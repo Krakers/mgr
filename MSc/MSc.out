@@ -1,6 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Wstep}{}% 1
 \BOOKMARK [1][-]{section.2}{Transmisja danych w sieciach kom\363rkowych}{}% 2
+<<<<<<< HEAD
 \BOOKMARK [2][-]{subsection.2.1}{GSM i EDGE}{section.2}% 3
+=======
+\BOOKMARK [2][-]{subsection.2.1}{Standardy GSM i EDGE}{section.2}% 3
+>>>>>>> 2f459d1a8245f636718706b40f60944827b737ba
 \BOOKMARK [2][-]{subsection.2.2}{UMTS i HSDPA}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{LTE}{section.2}% 5
 \BOOKMARK [1][-]{section.3}{Transmisja danych w z wykorzystaniem protoko\233u TCP/IP}{}% 6

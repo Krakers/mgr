@@ -10,15 +10,24 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
+<<<<<<< HEAD
 CaretPos.X=12
 CaretPos.Y=209
+=======
+CaretPos.X=312
+CaretPos.Y=140
+>>>>>>> 2f459d1a8245f636718706b40f60944827b737ba
 CharSet=def
 FileName=msc.tex
 FoldedLines=
 IsMainFile=yes
 Opened=yes
 ScrollPos.X=0
+<<<<<<< HEAD
 ScrollPos.Y=345
+=======
+ScrollPos.Y=211
+>>>>>>> 2f459d1a8245f636718706b40f60944827b737ba
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
@@ -420,7 +429,11 @@ Zoom=9
 FileName=1
 FirstPage=0
 Magnifier=5
+<<<<<<< HEAD
 Page=11
+=======
+Page=7
+>>>>>>> 2f459d1a8245f636718706b40f60944827b737ba
 PaperHeight=297
 PaperWidth=210
 Zoom=6
