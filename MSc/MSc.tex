@@ -30,11 +30,11 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[LE,LO]{£akomy T. - }
+\fancyhead[LE,LO]{£akomy T. - Praca magisterska}
 \fancyfoot[C]{\thepage}
 \setcounter{tocdepth}{2}
 
-\title{Praca magisterska}
+\title{Praca magisterska \\ Aplikacja do pomiarÛw parametrÛw ≥πcza sieciowego dla urzπdzeÒ z systemem operacyjnym Android}
 \author{Tomasz £akomy}
 \date{}
 
@@ -69,12 +69,54 @@
 \newpage
 \section{Transmisja danych w sieciach komÛrkowych}
 
-\subsection{GSM}
+\subsection{Standard GSM i technologia EDGE}
+\subsubsection{GSM}
+\qquad GSM (ang. \textit{Global System for Mobile Communications}) jest standardem telefonii komÛrkowej, ktÛry powsta≥ dziÍki europejskiej inicjatywie stworzenia jednego, otwartego standardu telefonii komÛrkowej. Jest to najstarsza wykorzystywana dziú technologia radiokomunikacji ruchomej, na obszarze europejskim rozpoczÍto uruchamianie GSM w roku 1989, rok po opublikowaniu pierwszej wersji standardu. Polska na uruchomienie pierwszej sieci GSM czeka≥a kolejne 7 lat, zosta≥a ona uruchomiona w roku 1996.
+
+\qquad GSM jest aktualnie najpowszchniej wykorzystywanem standardem telefonii komÛrkowej na úwiecie, jest on dostÍpny w 219 paÒstwach. Pierwotnie by≥ to standard pozwalajπcy jedynie na transmisje mowy, jednakøe po latach ewolucji pojawi≥y siÍ bazujπce na GSM technologie transmisji danych takie jak GPRS (ang. \textit{General Packet Radio Service}) czy jego nastÍpca, EDGE (ang. \textit{Enchanced Data Rules for GSM evolution}). W przypadku, gdy uøytkownik terminala mobilnego wybra≥ korzystanie np. z sieci LTE (ang. \textit{Long Term Evolution}) do transmisji danych i z jakiú powodÛw transmisja ta nie jest moøliwa (przyk≥adowo z powodu zbyt s≥abego zasiÍgu sieci LTE), transmisja moøe byÊ przeprowadzona za pomocπ technologii EDGE, ktÛra jest dostÍpna niemaløe wszÍdzie tam, gdzie dostÍpna jest sieÊ GSM.
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ | l | p{4cm} | p{4cm} | p{3cm} | }
+		\hline
+		\textbf{Standard} & \textbf{CzÍstotliwoúci wykorzystywane w ≥πczu w gÛrÍ [MHz]} & \textbf{CzÍstotliwoúci wykorzystywane w ≥πczu w dÛ≥ [MHz]} & \textbf{Liczba dostÍpnych pasm czÍstotliwoúci} \\ \hline
+		GSM 400 & 450.4 - 457.6
+lub 478.8 - 486 & 460.4 - 467.6
+lub 488.8 - 496 & 35 \\ \hline
+		GSM 850 & 824 - 849 & 869 - 894 & 124 \\ \hline
+		GSM 900 & 880 - 915 & 925 - 960 & 174 \\ \hline
+		GSM 1800 & 1710 - 1785 & 1805 - 1880 & 374 \\ \hline
+		GSM 1900 & 1850 - 1910 & 1930 - 1990 & 299 \\ \hline
+		\end{tabular}
+		\caption{Tabela porÛwnujπca standardy sieci GSM}
+		\label{tab:GSM_standards}
+	\end{center}
+\end{table}
+
+\qquad Istnieje piÍÊ g≥Ûwnych standardÛw sieci GSM, rÛøniπcych siÍ od siebie wykorzystywanym pasmem radiowym oraz liczbπ dostÍpnych pasm czÍstotliwoúci, co przedstawia tabela \ref{tab:GSM_standards}
+
+\qquad Na terenie Unii Europejskiej uøywany jest standard GSM 900/1800, ktÛry polega na uruchomieniu obu sieci jednoczeúnie na danym obszarze. Na terenach, gdzie spodziewany ruch jest niezbyt duøy (np. tereny wiejskie) uruchamiana jest tylko sieÊ GSM 900, jednakøe w miastach, gdzie ruch ten jest zdecydowanie wiÍkszy, dodatkowo wdraøany jest takøe standard GSM 1800, ktÛry dziÍki wiÍkszej liczbie jednoczeúnie oferowanych czÍstotliwoúci jest w stanie obs≥uøyÊ wiÍkszy ruch. 
+
+\qquad Aktualnie niemaløe wszystkie telefony komÛrkowe pozwalajπ na pracÍ w obydwu zakresach czÍstotliwoúci, co sprawia, øe uøytkownik nie musi siÍ obawiaÊ o utratÍ zakresu np. sieci GSM 1800. GSM zak≥ada moøliwoúÊ rozmowy w trakcie przemieszczania siÍ pomiÍdzy stacjami bazowymi.
+
+\subsubsection{EDGE}
+\qquad Standard EDGE (ang. \textit{Enhanced Data Rates for GSM Evolution}) powsta≥ jako odpowiedü na zapotrzebowanie uøytkownikÛw na wiÍksze niø w przypadku GPRS prÍdkoúci transmsji danych pakietowych. Obecnie jest to najbardziej postawowa technika przesy≥ana danych w sieciach komÛrkowych, wykorzystywana, gdy sieci UMTS oraz LTE nie sπ dostÍpne.
+
+\qquad ZarÛwno EDGE jak i GPRS dzia≥ajπ na bazie istniejπcej infrastruktury sieci komÛrkowej, wiÍc wdroøenie ich nie stwarza≥o koniecznoúci budowania nowej sieci radiowej. EDGE nie oferowa≥ nowych us≥ug, ale za to oferowa≥ uøytkownikom moøliwoúci dostarczania takich us≥ug jak Internet, korzystanie z transmisji strumieniowych audio/video czy teø wideorozmowy.
+
+\qquad W systemie GSM, transmisja jest zorganizowana na pasmach o szerokoúci 200 kHz, a czas podzielony jest na 8 kolejno nastÍpujπcych szczelin czasowych, z ktÛrych kaøda trwa 577 mikrosekund. Szczeliny se tπ ponumerowane od 1 do 8 i nastÍpujπ cyklicznie. W przypadku transmisji mowy, kontroler stacji bazowej przypisuje terminalowi mobilnemu jednπ szczelinÍ czasowπ na czÍstotwliwoúci uøywanej to transmisji. Oznacza to, øe na 1 czÍstotliwoúci moøna jednoczeúnie prowadziÊ do 8 rozmÛw telefonicznych.
+
+\qquad Ze wzglÍdu na to, øe EDGE zosta≥ zbudowany jako rozszerzenie standardu GSM, wykorzystuje on szczeliny czasowe na potrzeby transmisji danych. 
+
+\qquad 
+
+
+\qquad 
 \subsection{WCDMA}
 \subsection{LTE}
 
 \newpage
-\section{Transmisja danych w sieciach komÛrkowych}
+\section{Transmisja danych w Internecie}
 
 \newpage
 \section{Opis realizacji programowej}
@@ -87,6 +129,16 @@
 \newpage
 \section{Wyniki pomiarÛw}
 \subsection{Pomiar nieruchomego terminala mobilnego}
-\subsection{Pomiar ruchomego terminala mobilnego w úrodowisku mniejszym}
+\subsection{Pomiar ruchomego terminala mobilnego w úrodowisku miejskim}
 
+
+
+\newpage
+\begin{thebibliography}{11}
+	\bibitem{[1]} \textit{Podstawy cyfrowych systemÛw telekomunikacyjnych} - Krzysztof Weso≥owski, WK£, Warszawa 2006
+	\bibitem{[2]} \textit{Systemy radiokomunikacji ruchomej} - Krzysztof Weso≥owski, WK£, Warszawa 2006 
+	\bibitem{[3]} èrÛd≥o internetowe: \textit{"MIMO transmission schemes for LTE and HSPA networks"} \\
+	http://www.3gamericas.org/documents/ \\ Mimo\_Transmission\_Schemes\_for\_LTE\_and\_HSPA\_Networks\_June-2009.pdf
+	
+\end{thebibliography}
 \end{document}

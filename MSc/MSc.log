@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  20 SEP 2015 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  20 SEP 2015 18:07
 entering extended mode
 **msc.tex
 (msc.tex
@@ -854,6 +854,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+\OT4/cmr/bx/n/12 nych pasm
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -875,11 +882,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-Overfull \hbox (7.83664pt too wide) in paragraph at lines 90--90
-[]\OT4/cmr/bx/n/14.4 Pomiar ru-cho-me-go ter-mi-na-la mo-bil-ne-go w ±ro-do-wi-
-sku mniej-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -887,30 +889,53 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (msc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `msc.out' has not changed.
-(rerunfilecheck)             Checksum: 1792AC94A79C2938B56BCD8E24635219;1198.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
+(rerunfilecheck)             Checksum: 3A72AA860FFB543EDF45D098E26A5516;1211.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 18921 strings out of 493673
- 377862 string characters out of 3141527
- 462621 words of memory out of 3000000
- 21890 multiletter control sequences out of 15000+200000
- 16074 words of font info for 51 fonts, out of 3000000 for 9000
+ 18941 strings out of 493673
+ 378065 string characters out of 3141527
+ 465885 words of memory out of 3000000
+ 21899 multiletter control sequences out of 15000+200000
+ 16612 words of font info for 52 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 55i,11n,67p,406b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}<C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/pl/plr17.pfb>
-Output written on msc.pdf (8 pages, 49098 bytes).
+ 55i,12n,67p,834b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plit.enc}{C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}<C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/pl/plr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/pl/plr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti12.p
+fb>
+Output written on msc.pdf (11 pages, 75676 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

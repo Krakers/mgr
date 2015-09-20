@@ -10,15 +10,15 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=0
-CaretPos.Y=70
+CaretPos.X=25
+CaretPos.Y=82
 CharSet=def
 FileName=msc.tex
 FoldedLines=
 IsMainFile=yes
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=69
+ScrollPos.Y=92
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
@@ -381,7 +381,7 @@ Page=0
 Zoom=9
 
 [Project\DVI\1]
-Page=0
+Page=1
 Zoom=9
 
 [Project\DVI\2]
