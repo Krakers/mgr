@@ -1,4 +1,3 @@
-
 \documentclass[12pt,a4paper]{article}
  
 %Ustawienia strony A4:
@@ -69,7 +68,7 @@
 \newpage
 \section{Transmisja danych w sieciach komÛrkowych}
 
-\subsection{Standard GSM i technologia EDGE}
+\subsection{GSM i EDGE}
 \subsubsection{GSM}
 \qquad GSM (ang. \textit{Global System for Mobile Communications}) jest standardem telefonii komÛrkowej, ktÛry powsta≥ dziÍki europejskiej inicjatywie stworzenia jednego, otwartego standardu telefonii komÛrkowej. Jest to najstarsza wykorzystywana dziú technologia radiokomunikacji ruchomej, na obszarze europejskim rozpoczÍto uruchamianie GSM w roku 1989, rok po opublikowaniu pierwszej wersji standardu. Polska na uruchomienie pierwszej sieci GSM czeka≥a kolejne 7 lat, zosta≥a ona uruchomiona w roku 1996.
 
@@ -133,18 +132,94 @@ lub 488.8 - 496 & 35 \\ \hline
 
 \qquad Z powyøszej tabeli wynika, øe maksymalnπ prÍdkoúc transmisji moøna osiπgnπÊ wybierajπc schemat MCS-9, ktÛry przy zastosowaniu 5 szczelin czasowych umoøliwa transmisjÍ do 296 kilobitÛw na sekundÍ. W praktyce prÍdkoúÊ ta jest zdecydowanie niøsza, ze wzglÍdu na warunki panujπce w kanale radiowym.
 
+\subsection{UMTS i HSDPA}
+\subsubsection{UMTS}
 
-\qquad 
-\subsection{WCDMA}
+\qquad UMTS (ang. \textit{Universal Mobile Telecommunications System}), jest to standard sieci komÛrkowej trzeciej generacji bÍdπcy nastÍpcπ systemu GSM. UMTS zosta≥ zbudowany na bazie GSM, co oznacza, øe nie zak≥ada on zmian w sieci szkieletowej, jednakøe wprowadzono gruntowne zmiany w sieci radiowej. DziÍki tym zmianiom (takim jak zaimplementowanie technologii HSDPA - ang. \textit{High Speed Downlink Packet Access}) uda≥o siÍ uzyskaÊ prÍdkoúci transmisji danych pakietowych dochodzπce do 21.6 Mbit/s w transmisji w ≥πczu w gÛrÍ, oraz do 5.76 Mbit/s w ≥πczu w dÛ≥.
+
+\qquad PrÍdkoúci transmisji danych w sieciach trzeciej generacji sπ zdecydowanie wiÍksze od prÍdkoúci mierzonych w sieciach poprzedniej generacji ze wzglÍdu na rosnπce zapotrzebowanie uøytkownikÛw na korzystanie z us≥ug internetowych w terminalach mobilnych. W czasach, gdy strumieniowanie filmÛw w wysokiej rozdzielczoúci przez Internet jest poøπdanπ przez uøytkownikÛw telefonÛw komÛrkowych funkcjonalnoúciπ, EDGE nie jest wystarczajπcy dla zaspokojenia ich potrzeb.
+
+\qquad W dzisiejszych czasach UMTS jest najpopularniejszπ sieciπ komÛrkowπ trzeciej generacji, a polscy operatorzy komÛrkowi objeli jej zasiÍgiem niemaløe ca≥y kraj. \cite{[4]}\cite{[5]}\cite{[6]}\cite{[7]}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.8,natwidth=701,natheight=600]{t_mobile_zasieg.jpg}
+	\caption{ZasiÍg sieci 3G operatora T-Mobile w wrzeúniu 2015 roku}
+	\label{fig:t_mobile_coverage}
+\end{figure}
+
+\subsubsection{WCDMA}
+\qquad WCDMA (ang. \textit{Wideband Code Division Multiple Access}) jest to technika szybkiego przesy≥ania danych pakietowych zaimplementowana w standardzie UMTS. Pierwszy raz zosta≥a ona zaimplementowana w 2001 roku, a aktualnie jest to najpopularniejsze rozwiπzanie stosowane w sieciach 3G, oferujπce prÍdkoúci transmisji danych do 384 kbit/s.
+
+\qquad WCDMA bazuje na technice wielodostÍpu z podzia≥em kodowym (CDMA - \textit{Code Division Multiple Access}), spotykanej w systemach z poszerzonym widmem \cite{[2]}. W przeciwieÒstwie do GSM/EDGE, nie istnieje tutaj pojÍcie pasm czÍstotliwoúci przydzielanych dla danej transmisji. Zamiast tego, wszystkie transmisje odbywajπ siÍ na wspÛlnym szerokim paúmie, wykorzystywanym przez wszystkich uøytkownikÛw jednoczeúnie. W specyfikacji standardu szerokoúÊ tego pasma wynosi 4.68 MHz, w praktyce jednak wykorzystuje siÍ pasmo 5 MHz, aby zminimalizowaÊ efekty interferencji z innymi jednoczeúnie odbywajπcymi siÍ transmisjami.
+
+\qquad W systemach wykorzystujπcych CDMA, transmisje pochodzπce od poszczegÛlnych uøytkownikÛw sieci sπ przetwarzane w nadajniku za pomocπ wyznaczonych kodÛw, ktÛre poszerzajπ pasmo nadawanego sygna≥u. DziÍki temu moøna umieúciÊ wiele transmisji na jednakowym paúmie, kody te sπ ortogonalne wobec siebie, tak wiÍc moøliwe jest wyobrÍbnienie danego sygna≥u w odbiorniku spoúrÛd wielu innych, jednoczeúnie nadawanych. Ponadto, ciπgi danych sπ modulowane z zastosowaniem modulacji cyfrowej QPSK, co takøe poprawia odpornoúÊ transmisji na b≥Ídy.
+
+\subsubsection{HSDPA}
+\qquad HSDPA (ang. \textit{High Speed Downlink Packet Access}) pojawi≥o siÍ ze wzglÍdu na wciπø rosnπce zapotrzebowanie na szybkπ transmisjÍ danych, prÍdkoúci oferowane przez WCDMA nie by≥y juø wystarczajπce dla uøytkownikÛw XXI wieku. Technologia ta powsta≥a na bazie WCDMA, co sprawia, øe operatorzy komÛrkowi przy jej wdraøaniu nie musza ponosiÊ kosztÛw zwiπzanych z wymianπ sieci szkieletowej, a jedyne zmiany dotyczπ sieci radiowej.
+
+\qquad System HSDPA oferuje prÍdkoúci transmisji siÍgajπce 21.6 Mbit/s w ≥πczu w dÛ≥. Tak duøπ prÍdkoúc transmisji danych uda≥o siÍ osiπgnπÊ poprzez m.in. zastosowanie modulacji 16QAM (gdy warunki panujπce w kanale radiowym na to pozwalajπ, ze wzglÍdu na to, øe modulacja ta jest bardziej wraøliwa na zak≥Ûcenia niø QPSK), wyodrÍbnienie osobnego kana≥u transportowego dla transmisji w ≥πczu w dÛ≥ - HS-DSCH (\textit{High Speed Downlink Shared Channel}), oraz dziÍki zmniejszeniu okresu, w ktÛrym przesy≥ana jest ramka danych, co pozwala na lepsze reagowanie na zmieniajπce siÍ w czasie w≥aúciwoúci kana≥u radiowego.
+
 \subsection{LTE}
+\qquad Technologia LTE (ang. \textit{Long Term Evolution}) powsta≥a jako odpowiedü konsorcjum 3GPP (ang. \textit{3rd Generation Partnership Project}) na rosnπce zapotrzebowanie uøytkownikÛw na przepustowoúÊ ≥πcza danych. Z racji tego, øe jest ona nastÍpcπ takich rozwiπzaÒ telekomunikacyjnych jak WCDMA i HSPA bywa ona bardzo czÍsto omy≥kowo nazywana "technologiπ 4G", co nie jest do koÒca prawdπ. W tym miejscu warto zaznaczyÊ, øe pomimo wielu nieprawdziwych informacji docierajπcych z mediÛw standard LTE nie spe≥nia wymogÛw stawianych przez ITU dla technologii 4G/IMT-Advanced. Wymogi te spe≥nia dopiero nastÍpca standardu LTE o nazwie LTE-Advanced.
+
+\qquad Pierwszπ implementacjÍ standardu opisuje dokument 3GPP LTE Release 8, opublikowany w grudniu 2008 roku. Opisano w nowy standard oraz przedstawiono jego specyfikacjÍ. Kolejny dokument (Release 9) zosta≥ wydany rok pÛüniej, a wydanie Release 10 zawierajπcego opis LTE-Advanced pozwoli≥o 3GPP na spe≥nienie wymagaÒ dotyczπcych sieci 4G. W Release 8 zosta≥y opisane podstawowe w≥aúciwoúci systemu LTE, ktÛre przedstawiono w tabeli 
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ | l | l |}
+		\hline
+		\textbf{Parametr} & \textbf{Standard LTE } \\ \hline
+		Max przep≥ywnoúÊ - ≥πcze w dÛ≥ & 300 Mb/s \\ \hline
+		Maksymalna przep≥ywnoúÊ - ≥πczÍ w gÛrÍ & 50Mb/s \\ \hline
+		Maksymalne opÛünienie pakietu & ok. 10ms  \\ \hline
+		Wykorzystana metoda wielodostÍpu - downlink & OFDMA \\ \hline
+		Wykorzystana metoda wielodostÍpu - uplink & SC-FDMA \\ \hline
+		\end{tabular}
+		\caption{Podstawowe w≥aúciwoúci systemu LTE}
+		\label{LTE_requirements}
+	\end{center}
+\end{table}
+
+
+
+Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wykorzystano szereg technik: 
+
+\begin{itemize}
+  \item \textbf{MIMO} (\textit{Multiple Input Multiple Output}) - technika umoøliwiajπca korzystanie z wielu anten zarÛwno po stronie nadawczej jak i odbiorczej.
+  \item \textbf{SC-FDMA} (\textit{Single Carrier ñ Frequency Division Multiple Access}) - metoda wielodostÍpu stosowana w ≥πczu w gÛrÍ pozwalajπca uøytkownikom na wspÛ≥dzielenie zasobÛw czasowo-czÍstotliwoúciowych.
+  \item \textbf{HARQ} (\textit{Hybrid Automatic Repeat reQuest}) - protokÛ≥ polegajπcy na retransmisji danych w przypadku wystπpienia trudnych warunkÛw propagacyjnych.
+  \item \textbf{OFDM} (\textit{Orthogonal Frequency Division Multiplexing}) - modulacja stosowana w ≥πczu w dÛ≥, polegajπca na transmisji na wielu podnoúnych, ktÛre sπ wzglÍdem siebie ortogonalne.
+  \item \textbf{SAE} (\textit{System Architecture Evolution}) - poprawienie struktury szkieletowej sieci, ktÛra jest ≥atwa w modyfikacji i dopasowana do potrzeb przysz≥ego standardu LTE-Advanced.
+  \item \textbf{SON} (\textit{Self-Organizing Networks}) - rozwiπzania pozwalajπce na samokonfiguracjÍ oraz samooptymalizacjÍ sieci LTE.
+\end{itemize}
+
+
 
 \newpage
-\section{Transmisja danych w Internecie}
+\section{Transmisja danych w z wykorzystaniem protoko≥u TCP/IP}
 
 \newpage
 \section{Opis realizacji programowej}
+\subsection{Cechy charakterystyczne programowania urzπdzeÒ z systemem Android}
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=0.35,natwidth=1366,natheight=728]{android_studio.png}
+	\caption{Tworzenie aplikacji na system operacyjny Android w úrodowisku Android Studio}
+	\label{fig:android_studio}
+\end{figure}
+
 \subsection{Opis aplikacji na smartfon z systemem Android}
-\subsection{Opis aplikacji pe≥niπcej funkcjÍ serwerana komputer PC}
+
+\subsection{Opis aplikacji pe≥niπcej funkcjÍ serwera na komputer PC}
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=549,natheight=332]{server_source_code.png}
+	\caption{Kod ürÛd≥owy aplikacji pe≥niπcej funkcjÍ serwera na komputer PC}
+	\label{fig:server_source_code}
+\end{figure}
+
+
 \subsection{Opis realizacji transmisji poprzez protokÛ≥ TCP/IP}
 \subsection{SposÛb pomiaru rejestracji czasu przesy≥ania pakietu}
 \subsection{SposÛb pomiaru po≥oøenia terminala mobilnego}
@@ -162,6 +237,13 @@ lub 488.8 - 496 & 35 \\ \hline
 	\bibitem{[2]} \textit{Systemy radiokomunikacji ruchomej} - Krzysztof Weso≥owski, WK£, Warszawa 2006 
 	\bibitem{[3]} èrÛd≥o internetowe: \textit{"MIMO transmission schemes for LTE and HSPA networks"} \\
 	http://www.3gamericas.org/documents/ \\ Mimo\_Transmission\_Schemes\_for\_LTE\_and\_HSPA\_Networks\_June-2009.pdf
-	
+	\bibitem{[4]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Play} \\
+	http://internet.playmobile.pl/maps/
+	\bibitem{[5]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Orange} \\
+	http://zasieg-orange.wp.pl/?ticaid=1c93f
+	\bibitem{[6]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora T-Mobile} \\
+	http://www.t-mobile.pl/pl/indywidualni/stali\_klienci/uslugi\_do\_telefonu/mapa\_zasiegu
+	\bibitem{[7]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Pla"} \\
+	http://www.plus.pl/mapa\_zasiegu\_plusa	
 \end{thebibliography}
 \end{document}

@@ -1,15 +1,16 @@
 \BOOKMARK [1][-]{section.1}{Wstep}{}% 1
 \BOOKMARK [1][-]{section.2}{Transmisja danych w sieciach kom\363rkowych}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Standard GSM i technologia EDGE}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{WCDMA}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.1}{GSM i EDGE}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{UMTS i HSDPA}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{LTE}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{Transmisja danych w Internecie}{}% 6
+\BOOKMARK [1][-]{section.3}{Transmisja danych w z wykorzystaniem protoko\233u TCP/IP}{}% 6
 \BOOKMARK [1][-]{section.4}{Opis realizacji programowej}{}% 7
-\BOOKMARK [2][-]{subsection.4.1}{Opis aplikacji na smartfon z systemem Android}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.2}{Opis aplikacji pe\233niacej funkcje serwerana komputer PC}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.3}{Opis realizacji transmisji poprzez protok\363\233 TCP/IP}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.4}{Spos\363b pomiaru rejestracji czasu przesy\233ania pakietu}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.5}{Spos\363b pomiaru po\233ozenia terminala mobilnego}{section.4}% 12
-\BOOKMARK [1][-]{section.5}{Wyniki pomiar\363w}{}% 13
-\BOOKMARK [2][-]{subsection.5.1}{Pomiar nieruchomego terminala mobilnego}{section.5}% 14
-\BOOKMARK [2][-]{subsection.5.2}{Pomiar ruchomego terminala mobilnego w srodowisku miejskim}{section.5}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Cechy charakterystyczne programowania urzadzen z systemem Android}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Opis aplikacji na smartfon z systemem Android}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Opis aplikacji pe\233niacej funkcje serwera na komputer PC}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.4}{Opis realizacji transmisji poprzez protok\363\233 TCP/IP}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.5}{Spos\363b pomiaru rejestracji czasu przesy\233ania pakietu}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.6}{Spos\363b pomiaru po\233ozenia terminala mobilnego}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Wyniki pomiar\363w}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Pomiar nieruchomego terminala mobilnego}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Pomiar ruchomego terminala mobilnego w srodowisku miejskim}{section.5}% 16
