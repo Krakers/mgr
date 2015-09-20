@@ -1,15 +1,10 @@
 \contentsline {section}{\numberline {1}Wst\k ep}{4}{section.1}
 \contentsline {section}{\numberline {2}Transmisja danych w sieciach kom\'orkowych}{5}{section.2}
-<<<<<<< HEAD
 \contentsline {subsection}{\numberline {2.1}GSM i EDGE}{5}{subsection.2.1}
-=======
-\contentsline {subsection}{\numberline {2.1}Standardy GSM i EDGE}{5}{subsection.2.1}
->>>>>>> 2f459d1a8245f636718706b40f60944827b737ba
 \contentsline {subsubsection}{\numberline {2.1.1}GSM}{5}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}EDGE}{6}{subsubsection.2.1.2}
 \contentsline {subsection}{\numberline {2.2}UMTS i HSDPA}{8}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}UMTS}{8}{subsubsection.2.2.1}
-<<<<<<< HEAD
 \contentsline {subsubsection}{\numberline {2.2.2}WCDMA}{9}{subsubsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.3}HSDPA}{10}{subsubsection.2.2.3}
 \contentsline {subsection}{\numberline {2.3}LTE}{11}{subsection.2.3}
@@ -24,16 +19,3 @@
 \contentsline {section}{\numberline {5}Wyniki pomiar\'ow}{15}{section.5}
 \contentsline {subsection}{\numberline {5.1}Pomiar nieruchomego terminala mobilnego}{15}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Pomiar ruchomego terminala mobilnego w \'srodowisku miejskim}{15}{subsection.5.2}
-=======
-\contentsline {subsection}{\numberline {2.3}LTE}{9}{subsection.2.3}
-\contentsline {section}{\numberline {3}Transmisja danych w Internecie}{10}{section.3}
-\contentsline {section}{\numberline {4}Opis realizacji programowej}{11}{section.4}
-\contentsline {subsection}{\numberline {4.1}Opis aplikacji na smartfon z systemem Android}{11}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Opis aplikacji pe\IeC {\l }ni\k acej funkcj\k e serwerana komputer PC}{11}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Opis realizacji transmisji poprzez protok\'o\IeC {\l } TCP/IP}{11}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Spos\'ob pomiaru rejestracji czasu przesy\IeC {\l }ania pakietu}{11}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Spos\'ob pomiaru po\IeC {\l }o\.zenia terminala mobilnego}{11}{subsection.4.5}
-\contentsline {section}{\numberline {5}Wyniki pomiar\'ow}{12}{section.5}
-\contentsline {subsection}{\numberline {5.1}Pomiar nieruchomego terminala mobilnego}{12}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Pomiar ruchomego terminala mobilnego w \'srodowisku miejskim}{12}{subsection.5.2}
->>>>>>> 2f459d1a8245f636718706b40f60944827b737ba
