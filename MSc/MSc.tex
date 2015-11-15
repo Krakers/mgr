@@ -141,7 +141,7 @@ lub 488.8 - 496 & 35 \\ \hline
 
 \qquad W dzisiejszych czasach UMTS jest najpopularniejsz¹ sieci¹ komórkow¹ trzeciej generacji, a polscy operatorzy komórkowi objeli jej zasiêgiem niemal¿e ca³y kraj. \cite{[4]}\cite{[5]}\cite{[6]}\cite{[7]}
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.8,natwidth=701,natheight=600]{t_mobile_zasieg.jpg}
 	\caption{Zasiêg sieci 3G operatora T-Mobile w wrzeœniu 2015 roku}
@@ -246,28 +246,32 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Android jest rozwi¹zaniem typu Open Source\cite{[9]}, co oznacza, ¿e jego kod Ÿród³owy jest powszechnie dostêpny. Jest to jeden z elementów otwartej polityki aktualnego w³aœciciela systemu operacyjnego Android - firmy Google, która rozwija Androida jako otwart¹ platformê zarówno dla programistów jak i dla u¿ytkowników.
 
-\qquad Najczêœciej u¿ywanym œrodowiskiem programistycznym do pisania aplikacji na system operacyjny Android jest program Android Studio, przedstawiony na rysnku \ref{fig:android_studio}.
+\qquad Najczêœciej u¿ywanym œrodowiskiem programistycznym do pisania aplikacji na system operacyjny Android jest program Android Studio, przedstawiony na rysunku \ref{fig:android_studio}. Œrodowisko te jest dostêpne na systemy operacyjne Windows, Mac OS X oraz Linux i stanowi one kompletn¹ platformê programistyczn¹ dla potrzeb tworzenia aplikacji na Androida.
 
-\begin{figure}[b]
+\qquad Zarówno system operacyjny Android jak i œrodowisko Android Studio wymagaj¹ zainstalowanego œrodowiska do programowania w jêzyku Java, ze wzglêdu na to, ¿e jest to g³ówny jêzyk programowania wykorzystywany na tej platformie. Istniej¹ rozwi¹zania pozwalaj¹ce kompilowaæ i uruchamiaæ kod napisany w innych jêzykach (np. Objective-C, JavaScript, C#) na platformie Android, jednak zaleca siê tworzenie aplikacji w jêzyku Java.
+
+\begin{figure}[!htbp]
 	\centering
 \includegraphics[scale=0.3,natwidth=1920,natheight=1040]{android_studio.png}
 	\caption{Tworzenie aplikacji na system operacyjny Android w œrodowisku Android Studio}
 	\label{fig:android_studio}
 \end{figure}
 
+\qquad Poza œrodowiskiem programistycznym, Android Studio zawiera tak¿e wizualny edytor s³u¿¹cy do przygotowania wygl¹du aplikacji, a tak¿e wbudowany emulator, który pozwala na przetestowanie powstaj¹cej aplikacji na ró¿nych typach urz¹dzeñ (np. tablety o ró¿nych przek¹tnych ekranu) bez koniecznoœci zakupu sprzêtu. 
+
 
 
 \subsection{Opis aplikacji na smartfon z systemem Android}
 
 \subsection{Opis aplikacji pe³ni¹cej funkcjê serwera na komputer PC}
-\begin{figure}[h!]
+\begin{figure}[!htbp]
 	\centering
 \includegraphics[scale=1,natwidth=549,natheight=332]{server_source_code.png}
 	\caption{Kod Ÿród³owy aplikacji pe³ni¹cej funkcjê serwera na komputer PC}
 	\label{fig:server_source_code}
 \end{figure}
 
-
+\subsection{Opis realizacji transmisji z wykorzystaniem zapytañ HTTP}
 \subsection{Opis realizacji transmisji poprzez protokó³ TCP/IP}
 \subsection{Sposób pomiaru rejestracji czasu przesy³ania pakietu}
 \subsection{Sposób pomiaru po³o¿enia terminala mobilnego}

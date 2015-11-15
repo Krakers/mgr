@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.9.20)  15 NOV 2015 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=latex 2015.9.20)  15 NOV 2015 18:38
 entering extended mode
 **msc.tex
 (msc.tex
@@ -817,7 +817,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 No file msc.nls.
-(msc.toc)
+(msc.toc
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 3.
+)
 \tf@toc=\write6
 
 
@@ -834,13 +841,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 79.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 79.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 79.
-
 Underfull \hbox (badness 10000) in paragraph at lines 81--81
 \OT4/cmr/bx/n/12 nych pasm
  []
@@ -873,18 +873,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7]
 
-LaTeX Warning: Citation `[4]' on page 8 undefined on input line 142.
-
-
-LaTeX Warning: Citation `[5]' on page 8 undefined on input line 142.
-
-
-LaTeX Warning: Citation `[6]' on page 8 undefined on input line 142.
-
-
-LaTeX Warning: Citation `[7]' on page 8 undefined on input line 142.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -898,15 +886,19 @@ Overfull \hbox (109.93732pt too wide) in paragraph at lines 146--147
  []
 
 
-LaTeX Warning: Citation `[2]' on page 9 undefined on input line 154.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -924,17 +916,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [11]
-
-LaTeX Warning: Citation `[8]' on page 12 undefined on input line 202.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -949,24 +931,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13]
-File: android_studio.png Graphic file (type eps)
- <android_studio.png>
-Overfull \hbox (125.19806pt too wide) in paragraph at lines 251--252
- [][][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: server_source_code.png Graphic file (type eps)
-<server_source_code.png>
-Overfull \hbox (98.09093pt too wide) in paragraph at lines 263--264
- [][][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -974,16 +938,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
+File: android_studio.png Graphic file (type eps)
+ <android_studio.png>
+Overfull \hbox (125.19806pt too wide) in paragraph at lines 253--254
+ [][][] 
+ []
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15]
-Overfull \hbox (16.8445pt too wide) in paragraph at lines 290--292
-\OT4/cmr/m/n/12 http://www.t-mobile.pl/pl/indywidualni/stali[]klienci/uslugi[]d
-o[]telefonu/mapa[]zasiegu 
+File: server_source_code.png Graphic file (type eps)
+<server_source_code.png>
+Overfull \hbox (98.09093pt too wide) in paragraph at lines 265--266
+ [][][] 
  []
 
 
@@ -992,9 +956,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
+[15]
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1016,34 +985,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
+Overfull \hbox (16.8445pt too wide) in paragraph at lines 292--294
+\OT4/cmr/m/n/12 http://www.t-mobile.pl/pl/indywidualni/stali[]klienci/uslugi[]d
+o[]telefonu/mapa[]zasiegu 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (msc.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
-
-
-Package rerunfilecheck Warning: File `msc.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `msc.out':
-(rerunfilecheck)             Before: D90DE411925760E43D250DF080E5D8B1;635
-(rerunfilecheck)             After:  9DB1F34F8613DEADA27E372FEFC4E39C;1527.
-
-LaTeX Warning: There were undefined references.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
+Package rerunfilecheck Info: File `msc.out' has not changed.
+(rerunfilecheck)             Checksum: 9DB1F34F8613DEADA27E372FEFC4E39C;1527.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 302.
  ) 
 Here is how much of TeX's memory you used:
- 18540 strings out of 493674
- 372249 string characters out of 3141553
- 468458 words of memory out of 3000000
- 21536 multiletter control sequences out of 15000+200000
+ 18550 strings out of 493674
+ 372393 string characters out of 3141553
+ 468946 words of memory out of 3000000
+ 21546 multiletter control sequences out of 15000+200000
  16869 words of font info for 53 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,12n,67p,891b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on msc.dvi (19 pages, 57292 bytes).
+Output written on msc.dvi (20 pages, 70284 bytes).
