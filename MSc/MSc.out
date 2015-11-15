@@ -3,14 +3,17 @@
 \BOOKMARK [2][-]{subsection.2.1}{GSM i EDGE}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{UMTS i HSDPA}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{LTE}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{Transmisja danych w z wykorzystaniem protoko\233u TCP/IP}{}% 6
-\BOOKMARK [1][-]{section.4}{Opis realizacji programowej}{}% 7
-\BOOKMARK [2][-]{subsection.4.1}{Cechy charakterystyczne programowania urzadzen z systemem Android}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.2}{Opis aplikacji na smartfon z systemem Android}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.3}{Opis aplikacji pe\233niacej funkcje serwera na komputer PC}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.4}{Opis realizacji transmisji poprzez protok\363\233 TCP/IP}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.5}{Spos\363b pomiaru rejestracji czasu przesy\233ania pakietu}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.6}{Spos\363b pomiaru po\233ozenia terminala mobilnego}{section.4}% 13
-\BOOKMARK [1][-]{section.5}{Wyniki pomiar\363w}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{Pomiar nieruchomego terminala mobilnego}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.2}{Pomiar ruchomego terminala mobilnego w srodowisku miejskim}{section.5}% 16
+\BOOKMARK [1][-]{section.3}{Transmisja danych w Internecie}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Protok\363\233 TCP}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Protok\363\233 HTTP}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Opis realizacji programowej}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Za\233ozenia projektowe}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Cechy charakterystyczne programowania urzadzen z systemem Android}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Opis aplikacji na smartfon z systemem Android}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.4}{Opis aplikacji pe\233niacej funkcje serwera na komputer PC}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.5}{Opis realizacji transmisji poprzez protok\363\233 TCP/IP}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.6}{Spos\363b pomiaru rejestracji czasu przesy\233ania pakietu}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.7}{Spos\363b pomiaru po\233ozenia terminala mobilnego}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{Wyniki pomiar\363w}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Pomiar nieruchomego terminala mobilnego}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Pomiar ruchomego terminala mobilnego w srodowisku miejskim}{section.5}% 19

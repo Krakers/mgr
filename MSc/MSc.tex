@@ -197,22 +197,70 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 
 \newpage
-\section{Transmisja danych w z wykorzystaniem protoko≥u TCP/IP}
+\section{Transmisja danych w Internecie}
+\subsection{ProtokÛ≥ TCP}
+\qquad ProtokÛ≥ TCP (ang. \textit{Transmission Control Protocol}) jest po≥πczeniowym, niezawodnym, strumieniownym protoko≥em stanowiπcym podstawÍ dzia≥ania dzisiejszego Internetu. Jest to protokÛ≥ czwartej warstwy modelu OSI. Po raz pierwszy zosta≥ on zdefiniowany w dokumencie RFC 793 z 1981 roku zatytu≥owanym "\textit{Transmission Control Protocol. Darpa Internet Program protocol specification}" \cite{[8]}. 
+
+\qquad ProtokÛ≥ TCP jest czÍsciπ stosu TCP/IP, korzystajπcego z protoko≥u IP (ang. \textit{Internet Protocol}) do przeprowadzania bezb≥ednej transmisji danych w obu kierunkach.
+
+\subsection{ProtokÛ≥ HTTP}
 
 \newpage
 \section{Opis realizacji programowej}
+
+\subsection{Za≥oøenia projektowe}
+
+\qquad Celem pracy jest stworzenie úrodowiska pomiarowego do pomiaru czasu transmisji danych w sieciach komÛrkowych pod kπtem zastosowania tych sieci w systemach pomiarowych. W tym celu naleøa≥o opracowac aplikacjÍ dla urzπdzeÒ z systemem Android, a takøe dedykowane dla niej serwery napisane w jÍzyku Python. Serwery te umoøliwiajπ komunikacjÍ z aplikacjπ zainstalowanπ na terminalu mobilnym z wykorzystaniem zapytaÒ HTTP jak i za pomocπ gniazd protoko≥u TCP/IP.
+
+\qquad Naleøa≥o dokonaÊ pomiaru dla nieruchomego terminala mobilnego oraz dla terminala, ktÛrego uøytkownik pozostaje w ruchu. Przy za≥oøeniu, øe aplikacja posiada dwa moøliwe sposoby komunikacji, oznacza to cztery moøliwe sposoby przeprowadzania pomiaru:
+
+\begin{itemize}
+  \item Pomiar terminala nieruchomego z wykorzystaniem zapytaÒ HTTP
+  \item Pomiar terminala nieruchomego z wykorzystaniem protko≥u TCP/IP
+  \item Pomiar terminala przemieszczajπcego siÍ z wykorzystaniem zapytaÒ HTTP
+  \item Pomiar terminala przemieszczajπcego siÍ z wykorzystaniem protko≥u TCP/IP
+\end{itemize}
+
+\qquad Aplikacja posiada takøe moøliwoúÊ wyboru pracy sieci telefonu komÛrkowego, wybÛr ten przedstawia siÍ nastÍpujπco:
+
+\begin{itemize}
+  \item LTE/WCDMA/GSM (automatyczne po≥πczenie)
+  \item WCDMA/GSM (automatyczne po≥πczenie)
+  \item Tylko WCDMA
+  \item Tylko GSM
+\end{itemize}
+
+\qquad PojedyÒczym pomiarem nazywamy pomiar czasu wykonania nastÍpujπcych czynnoúci:
+\begin{enumerate}
+\item Przes≥anie pakietu danych o zadanej d≥ugoúci z terminalu mobilnego do serwera
+\item Odebranie pakietu danych przez serwer
+\item Odes≥anie identycznego pakietu danych do terminala mobilnego
+\item Odebranie pakietu danych w terminalu mobilnym
+\end{enumerate}
+
+\qquad Przygotowana aplikacja na system operacyjny Android posiada moøliwoúÊ wyúwietlenia wykresu prezentujπcego czasy transmisji zarejestrowane w czasie pomiaru. Ponadto, wszystkie pomiary sπ zapisywane w postaci pliku .csv w pamiÍci telefonu, co pozwala na ich pÛüniejszπ analizÍ z wykorzystaniem innych narzÍdzi.
+
 \subsection{Cechy charakterystyczne programowania urzπdzeÒ z systemem Android}
-\begin{figure}[h]
+
+\qquad Android jest systemem operacyjnym z jπdrem Linux przeznaczonym dla urzπdzeÒ mobilnych takich jak telefony komÛrkowe, smartfony, tablety oraz przyk≥adowo w inteligentnych telewizorach (technologia Android TV). Obecnie jest to najbardziej popularny system operacyjny na telefony komÛrkowe (dane na rok 2015), a w mowie potocznej okreúlenie "smartfon" jest utoøsamianie z telefonem z panelem dotykowym, na ktÛrym zainstalowany jest system operacyjny Android.
+
+\qquad Android jest rozwiπzaniem typu Open Source\cite{[9]}, co oznacza, øe jego kod ürÛd≥owy jest powszechnie dostÍpny. Jest to jeden z elementÛw otwartej polityki aktualnego w≥aúciciela systemu operacyjnego Android - firmy Google, ktÛra rozwija Androida jako otwartπ platformÍ zarÛwno dla programistÛw jak i dla uøytkownikÛw.
+
+\qquad NajczÍúciej uøywanym úrodowiskiem programistycznym do pisania aplikacji na system operacyjny Android jest program Android Studio, przedstawiony na rysnku \ref{fig:android_studio}.
+
+\begin{figure}[b]
 	\centering
-\includegraphics[scale=0.5,natwidth=1366,natheight=728]{android_studio.png}
+\includegraphics[scale=0.3,natwidth=1920,natheight=1040]{android_studio.png}
 	\caption{Tworzenie aplikacji na system operacyjny Android w úrodowisku Android Studio}
 	\label{fig:android_studio}
 \end{figure}
 
+
+
 \subsection{Opis aplikacji na smartfon z systemem Android}
 
 \subsection{Opis aplikacji pe≥niπcej funkcjÍ serwera na komputer PC}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 \includegraphics[scale=1,natwidth=549,natheight=332]{server_source_code.png}
 	\caption{Kod ürÛd≥owy aplikacji pe≥niπcej funkcjÍ serwera na komputer PC}
@@ -243,7 +291,12 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 	http://zasieg-orange.wp.pl/?ticaid=1c93f
 	\bibitem{[6]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora T-Mobile} \\
 	http://www.t-mobile.pl/pl/indywidualni/stali\_klienci/uslugi\_do\_telefonu/mapa\_zasiegu
-	\bibitem{[7]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Pla"} \\
-	http://www.plus.pl/mapa\_zasiegu\_plusa	
+	\bibitem{[7]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Play"} \\
+	http://www.plus.pl/mapa\_zasiegu\_plusa
+	\bibitem{[8]} èrÛd≥o internetowe: \textit{Dokument RFC793 definiujπcy protokÛ≥ TCP} \\
+	http://tools.ietf.org/html/rfc793
+	\bibitem{[9]} èrÛd≥o internetowe: \textit{Android Open Source Project} \\
+	https://source.android.com/
+	
 \end{thebibliography}
 \end{document}
