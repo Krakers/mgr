@@ -362,6 +362,24 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 \end{figure}
 
 \subsection{Opis realizacji programowej transmisji z wykorzystaniem zapytañ HTTP}
+
+\qquad Rysunek \ref{fig:http_requests_android} przedstawia sposób realizacji programowej transmisji z wykorzystaniem zapytañ HTTP. Pokazuje on funkcjê \textit{performHttpRequests()} (ang. \textit{wykonajZapytaniaHttp()}), która odpowiada za realizacje transmisji za pomoc¹ protoko³u HTTP. 
+
+\qquad Na pocz¹tku definicji tej funkcji tworzone s¹ funkcje pomocnicze, które s¹ wykonywane w przypadku poprawnego przesy³u pakietu lub b³êdu (odpowiednio: \textit{successHandler} oraz \textit{errorHandler}). W przypadku b³êdu wyœwietlany jest odpowiedni komunikat, w przypadku poprawnej transmisji wykonwane s¹ funkcje odpowiedzialne za aktualizacje wyników i wyœwietlenia aktualnego œredniego czasu transmisji na ekranie.
+
+\qquad Sama transmisja odbywa siê za pomoc¹ obiektu \textit{stringRequest}, który odpowiada za wysy³anie zapytañ POST protoko³u HTTP, do³¹czaj¹c do parametrów tego zapytania zarówno unikalny identyfikator czasowy jak i losowo wygenerowane dane o zadanym przez u¿ytkownika rozmiarze. Ka¿de takie zapytanie otrzymuje najwy¿szy mo¿liwy priorytet (\textit{Priority.IMMEDIATE} - ang. \textit{natychmiast}), co gwarantuje najszybszy mo¿liwy czas startu transmisji danego pakietu.
+
+\qquad Ostatnia linia tworzy tzw. kolejkê zapytañ co oznacza, ¿e dana transmisja za poœrednictwem zapytania HTTP bêdzie dodawana na kolejkê po up³yniêciu interwa³u okreœlony przez u¿ytkownika w trakcie ustalania parametrów pomiaru. Przyk³adowo, ustawienie czasu pomiêdzy pakietami na 5 sekund spowoduje dodanie nowego pakietu na kolejkê po up³ywie 5 sekund od poprzednio wys³anego pakietu.
+
+\begin{figure}[!htbp]
+	\centering
+\includegraphics[scale=0.5,natwidth=779,natheight=739]{http_requests_source.png}
+	\caption{Realizacja programowa transmisji z wykorzystaniem zapytañ HTTP}
+	\label{fig:http_requests_android}
+\end{figure}
+
+
+
 \subsection{Opis realizacji programowej transmisji poprzez protokó³ TCP/IP}
 \subsection{Sposób pomiaru rejestracji czasu przesy³ania pakietu}
 \subsection{Sposób pomiaru po³o¿enia terminala mobilnego}

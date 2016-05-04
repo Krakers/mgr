@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  4 MAY 2016 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  4 MAY 2016 23:14
 entering extended mode
 **msc.tex
 (msc.tex
@@ -1063,11 +1063,6 @@ File: results.jpg Graphic file (type jpg)
 Package pdftex.def Info: results.jpg used on input line 359.
 (pdftex.def)             Requested size: 189.71158pt x 337.26506pt.
 
-Overfull \hbox (35.22168pt too wide) in paragraph at lines 365--365
-[]\OT4/cmr/bx/n/14.4 Opis re-ali-za-cji pro-gra-mo-wej trans-mi-sji po-przez pr
-o-to-kóª TCP/IP 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1075,6 +1070,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24 <./results.jpg>]
+<http_requests_source.png, id=273, 587.19376pt x 557.83406pt>
+File: http_requests_source.png Graphic file (type png)
+
+<use http_requests_source.png>
+Package pdftex.def Info: http_requests_source.png used on input line 376.
+(pdftex.def)             Requested size: 293.59616pt x 278.91634pt.
+
+Overfull \hbox (35.22168pt too wide) in paragraph at lines 383--383
+[]\OT4/cmr/bx/n/14.4 Opis re-ali-za-cji pro-gra-mo-wej trans-mi-sji po-przez pr
+o-to-kóª TCP/IP 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1088,8 +1095,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
-Overfull \hbox (16.8445pt too wide) in paragraph at lines 386--388
+[26 <./http_requests_source.png>]
+Overfull \hbox (16.8445pt too wide) in paragraph at lines 404--406
 \OT4/cmr/m/n/12 http://www.t-mobile.pl/pl/indywidualni/stali[]klienci/uslugi[]d
 o[]telefonu/mapa[]zasiegu 
  []
@@ -1101,24 +1108,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 396.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 396.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 414.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 414.
  (msc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 396.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 396.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 414.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 414.
 Package rerunfilecheck Info: File `msc.out' has not changed.
 (rerunfilecheck)             Checksum: A94F56E1003FDF33608B666C7AC4B28D;1658.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 396.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 414.
  ) 
 Here is how much of TeX's memory you used:
- 19075 strings out of 493673
- 380279 string characters out of 3141527
- 468785 words of memory out of 3000000
- 21974 multiletter control sequences out of 15000+200000
+ 19082 strings out of 493673
+ 380454 string characters out of 3141527
+ 468872 words of memory out of 3000000
+ 21979 multiletter control sequences out of 15000+200000
  16869 words of font info for 53 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,12n,67p,891b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1129,9 +1136,9 @@ les (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}<C:/Program Files (x86)/MiKTeX
 pe1/public/pl/plr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/p
 l/plr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb
 >
-Output written on msc.pdf (27 pages, 779061 bytes).
+Output written on msc.pdf (27 pages, 836147 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 
