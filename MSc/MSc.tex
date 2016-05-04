@@ -260,17 +260,6 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 \qquad Poza œrodowiskiem programistycznym, Android Studio zawiera tak¿e wizualny edytor s³u¿¹cy do przygotowania wygl¹du aplikacji, a tak¿e wbudowany emulator, który pozwala na przetestowanie powstaj¹cej aplikacji na ró¿nych typach urz¹dzeñ (np. tablety o ró¿nych przek¹tnych ekranu) bez koniecznoœci zakupu sprzêtu. 
 
 
-
-\subsection{Opis aplikacji na smartfon z systemem Android}
-\begin{figure}[!htbp]
-	\centering
-\includegraphics[scale=1,natwidth=549,natheight=332]{server_source_code.png}
-	\caption{Kod Ÿród³owy serwera odbieraj¹cego i nadaj¹cego przy pomocy zapytañ HTTP}
-	\label{fig:server_source_code}
-\end{figure}
-
-
-
 \subsection{Opis aplikacji pe³ni¹cej funkcjê serwera na komputer PC}
 \begin{figure}[!htbp]
 	\centering
@@ -287,7 +276,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \begin{figure}[!htbp]
 	\centering
-\includegraphics[scale=1,natwidth=634,natheight=778]{server_socket_source_code.png}
+\includegraphics[scale=0.8,natwidth=634,natheight=778]{server_socket_source_code.png}
 	\caption{Kod Ÿród³owy serwera odbieraj¹cego i nadaj¹cego pakiety protoko³u TCP}
 	\label{fig:server_socket_source_code}
 \end{figure}
@@ -299,6 +288,78 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 \qquad Wysy³aj¹c pakiety TCP koneiczne jest okreœlenie rozmiaru pakietu w bajtach. Program oczekuje, ¿e wœród przesy³anych danych pojawi siê sekwencja PACKET\_SIZE:N (ang. \textit{Rozmiar pakietu}), gdzie N jest rozmiarem pakietu danych. Nastêpnie program (tak d³ugo, jak wysy³ane s¹ dane) odbiera pakiety o zadanej d³ugoœci i odsy³a je z powrotem do terminala, który je nada³. W momencie, w którym terminal mobilny przestaje wysy³aæ dane, serwer pozostaje w czuwaniu i czeka na kolejne pakiety do transmisji.
 
 \qquad Zarówno program pe³ni¹cy funkcjê serwera dla zapytañ HTTP jak i serwer transmituj¹cy pakiety TCP mo¿na uruchomiæ na ka¿dym komputerze z systemem Windows, Linux lub OSX na którym zainstalowany zosta³ jêzyk programowania Python i biblioteka Flask.
+
+\subsection{Opis aplikacji na smartfon z systemem Android}
+\begin{figure}[!htbp]
+	\centering
+\includegraphics[scale=0.35,natwidth=540,natheight=960]{main_screen.jpg}
+	\caption{G³ówny ekran aplikacji}
+	\label{fig:main_screen_android}
+\end{figure}
+
+\qquad Aplikacja na smartfon z systemem Android zosta³a przygotowana w œrodowisku Android Studio w wersji 1.3.1 i zaimplementowana w jêzyku programowania Java. Aplikacja zosta³a napisana wspieraj¹c wersje systemu operacyjnego Android pocz¹wszy od 4.0.0, co w praktyce oznacza, ¿e ponad 94\% telefonów z systemem Android jest w stanie j¹ poprawnie uruchomiæ. Dane te potwierdza rysunek \ref{fig:android_device_support}.
+
+\begin{figure}[!htbp]
+	\centering
+\includegraphics[scale=1,natwidth=563,natheight=93]{android_device_support.png}
+	\caption{Wsparcie sprzêtowe aplikacji na system Android}
+	\label{fig:android_device_support}
+\end{figure}
+
+\qquad Rysunek \ref{fig:main_screen_android} przedstawia g³ówny ekran aplikacji napisanej na system Android. Aplikacja ta zosta³a nazwana \textit{Android Ping!}, co podkreœla fakt, ¿e jej dzia³anie zbli¿one jest do programu \textit{ping} z systemów Unixowych. Przed rozpoczêciem pomiaru, aplikacja prosi u¿ytkownika o podanie nastêpuj¹cych danych:
+
+\begin{itemize}
+  \item Adresu IP serwera - jest to komputer, na którym uruchomiona jest jedna z dwóch aplikacji pe³ni¹cych funkcjê serwera opisanych w poprzednim rozdziale
+  \item Numer portu
+  \item Iloœæ pakietów, które zostan¹ przes³ane w trakcie pomiaru
+  \item Rozmiar pojedyñczego pakietu w bajtach
+  \item Czas pomiêdzy kolejnymi transmisjami pakietów (w sekundach)
+  \item Typ protoko³u, za poœrednictwem którego bêdzie realizowana transmisja - dostêpne opcje to TCP oraz HTTP.
+\end{itemize}
+
+\qquad W prawym górnym rogu aplikacji znajduje siê przycisk \textit{NETWORK SETTINGS} (ang. \textit{Ustawienia sieci}), który przenosi u¿ytkownika do ekranu ustawieñ systemu operacyjnego dotycz¹cego ustawieñ sieci komórkowej. Przyk³adowy ekran ustawieñ sieci komórkowej w systemie Android (w telefonie Samsung Galaxy S4) przedstawia rysunek \ref{fig:network_settings_android}. Dziêki dostêpowi do tego okna u¿ytkownik mo¿e przeprowadzaæ pomiary nastêpuj¹cych sieci:
+
+\begin{itemize}
+  \item LTE/WCDMA/GSM (automatyczne po³¹czenie)
+  \item WCDMA/GSM (automatyczne po³¹czenie)
+  \item Tylko WCDMA
+  \item Tylko GSM
+\end{itemize}
+
+\begin{figure}[!htbp]
+	\centering
+\includegraphics[scale=0.35,natwidth=540,natheight=960]{network_settings.jpg}
+	\caption{Ustawienia sieci komórkowej w systemie Android}
+	\label{fig:network_settings_android}
+\end{figure}
+
+\qquad Po ustawieniu parametrów pomiaru i wciœniêciu przycisku \textit{START MEASURING} (ang. \textit{rozpocznij pomiar}) aplikacja przechodzi do ekranu pomiaru (rysunek \ref{fig:measurement_screen_android}). W jego centralnym punkcie (zak³adajac, ¿e u¿ytkownik ma w³¹czon¹ us³ugê nawigacji w telefonie) znajduje siê mapa pochodz¹ca od us³ugi Google Maps przedstawiaj¹ca aktualne po³o¿enie terminala mobilnego.
+
+\qquad W trakcie trwania pomiaru terminal mobilny mo¿e zmieniæ swoj¹ pozycjê - jest ona oznaczana w trakcie kolejno dodawanych do mapy punktów. Ka¿dy punkt oznacza pomiar dokonany w danym miejscu, a jego kolor oznacza czas transmisji danego pakietu - barwa jaœniejsza oznacza szybszy czas transmisji, barwa ciemniejsza, wolniejszy. Dziêki temu rozwi¹zaniu, w trakcie trwania pomiaru istnieje mo¿liwoœc œledzenia pozycji terminala mobilnego i wykonywania pomiarów w trakcie np. podró¿y samochodem lub poci¹giem. 
+
+\begin{figure}[!htbp]
+	\centering
+\includegraphics[scale=0.35,natwidth=540,natheight=960]{measurement_screen.jpg}
+	\caption{Ekran pomiaru}
+	\label{fig:measurement_screen_android}
+\end{figure}
+
+\qquad Pod map¹ znajduj¹ siê informacje na temat biê¿¹cego pomiaru takie jak:
+
+\begin{itemize}
+  \item Iloœæ pakietów, które zostan¹ przes³ane w trakcie bie¿¹cego pomiaru
+  \item Numer aktualnie przesy³anego pakietu
+  \item Œredni czas przesy³u pakietu dla aktualnego pomiaru
+\end{itemize}
+
+\qquad Po zakoñczeniu pomiaru u¿ytkownik mo¿e zobaczyæ œredni czas transferu pakietu dla uprzednio ustalonych parametrów, a tak¿e u¿yæ przycisku \textit{RESULTS} (ang. \textit{wyniki}), aby zobaczyæ wykres obrazuj¹cy w jaki sposób zmienia³y siê czasy przesy³u poszczególnych pakietów. Przyk³ad takiego wykresu obrazuje rysunek \ref{fig:results_android}.
+
+\begin{figure}[!htbp]
+	\centering
+\includegraphics[scale=0.35,natwidth=540,natheight=960]{results.jpg}
+	\caption{Ekran pomiaru}
+	\label{fig:results_android}
+\end{figure}
 
 \subsection{Opis realizacji programowej transmisji z wykorzystaniem zapytañ HTTP}
 \subsection{Opis realizacji programowej transmisji poprzez protokó³ TCP/IP}
