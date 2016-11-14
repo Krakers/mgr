@@ -283,25 +283,17 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Celem pracy jest stworzenie œrodowiska pomiarowego do pomiaru czasu transmisji danych w sieciach komórkowych pod k¹tem zastosowania tych sieci w systemach pomiarowych. W tym celu nale¿y opracowaæ aplikacjê dla urz¹dzeñ z systemem Android, a tak¿e dedykowane dla niej serwery napisane w jêzyku Python. Serwery te umo¿liwiaj¹ komunikacjê z aplikacj¹ zainstalowan¹ na terminalu mobilnym z wykorzystaniem protoko³ów HTTP, TCP oraz UDP.
 
-\qquad Nale¿a³o dokonaæ pomiaru dla nieruchomego terminala mobilnego oraz dla terminala, którego u¿ytkownik pozostaje w ruchu. Przy za³o¿eniu, ¿e aplikacja posiada dwa mo¿liwe sposoby komunikacji, oznacza to cztery mo¿liwe sposoby przeprowadzania pomiaru:
-
+\qquad Aplikacja na system Android umo¿liwia wybór nastêpuj¹cych parametrów pomiaru:
 \begin{itemize}
-  \item Pomiar terminala nieruchomego z wykorzystaniem zapytañ HTTP
-  \item Pomiar terminala nieruchomego z wykorzystaniem protko³u TCP/IP
-  \item Pomiar terminala przemieszczaj¹cego siê z wykorzystaniem zapytañ HTTP
-  \item Pomiar terminala przemieszczaj¹cego siê z wykorzystaniem protko³u TCP/IP
+\item Adres IP serwera
+\item Port, na którym nas³uchuje uruchomiony uprzednio serwer
+\item Liczbê pakietów, która zostanie przes³ana w trakcie pomiaru
+\item Rozmiar (w bajtach) pojedyñczego przesy³anego pakietu
+\item Czas pomiêdzy przes³aniem kolejnego pakietu. Minimalny dopuszczalny czas wynosi 500ms, u¿ytkownik ma tak¿e mo¿liwoœæ wyboru pomiêdzy podaniem wartoœci w sekundach, minutach oraz milisekundach.
+\item Protokó³ transmisji - do wyboru s¹ protoko³y HTTP, TCP oraz UDP
 \end{itemize}
 
-\qquad Aplikacja posiada tak¿e mo¿liwoœæ wyboru pracy sieci telefonu komórkowego, wybór ten przedstawia siê nastêpuj¹co:
-
-\begin{itemize}
-  \item LTE/WCDMA/GSM (automatyczne po³¹czenie)
-  \item WCDMA/GSM (automatyczne po³¹czenie)
-  \item Tylko WCDMA
-  \item Tylko GSM
-\end{itemize}
-
-\qquad Pojedyñczym pomiarem nazywamy pomiar czasu wykonania nastêpuj¹cych czynnoœci:
+\qquad Pojedyñczym pomiarem czasu transmisji nazywamy pomiar czasu wykonania nastêpuj¹cych czynnoœci:
 \begin{enumerate}
 \item Przes³anie pakietu danych o zadanej d³ugoœci z terminalu mobilnego do serwera
 \item Odebranie pakietu danych przez serwer
@@ -309,9 +301,33 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 \item Odebranie pakietu danych w terminalu mobilnym
 \end{enumerate}
 
-\qquad Przygotowana aplikacja na system operacyjny Android posiada mo¿liwoœæ wyœwietlenia wykresu prezentuj¹cego czasy transmisji zarejestrowane w czasie pomiaru. Ponadto, wszystkie pomiary s¹ zapisywane w postaci pliku .csv w pamiêci telefonu, co pozwala na ich póŸniejsz¹ analizê z wykorzystaniem innych narzêdzi takich jak programy Microsoft Office Excel czy Matlab.
+\qquad Program umo¿liwia retransmisjê pakietu o zadanej wielkoœci co \textit{N} czasu (\textit{N} jest wartoœci¹ podan¹ przez u¿ytkownika). W przypadku transmisji za poœrednictwem protoko³u TCP przy zadanym interwale mniejszym ni¿ minuta program realizuje transmisjê w trakcie jednej sesji TCP. Je¿eli czas ten jest d³u¿szy ni¿ minutê, program przy ka¿dej transmisji otwier¹ now¹ sesjê TCP.
+
+\qquad W trakcie dokonywania pomiaru, program wyœwietla nastêpuj¹ce dane:
+\begin{itemize}
+\item Aktualne po³o¿enie terminala mobilnego na mapie (za poœrednictwem Google Maps). W zale¿noœci od szybkoœci aktualnej transmisji, po³o¿enie jest zaznaczane jaœniejszym b¹dŸ ciemniejszym okrêgiem. Pozwala to oceniæ jakoœæ transmisji w danym miejscu w przypadku przemieszczania siê w trakcie pomiaru.
+\item Numer aktualnie przesy³anego pakietu
+\item Liczbê pakietów, które zostan¹ przes³ane w trakcie aktualnego pomiaru
+\item Aktualn¹ sieæ (LTE/WCDMA/EDGE)
+\item Aktualn¹ moc sygna³u (w dBm)
+\item Czas transmisji aktualnie wys³anego pakietu
+\item Mediana czasu transmisji pakietu
+\item Odchylenie æwiartkowe czasu transmisji pakietu
+\item Minimalny czas transmisji pakietu w trakcie aktualnego pomiaru
+\item Maksymalny czas transmisji pakietu w trakcie aktualnego pomiaru
+\item Œredni czas transmisji pakietu w trakcie aktualnego pomiaru
+\end{itemize}
+
+\qquad W trakcie pomiaru tworzony jest plik w formacie .csv w pamiêci urz¹dzenia. Plik ten zawiera dane o aktualnym pomiarze w formacie:
+
+\qquad [\textit{Data, czas pomiaru, aktualna sieæ, czas transmisji pakietu, moc sygna³u, po³o¿enie terminala ruchomego}]
+
+\qquad Po skoñczonym pomiarze u¿ytkownik ma mo¿liwoœæ wygenerowania nie tylko pliku z wynikami pomiarów, lecz tak¿e zapisanej w pliku .jpg mapy z zaznaczonymi punkatami pomiarów oraz wykresu przedstawiaj¹cego zmiany czasów transmisji oraz mocy sygna³u w trakcie pomiaru.
+
+\qquad W celu weryfikacji dzia³ania aplikacji dokonano przyk³adowych pomiarów.
 
 \section{Opis aplikacji pe³ni¹cej funkcjê serwera na komputer PC}
+\subsection{Protokó³ HTTP}
 \begin{figure}[!htbp]
 	\centering
 \includegraphics[scale=1,natwidth=549,natheight=332]{server_source_code.png}
@@ -319,7 +335,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 	\label{fig:server_source_code}
 \end{figure}
 
-\qquad Rysunek \ref{fig:server_source_code} przedstawia kod Ÿród³owy jednego z dwóch programów, które powsta³y w celu odbierania pakietów od terminala mobilnego, a nastêpnie odsy³ania ich z powrotem. Zosta³ on napisany w jêzyku programowania Python, który jest jêzykiem skryptowym znajduj¹cym szerokie zastosowania w serwerach, przetwarzaniu danych, a nawet sztucznej inteligencji. 
+\qquad Rysunek \ref{fig:server_source_code} przedstawia kod Ÿród³owy jednego z programów, które powsta³y w celu odbierania pakietów od terminala mobilnego, a nastêpnie odsy³ania ich z powrotem. Zosta³ on napisany w jêzyku programowania Python, który jest jêzykiem skryptowym znajduj¹cym szerokie zastosowania w serwerach, przetwarzaniu danych, a nawet sztucznej inteligencji. 
 
 \qquad W programie tym skorzystano z biblioteki o nazwie Flask (ang. \textit{fiolka}), która w prosty sposób pozwala na realizacje obs³ugi zapytañ HTTP. Wysoki stopieñ abstrakcji interfejsu programisty udostêpnionego przez bibliotekê Flask sprawia, ¿e przy odrobinie umiejêtnoœci programistycznych mo¿na implementowaæ zarówno proste jak i bardziej skomplikowane aplikacje - serwery przy u¿yciu niewielkiej iloœci linii kodu.
 
@@ -332,13 +348,16 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 	\label{fig:server_socket_source_code}
 \end{figure}
 
+\subsection{Protokó³ TCP}
 \qquad Rysunek \ref{fig:server_socket_source_code} przedstawia kod Ÿród³owy programu pe³ni¹cego funkcjê serwera wysy³aj¹cego i odbieraj¹cego pakiety TCP. Podobnie jak poprzedni program-serwer, zosta³ on napisany w jêzyku programowania Python, ze wzglêdu na prostotê implementacji i szerok¹ gamê gotowych do u¿ycia bibliotek. 
 
 \qquad Poprzednio wspomniania biblioteka do obs³ugi zapytañ HTTP jak¹ jest Flask nie posiada mo¿liwoœci obs³ugi transmisji pakietów TCP. Ze wzglêdu na to, zdecydowano siê na zastosowanie biblioteki o nazwie socket (ang. \textit{gniazdo}). Pozwala ona na utworzenie tzw. gniazda po stronie serwera, do którego terminal mobilny mo¿e wysy³aæ pakiety protoko³u TCP. 
 
-\qquad Wysy³aj¹c pakiety TCP koneiczne jest okreœlenie rozmiaru pakietu w bajtach. Program oczekuje, ¿e wœród przesy³anych danych pojawi siê sekwencja PACKET\_SIZE:N (ang. \textit{Rozmiar pakietu}), gdzie N jest rozmiarem pakietu danych. Nastêpnie program (tak d³ugo, jak wysy³ane s¹ dane) odbiera pakiety o zadanej d³ugoœci i odsy³a je z powrotem do terminala, który je nada³. W momencie, w którym terminal mobilny przestaje wysy³aæ dane, serwer pozostaje w czuwaniu i czeka na kolejne pakiety do transmisji.
+\qquad Wysy³aj¹c pakiety TCP konieczne jest okreœlenie rozmiaru pakietu w bajtach. Program oczekuje, ¿e wœród przesy³anych danych pojawi siê sekwencja PACKET\_SIZE:N (ang. \textit{Rozmiar pakietu}), gdzie N jest rozmiarem pakietu danych. Nastêpnie program (tak d³ugo, jak wysy³ane s¹ dane) odbiera pakiety o zadanej d³ugoœci i odsy³a je z powrotem do terminala, który je nada³. W momencie, w którym terminal mobilny przestaje wysy³aæ dane, serwer pozostaje w czuwaniu i czeka na kolejne pakiety do transmisji.
 
 \qquad Zarówno program pe³ni¹cy funkcjê serwera dla zapytañ HTTP jak i serwer transmituj¹cy pakiety TCP mo¿na uruchomiæ na ka¿dym komputerze z systemem Windows, Linux lub OSX na którym zainstalowany zosta³ jêzyk programowania Python i biblioteka Flask.
+
+\subsection{Protokó³ UDP}
 
 \section{Opis aplikacji na smartfon z systemem Android}
 \begin{figure}[h]
@@ -359,16 +378,25 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Rysunek \ref{fig:main_screen_android} przedstawia g³ówny ekran aplikacji napisanej na system Android. Aplikacja ta zosta³a nazwana \textit{Android Ping!}, co podkreœla fakt, ¿e jej dzia³anie zbli¿one jest do programu \textit{ping} z systemów Unixowych. Przed rozpoczêciem pomiaru, aplikacja prosi u¿ytkownika o podanie nastêpuj¹cych danych:
 
+\begin{enumerate}
+\item Adres IP serwera
+\item Port, na którym nas³uchuje uruchomiony uprzednio serwer
+\item Liczbê pakietów, która zostanie przes³ana w trakcie pomiaru
+\item Rozmiar (w bajtach) pojedyñczego przesy³anego pakietu
+\item Czas pomiêdzy przes³aniem kolejnego pakietu. Minimalny dopuszczalny czas wynosi 500ms, u¿ytkownik ma tak¿e mo¿liwoœæ wyboru pomiêdzy podaniem wartoœci w sekundach, minutach oraz milisekundach.
+\item Protokó³ transmisji - do wyboru s¹ protoko³y HTTP, TCP oraz UDP
+\end{enumerate}
+
+\qquad Aplikacja weryfikuje podane przez u¿ytkownika dane przed rozpoczêciem pomiaru. Kryteria, jakie musz¹ spe³niaæ parametry pomiaru s¹ nastêpuj¹ce:
+
 \begin{itemize}
-  \item Adresu IP serwera - jest to komputer, na którym uruchomiona jest jedna z dwóch aplikacji pe³ni¹cych funkcjê serwera opisanych w poprzednim rozdziale
-  \item Numer portu
-  \item Iloœæ pakietów, które zostan¹ przes³ane w trakcie pomiaru
-  \item Rozmiar pojedyñczego pakietu w bajtach
-  \item Czas pomiêdzy kolejnymi transmisjami pakietów (w sekundach)
-  \item Typ protoko³u, za poœrednictwem którego bêdzie realizowana transmisja - dostêpne opcje to TCP oraz HTTP.
+  \item Rozmiar pakietu (w bajtach) musi byæ wiêkszy ni¿ 0
+  \item Rozmiar pakietu (w bajtach) musi byæ mniejszy ni¿ 65000 bajtów
+  \item Czas pomiêdzy transmisj¹ kolejnych pakietów musi byæ wiêkszy niz 500ms
+  \item Liczba nadanych pakietów w trakcie pomiaru musi byæ wiêksza ni¿ 0
 \end{itemize}
 
-\qquad W prawym górnym rogu aplikacji znajduje siê przycisk \textit{NETWORK SETTINGS} (ang. \textit{Ustawienia sieci}), który przenosi u¿ytkownika do ekranu ustawieñ systemu operacyjnego dotycz¹cego ustawieñ sieci komórkowej. Przyk³adowy ekran ustawieñ sieci komórkowej w systemie Android (w telefonie Samsung Galaxy S4) przedstawia rysunek \ref{fig:network_settings_android}. Dziêki dostêpowi do tego okna u¿ytkownik mo¿e przeprowadzaæ pomiary nastêpuj¹cych sieci:
+\qquad Po wciœniêciu klawisza MENU telefonu u¿ytkownikowi pokazuje siê przycisk \textit{NETWORK SETTINGS} (ang. \textit{Ustawienia sieci}), który przenosi u¿ytkownika do ekranu ustawieñ systemu operacyjnego dotycz¹cego ustawieñ sieci komórkowej. Przyk³adowy ekran ustawieñ sieci komórkowej w systemie Android (w telefonie Samsung Galaxy S4) przedstawia rysunek \ref{fig:network_settings_android}. Dziêki dostêpowi do tego okna u¿ytkownik mo¿e przeprowadzaæ pomiary nastêpuj¹cych sieci:
 
 \begin{itemize}
   \item LTE/WCDMA/GSM (automatyczne po³¹czenie)
