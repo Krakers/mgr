@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{book}
+\documentclass[12pt,a4paper]{report}
  
 %Ustawienia strony A4:
 \setlength{\textheight}{23cm}  \setlength{\textwidth}{15.92cm} \setlength{\footskip}{10mm} \setlength{\oddsidemargin}{5mm} \setlength{\evensidemargin}{5mm} \setlength{\headsep}{5mm}
@@ -236,9 +236,9 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
   \item \textbf{Suma kontrolna} [16 bitów] - obliczana na podstawie nag³ówka i danych przesy³anego pakietu
 \end{itemize}
 
-\section{Cechy charakterystyczne programowania urz¹dzeñ z systemem Android}
+\section{Charakterystyka tworzenia oprogramowania na urz¹dzenia z systemem Android}
 
-\qquad Android jest systemem operacyjnym z j¹drem Linux przeznaczonym dla urz¹dzeñ mobilnych takich jak telefony komórkowe, smartfony, tablety oraz przyk³adowo w inteligentnych telewizorach (technologia Android TV). Obecnie jest to najbardziej popularny system operacyjny na telefony komórkowe (dane na rok 2015), a w mowie potocznej okreœlenie "smartfon" jest uto¿samianie z telefonem z panelem dotykowym, na którym zainstalowany jest system operacyjny Android.
+\qquad Android jest systemem operacyjnym z j¹drem Linux przeznaczonym dla urz¹dzeñ mobilnych takich jak telefony komórkowe, smartfony, tablety oraz przyk³adowo w inteligentnych telewizorach (technologia Android TV). Obecnie jest to najbardziej popularny system operacyjny na telefony komórkowe (87\% udzia³u na rynku, dane z drugiego kwarta³u 2016 \cite{[12]}), a w mowie potocznej okreœlenie "smartfon" jest uto¿samianie z telefonem z panelem dotykowym, na którym zainstalowany jest system operacyjny Android.
 
 \qquad Android jest rozwi¹zaniem typu Open Source\cite{[9]}, co oznacza, ¿e jego kod Ÿród³owy jest powszechnie dostêpny. Jest to jeden z elementów otwartej polityki aktualnego w³aœciciela systemu operacyjnego Android - firmy Google, która rozwija Androida jako otwart¹ platformê zarówno dla programistów jak i dla u¿ytkowników.
 
@@ -255,12 +255,33 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Poza œrodowiskiem programistycznym, Android Studio zawiera tak¿e wizualny edytor s³u¿¹cy do przygotowania wygl¹du aplikacji, a tak¿e wbudowany emulator, który pozwala na przetestowanie powstaj¹cej aplikacji na ró¿nych typach urz¹dzeñ (np. tablety o ró¿nych przek¹tnych ekranu) bez koniecznoœci zakupu sprzêtu. 
 
+\section{Charakterystyka tworzenia oprogramowania w jêzyku Python}
+
+\qquad Python to powsta³y w 1991 roku jêzyk programowania wysokiego poziomu, którego ide¹ jest czystoœæ i klarownoœæ kodu Ÿród³owego. Python jest jêzykiem uniwersalnym, wieloparadygmatowym i aktualnie jednym z najpowszechniej u¿ywanych jêzyków programowania na œwiecie \cite{[13]}.
+
+\qquad Do zalet programowania w jêzyku Python nale¿y zaliczyæ ogromn¹ iloœæ dostêpnych bibliotek, obszern¹ bibliotekê standardowa, prostotê pisania i czytania kodu oraz mo¿liwoœæ uruchamiania stworzonego w tym jêzyku oprogramowania na wielu ró¿nych platformach. Python jest jêzykiem interpretowanym, co oznacza, ¿e do uruchomienia programu napisanego w tym jêzyku nie jest wymagana kompilacja. Pozwala to na zwiêkszenie szybkoœci pracy nad oprogramowaniem, a ró¿nice w prêdkoœci dzia³ania programów napisanych w Pythonie i tych napiasnych w jêzykach kompilowanych nie s¹ widoczne w wiêkszoœci popularnych zastosowañ.
+
+\qquad Python jest obecnie wykorzystywany do tworzenia zarówno samodzielnych programów i gier, jak i aplikacji skryptowych o wielu ró¿nych zastosowaniach. Znajduje zastosowanie tak¿e w systemach sztucznej inteligencji, nauczaniu maszynowym czy w programach realizuj¹cych transmisjê z wykorzystaniem protoko³ów sieciowych.
+
+\qquad Interpreter jêzyka Python jest dostêpny do pobrania w Internecie na oficjalnej stronie tego jêzyka \cite{[14]} w wersjach na komputery z systemem Windows, Linux, MacOS, a tak¿e z zdecydowanie rzadziej wykorzystywanymi obecnie systemami takimi jak MS-DOS, Solaris czy BeOS.
+
+\qquad Python jest jêzykiem interpretowanym, co pozwala na pisanie programów w tym jêzyku nawet na stronie python.org, gdzie dostêpny jest Python Interpreter Online. Pozwala on na naukê jêzyka, a tak¿e na pisanie w³asnych prostych programów bez pobierania jakiegokolwiek dodatkowego oprogramowania (rysunek \ref{fig:python_interpreter}). W celu pisania bardziej skompilkowanych programów zalecane jest pobranie interpretera oraz edytora tekstu takiego jak PyCharm czy SublimeText.
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=641,natheight=103]{python_interpreter.png}
+	\caption{Interpreter jêzyka Python}
+	\label{fig:python_interpreter}
+\end{figure}
+
+\section{Aktualnie dostêpne narzêdzia do pomiarów parametrów transmisji dla urz¹dzeñ z systemem Android}
+
 \newpage
 \chapter{Realizacja pracy}
 
 \section{Za³o¿enia projektowe}
 
-\qquad Celem pracy jest stworzenie œrodowiska pomiarowego do pomiaru czasu transmisji danych w sieciach komórkowych pod k¹tem zastosowania tych sieci w systemach pomiarowych. W tym celu nale¿a³o opracowaæ aplikacjê dla urz¹dzeñ z systemem Android, a tak¿e dedykowane dla niej serwery napisane w jêzyku Python. Serwery te umo¿liwiaj¹ komunikacjê z aplikacj¹ zainstalowan¹ na terminalu mobilnym z wykorzystaniem zapytañ HTTP jak i za pomoc¹ gniazd protoko³u TCP/IP.
+\qquad Celem pracy jest stworzenie œrodowiska pomiarowego do pomiaru czasu transmisji danych w sieciach komórkowych pod k¹tem zastosowania tych sieci w systemach pomiarowych. W tym celu nale¿y opracowaæ aplikacjê dla urz¹dzeñ z systemem Android, a tak¿e dedykowane dla niej serwery napisane w jêzyku Python. Serwery te umo¿liwiaj¹ komunikacjê z aplikacj¹ zainstalowan¹ na terminalu mobilnym z wykorzystaniem protoko³ów HTTP, TCP oraz UDP.
 
 \qquad Nale¿a³o dokonaæ pomiaru dla nieruchomego terminala mobilnego oraz dla terminala, którego u¿ytkownik pozostaje w ruchu. Przy za³o¿eniu, ¿e aplikacja posiada dwa mo¿liwe sposoby komunikacji, oznacza to cztery mo¿liwe sposoby przeprowadzania pomiaru:
 
@@ -560,6 +581,11 @@ Poni¿sze wyniki przedstawiaj¹ pomiary dokonane w œrodowisku miejskim, terminal m
 	https://source.android.com/
 	\bibitem{[10]} \textit{Sieci Komputerowe} - Karol Krysiak, Helion, Gliwice 2005
 	\bibitem{[11]} ród³o internetowe: \textit{TCP, Transmission Control Protocol} \\ http://networksorcery.com/enp/protocol/tcp.htm
+	\bibitem{[12]} ród³o internetowe: \textit{Smartphone OS market share} \\ http://www.idc.com/prodserv/smartphone-os-market-share.jsp
+	\bibitem{[13]} \textit{Python. Leksykon kieszonkowy} - Mark Lutz, Helion, Gliwice 2014
+	\bibitem{[14]} ród³o internetowe: \textit{Strona internetowa Python Software Foundation} \\ https://www.python.org/
+
+
 	
 \end{thebibliography}
 \end{document}

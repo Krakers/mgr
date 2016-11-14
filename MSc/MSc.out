@@ -3,7 +3,7 @@
 \BOOKMARK [1][-]{section.2.1}{Transmisja danych w sieciach kom\363rkowych}{chapter.2}% 3
 \BOOKMARK [2][-]{subsection.2.1.1}{GSM i EDGE}{section.2.1}% 4
 \BOOKMARK [3][-]{section*.3}{GSM}{subsection.2.1.1}% 5
-\BOOKMARK [3][-]{section*.4}{GSM}{subsection.2.1.1}% 6
+\BOOKMARK [3][-]{section*.4}{EDGE}{subsection.2.1.1}% 6
 \BOOKMARK [2][-]{subsection.2.1.2}{UMTS i HSDPA}{section.2.1}% 7
 \BOOKMARK [3][-]{section*.5}{UMTS}{subsection.2.1.2}% 8
 \BOOKMARK [3][-]{section*.6}{WCDMA}{subsection.2.1.2}% 9
@@ -13,18 +13,21 @@
 \BOOKMARK [2][-]{subsection.2.2.1}{Protok\363\233 HTTP}{section.2.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.2}{Protok\363\233 TCP}{section.2.2}% 14
 \BOOKMARK [2][-]{subsection.2.2.3}{Protok\363\233 UDP}{section.2.2}% 15
-\BOOKMARK [1][-]{section.2.3}{Opis realizacji programowej}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.3.1}{Za\233ozenia projektowe}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.2}{Cechy charakterystyczne programowania urzadzen z systemem Android}{section.2.3}% 18
-\BOOKMARK [2][-]{subsection.2.3.3}{Opis aplikacji pe\233niacej funkcje serwera na komputer PC}{section.2.3}% 19
-\BOOKMARK [2][-]{subsection.2.3.4}{Opis aplikacji na smartfon z systemem Android}{section.2.3}% 20
-\BOOKMARK [2][-]{subsection.2.3.5}{Opis realizacji programowej transmisji z wykorzystaniem zapytan HTTP}{section.2.3}% 21
-\BOOKMARK [2][-]{subsection.2.3.6}{Opis realizacji programowej transmisji pakiet\363w poprzez protok\363\233 TCP/IP}{section.2.3}% 22
-\BOOKMARK [2][-]{subsection.2.3.7}{Spos\363b pomiaru rejestracji czasu przesy\233ania pakietu}{section.2.3}% 23
-\BOOKMARK [2][-]{subsection.2.3.8}{Spos\363b pomiaru po\233ozenia terminala mobilnego}{section.2.3}% 24
-\BOOKMARK [1][-]{section.2.4}{Wyniki pomiar\363w}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.4.1}{Pomiar nieruchomego terminala mobilnego}{section.2.4}% 26
-\BOOKMARK [3][-]{section*.8}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec LTE\)}{subsection.2.4.1}% 27
-\BOOKMARK [3][-]{section*.9}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec WCDMA\)}{subsection.2.4.1}% 28
-\BOOKMARK [3][-]{section*.10}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec EDGE\)}{subsection.2.4.1}% 29
-\BOOKMARK [2][-]{subsection.2.4.2}{Pomiar ruchomego terminala mobilnego w srodowisku miejskim}{section.2.4}% 30
+\BOOKMARK [1][-]{section.2.3}{Charakterystyka tworzenia oprogramowania na urzadzenia z systemem Android}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.4}{Charakterystyka tworzenia oprogramowania w jezyku Python}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.5}{Aktualnie dostepne narzedzia do pomiar\363w parametr\363w transmisji dla urzadzen z systemem Android}{chapter.2}% 18
+\BOOKMARK [0][-]{chapter.3}{Realizacja pracy}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Za\233ozenia projektowe}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{Opis aplikacji pe\233niacej funkcje serwera na komputer PC}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Opis aplikacji na smartfon z systemem Android}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Opis realizacji programowej transmisji z wykorzystaniem zapytan HTTP}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{Opis realizacji programowej transmisji pakiet\363w poprzez protok\363\233 TCP/IP}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.3}{Spos\363b pomiaru rejestracji czasu przesy\233ania pakietu}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.4}{Spos\363b pomiaru po\233ozenia terminala mobilnego}{section.3.3}% 26
+\BOOKMARK [0][-]{chapter.4}{Przyk\233adowe wyniki pomiar\363w}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Pomiar nieruchomego terminala mobilnego}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec LTE\)}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec WCDMA\)}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.4}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec EDGE\)}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.5}{Pomiar ruchomego terminala mobilnego w srodowisku miejskim}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Podsumowanie}{}% 33
