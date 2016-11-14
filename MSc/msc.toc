@@ -1,28 +1,30 @@
-\contentsline {section}{\numberline {1}Wst\k ep}{4}{section.1}
-\contentsline {section}{\numberline {2}Transmisja danych w sieciach kom\'orkowych}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}GSM i EDGE}{5}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}GSM}{5}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}EDGE}{6}{subsubsection.2.1.2}
-\contentsline {subsection}{\numberline {2.2}UMTS i HSDPA}{8}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}UMTS}{8}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}WCDMA}{9}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}HSDPA}{10}{subsubsection.2.2.3}
-\contentsline {subsection}{\numberline {2.3}LTE}{11}{subsection.2.3}
-\contentsline {section}{\numberline {3}Transmisja danych w Internecie}{13}{section.3}
-\contentsline {subsection}{\numberline {3.1}Protok\'o\IeC {\l } TCP}{13}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Protok\'o\IeC {\l } HTTP}{13}{subsection.3.2}
-\contentsline {section}{\numberline {4}Opis realizacji programowej}{14}{section.4}
-\contentsline {subsection}{\numberline {4.1}Za\IeC {\l }o\.zenia projektowe}{14}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Cechy charakterystyczne programowania urz\k adze\'n z systemem Android}{15}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Opis aplikacji pe\IeC {\l }ni\k acej funkcj\k e serwera na komputer PC}{16}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Opis aplikacji na smartfon z systemem Android}{19}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Opis realizacji programowej transmisji z wykorzystaniem zapyta\'n HTTP}{23}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } TCP/IP}{25}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Spos\'ob pomiaru rejestracji czasu przesy\IeC {\l }ania pakietu}{27}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}Spos\'ob pomiaru po\IeC {\l }o\.zenia terminala mobilnego}{28}{subsection.4.8}
-\contentsline {section}{\numberline {5}Wyniki pomiar\'ow}{29}{section.5}
-\contentsline {subsection}{\numberline {5.1}Pomiar nieruchomego terminala mobilnego}{29}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c LTE)}{29}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c WCDMA)}{30}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c EDGE)}{32}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}Pomiar ruchomego terminala mobilnego w \'srodowisku miejskim}{33}{subsection.5.2}
+\contentsline {chapter}{\numberline {1}Wst\k ep}{5}{chapter.1}
+\contentsline {chapter}{\numberline {2}Opis teoretyczny zastosowanych technologii}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Transmisja danych w sieciach kom\'orkowych}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}GSM i EDGE}{7}{subsection.2.1.1}
+\contentsline {subsubsection}{GSM}{7}{section*.3}
+\contentsline {subsubsection}{GSM}{9}{section*.4}
+\contentsline {subsection}{\numberline {2.1.2}UMTS i HSDPA}{11}{subsection.2.1.2}
+\contentsline {subsubsection}{UMTS}{11}{section*.5}
+\contentsline {subsubsection}{WCDMA}{11}{section*.6}
+\contentsline {subsubsection}{HSDPA}{13}{section*.7}
+\contentsline {subsection}{\numberline {2.1.3}LTE}{14}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Wybrane protoko\IeC {\l }y transmisji danych}{16}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Protok\'o\IeC {\l } HTTP}{16}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Protok\'o\IeC {\l } TCP}{16}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Protok\'o\IeC {\l } UDP}{17}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Opis realizacji programowej}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Za\IeC {\l }o\.zenia projektowe}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Cechy charakterystyczne programowania urz\k adze\'n z systemem Android}{20}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Opis aplikacji pe\IeC {\l }ni\k acej funkcj\k e serwera na komputer PC}{21}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Opis aplikacji na smartfon z systemem Android}{24}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Opis realizacji programowej transmisji z wykorzystaniem zapyta\'n HTTP}{28}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } TCP/IP}{30}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Spos\'ob pomiaru rejestracji czasu przesy\IeC {\l }ania pakietu}{32}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.8}Spos\'ob pomiaru po\IeC {\l }o\.zenia terminala mobilnego}{33}{subsection.2.3.8}
+\contentsline {section}{\numberline {2.4}Wyniki pomiar\'ow}{34}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Pomiar nieruchomego terminala mobilnego}{34}{subsection.2.4.1}
+\contentsline {subsubsection}{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c LTE)}{34}{section*.8}
+\contentsline {subsubsection}{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c WCDMA)}{35}{section*.9}
+\contentsline {subsubsection}{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c EDGE)}{37}{section*.10}
+\contentsline {subsection}{\numberline {2.4.2}Pomiar ruchomego terminala mobilnego w \'srodowisku miejskim}{38}{subsection.2.4.2}

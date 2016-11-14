@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt,a4paper]{book}
  
 %Ustawienia strony A4:
 \setlength{\textheight}{23cm}  \setlength{\textwidth}{15.92cm} \setlength{\footskip}{10mm} \setlength{\oddsidemargin}{5mm} \setlength{\evensidemargin}{5mm} \setlength{\headsep}{5mm}
@@ -31,7 +31,7 @@
 \fancyfoot{}
 \fancyhead[LE,LO]{£akomy T. - Praca magisterska}
 \fancyfoot[C]{\thepage}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{4}
 
 \title{Praca magisterska \\ Aplikacja do pomiarów parametrów ³¹cza sieciowego dla urz¹dzeñ z systemem operacyjnym Android}
 \author{Tomasz £akomy}
@@ -63,9 +63,10 @@
 
 %Pierwszy rozdzia³ - Wstêp
 \newpage
-\section{Wstêp}
+\chapter{Wstêp}
 
 \newpage
+\chapter{Opis teoretyczny zastosowanych technologii}
 \section{Transmisja danych w sieciach komórkowych}
 
 \subsection{GSM i EDGE}
@@ -194,21 +195,70 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
   \item \textbf{SON} (\textit{Self-Organizing Networks}) - rozwi¹zania pozwalaj¹ce na samokonfiguracjê oraz samooptymalizacjê sieci LTE.
 \end{itemize}
 
-
-
-\newpage
-\section{Transmisja danych w Internecie}
-\subsection{Protokó³ TCP}
-\qquad Protokó³ TCP (ang. \textit{Transmission Control Protocol}) jest po³¹czeniowym, niezawodnym, strumieniownym protoko³em stanowi¹cym podstawê dzia³ania dzisiejszego Internetu. Jest to protokó³ czwartej warstwy modelu OSI. Po raz pierwszy zosta³ on zdefiniowany w dokumencie RFC 793 z 1981 roku zatytu³owanym "\textit{Transmission Control Protocol. Darpa Internet Program protocol specification}" \cite{[8]}. 
-
-\qquad Protokó³ TCP jest czêsci¹ stosu TCP/IP, korzystaj¹cego z protoko³u IP (ang. \textit{Internet Protocol}) do przeprowadzania bezb³ednej transmisji danych w obu kierunkach.
-
+\section{Wybrane protoko³y transmisji danych}
 \subsection{Protokó³ HTTP}
+\subsection{Protokó³ TCP}
+\qquad Protokó³ TCP (ang. \textit{Transmission Control Protocol}) jest po³¹czeniowym, niezawodnym, strumieniownym protoko³em stanowi¹cym podstawê dzia³ania dzisiejszego Internetu \cite{[10]}. Po raz pierwszy zosta³ on zdefiniowany w dokumencie RFC 793 z 1981 roku zatytu³owanym "\textit{Transmission Control Protocol. Darpa Internet Program protocol specification}" \cite{[8]}. Jest on protoko³em warstwy transportowej modelu ISO, podobnie jak UDP.
+
+\qquad Fakt, ¿e protokó³ TCP jest protoko³em niezawodnym i po³¹czeniowym oznacza, ¿e weryfikuje on, czy dane zosta³y dostarczone przez sieæ poprawnie i w odpowiedniej kolejnoœci. Dziêki temu, dane przesy³ane za poœrednictwem TCP mo¿na traktowaæ jako ci¹g³y strumieñ bez obaw o ich utratê w trakcie transmisji. Za niezawodnoœc transmisji p³aci siê jednak pewn¹ cenê - transmisja TCP jest bardziej skomplikowana ni¿ np. transmisja UDP ze wzglêdu na mo¿liwoœæ retransmisji pakietów oraz wiêkszym rozmiarem nag³ówka.
+
+\qquad Jednostk¹ przesy³anych danych dla protoko³u TCP jest segment, który sk³ada siê z 32-bitowych s³ów nag³ówka oraz przesy³anych danych. Maksymalna dopuszczalna d³ugoœæ segmentu TCP wynosi 65 535 bajty, jednak¿e w zdecydowanej wiêkszoœci transmisji jest ona zdecydowanie mniejsza (np. dla transmisji Ethernet jest to 1500 bajtów).
+
+\qquad Nag³ówek segmentu TCP sk³ada siê z nastêpuj¹cych pól:
+\begin{itemize}
+  \item \textbf{Port Ÿród³owy} [16 bitów]
+  \item \textbf{Port przeznaczenia} [16 bitów]
+  \item \textbf{Numer kolejny} [32 bity] - numer kolejny pierwszego bajtu danych w tym segmencie. S³u¿y do numerowania bajtów w ca³ym po³¹czeniu, w celu zapewnienia ich poprawnej kolejnoœci
+  \item \textbf{Numer potwierdzenia} [32 bity] - pole to zawiera wartoœæ kolejnego oczekiwanego numeru kolejnego. Wartoœæ ta jest potwierdzeniem odebrania wszystkich bajtów o numerach kolejnych mniejszych ni¿ wartoœæ zapisana w tym polu.
+  \item \textbf{Przesuniêcie} [4 bity] - liczba 32 bitowych s³ów w aktualnie przesy³anym nag³ówki TCP. Przesuniêcie te wskazuje pocz¹tek danych.
+  \item \textbf{Zarezerwowane} [6 bitów] - zarezerwowane do wykorzystania w przysz³oœci
+  \item \textbf{Flagi} [6 bitów] - ka¿da o innym przeznaczeniu, przyk³adowo flaga ACK oznacza pole potwierdzenia, RST resetuje po³¹czenie, a flaga FIN - koñczy je
+  \item \textbf{Okno} [16 bitów] - okreœla liczbê bajtów danych, które nadawca zgodzi siê przyj¹æ. Pole te s³u¿y do sterowania przep³ywem danych.
+  \item \textbf{Suma kontrolna} [16 bitów] - suma kontrolna nag³ówka oraz danych
+  \item \textbf{WskaŸnik pilnoœci} [16 bitów] - pole u¿ywane, gdy ustawiona jest flaga URG. Zawiera numer kolejny bajtu nastêpuj¹cego po tzw. "pilnych danych"
+  \item \textbf{Pola opcji} [0 - 44 bajtów] - dodatkowe opcje transmisji TCP. Listê wszystkich dostêpnych opcji mo¿na znaleŸæ w \cite{[11]}
+  \item \textbf{Uzupe³nienie} [X bitów] - uzupe³nia zerami opcje tak, aby d³ugoœæ nag³ówka TCP by³a wielokrotnoœci¹ 32 bitów
+\end{itemize}
+
+
+\subsection{Protokó³ UDP}
+
+\qquad Protokó³ UDP (ang. \textit{User Datagram Protocol}) jest, podobnie jak TCP, protoko³em warstwy transportowej OSI. W przeciwieñstwie do TCP, protokó³ UDP realizuje us³ugê bezpo³¹czeniowego dostarczania danych. Oznacza to, ¿e nie zak³ada on poprawnoœci odebrania przes³ania danych oraz nie weryfikuje czy w ogóle dotar³y one do celu. Dziêki czemu uzyskano zdecydowanie bardziej zawodny sposób transmisji danych, co pozwoli³o zdecydowanie uproœciæ np. wielkoœc nag³ówka UDP.
+
+\qquad UDP zosta³ po raz pierwszy zdefiniowany w dokumencie RFC 768 z 1980r. zatytu³owanym "\textit{User Datagram Protocol}". Jego prostota sprawi³a, ¿e znalaz³ on zastosowanie w transmisji danych w przypadku której nie jest wymagana 100\% pewnoœæ, ¿e dane trafi³y do adresata. Przyk³adem takiej transmisji mo¿e byæ np. transmisja filmu wideo w Internecie. Weryfikacja poprawnoœci przes³ania ka¿dego segmentu TCP poch³ania moc obliczeniow¹, a straty jakoœci obrazu wynikaj¹ce z utraty czêœci pakietów UDP s¹ niezauwa¿alne dla przeciêtnego u¿ytkownika. Ponadto w wielu zastosowaniach to protoko³y warstw wy¿szych odpowiadaj¹ za gwarancjê poprawnoœci transmisji, z tego wzglêdu nie jest konieczne dublowanie tej funkcjonalnoœci w warstwie transportowej.
+
+\qquad Jednostk¹ przesy³anych danych dla protoko³u UDP jest pakiet, który sk³ada siê z 8 bajtów nag³ówka oraz pola danych. Nag³ówek UDP sk³ada siê z nastêpuj¹cych pól:
+
+\begin{itemize}
+  \item \textbf{Port Ÿród³owy} [16 bitów]
+  \item \textbf{Port docelowy} [16 bitów]
+  \item \textbf{D³ugoœæ} [16 bitów] - zawiera ca³kowit¹ d³ugoœæ aktualnie przesy³anego pakietu (nag³ówek wraz z danymi), mierzon¹ w bajtach
+  \item \textbf{Suma kontrolna} [16 bitów] - obliczana na podstawie nag³ówka i danych przesy³anego pakietu
+\end{itemize}
+
+\section{Cechy charakterystyczne programowania urz¹dzeñ z systemem Android}
+
+\qquad Android jest systemem operacyjnym z j¹drem Linux przeznaczonym dla urz¹dzeñ mobilnych takich jak telefony komórkowe, smartfony, tablety oraz przyk³adowo w inteligentnych telewizorach (technologia Android TV). Obecnie jest to najbardziej popularny system operacyjny na telefony komórkowe (dane na rok 2015), a w mowie potocznej okreœlenie "smartfon" jest uto¿samianie z telefonem z panelem dotykowym, na którym zainstalowany jest system operacyjny Android.
+
+\qquad Android jest rozwi¹zaniem typu Open Source\cite{[9]}, co oznacza, ¿e jego kod Ÿród³owy jest powszechnie dostêpny. Jest to jeden z elementów otwartej polityki aktualnego w³aœciciela systemu operacyjnego Android - firmy Google, która rozwija Androida jako otwart¹ platformê zarówno dla programistów jak i dla u¿ytkowników.
+
+\qquad Najczêœciej u¿ywanym œrodowiskiem programistycznym do pisania aplikacji na system operacyjny Android jest program Android Studio, przedstawiony na rysunku \ref{fig:android_studio}. Œrodowisko te jest dostêpne na systemy operacyjne Windows, Mac OS X oraz Linux i stanowi ono kompletn¹ platformê programistyczn¹ dla potrzeb tworzenia aplikacji na Androida.
+
+\qquad Zarówno system operacyjny Android jak i œrodowisko Android Studio wymagaj¹ zainstalowanego œrodowiska do programowania w jêzyku Java, ze wzglêdu na to, ¿e jest to g³ówny jêzyk programowania wykorzystywany na tej platformie. Istniej¹ rozwi¹zania pozwalaj¹ce kompilowaæ i uruchamiaæ kod napisany w innych jêzykach (np. Objective-C lub JavaScript) na platformie Android, jednak zaleca siê tworzenie aplikacji w jêzyku Java, ze wzglêdu na najlepsze wsparcie ze strony firmy Google.
+
+\begin{figure}[!htbp]
+	\centering
+\includegraphics[scale=0.3,natwidth=1920,natheight=1040]{android_studio.png}
+	\caption{Tworzenie aplikacji na system operacyjny Android w œrodowisku Android Studio}
+	\label{fig:android_studio}
+\end{figure}
+
+\qquad Poza œrodowiskiem programistycznym, Android Studio zawiera tak¿e wizualny edytor s³u¿¹cy do przygotowania wygl¹du aplikacji, a tak¿e wbudowany emulator, który pozwala na przetestowanie powstaj¹cej aplikacji na ró¿nych typach urz¹dzeñ (np. tablety o ró¿nych przek¹tnych ekranu) bez koniecznoœci zakupu sprzêtu. 
 
 \newpage
-\section{Opis realizacji programowej}
+\chapter{Realizacja pracy}
 
-\subsection{Za³o¿enia projektowe}
+\section{Za³o¿enia projektowe}
 
 \qquad Celem pracy jest stworzenie œrodowiska pomiarowego do pomiaru czasu transmisji danych w sieciach komórkowych pod k¹tem zastosowania tych sieci w systemach pomiarowych. W tym celu nale¿a³o opracowaæ aplikacjê dla urz¹dzeñ z systemem Android, a tak¿e dedykowane dla niej serwery napisane w jêzyku Python. Serwery te umo¿liwiaj¹ komunikacjê z aplikacj¹ zainstalowan¹ na terminalu mobilnym z wykorzystaniem zapytañ HTTP jak i za pomoc¹ gniazd protoko³u TCP/IP.
 
@@ -240,27 +290,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Przygotowana aplikacja na system operacyjny Android posiada mo¿liwoœæ wyœwietlenia wykresu prezentuj¹cego czasy transmisji zarejestrowane w czasie pomiaru. Ponadto, wszystkie pomiary s¹ zapisywane w postaci pliku .csv w pamiêci telefonu, co pozwala na ich póŸniejsz¹ analizê z wykorzystaniem innych narzêdzi takich jak programy Microsoft Office Excel czy Matlab.
 
-\subsection{Cechy charakterystyczne programowania urz¹dzeñ z systemem Android}
-
-\qquad Android jest systemem operacyjnym z j¹drem Linux przeznaczonym dla urz¹dzeñ mobilnych takich jak telefony komórkowe, smartfony, tablety oraz przyk³adowo w inteligentnych telewizorach (technologia Android TV). Obecnie jest to najbardziej popularny system operacyjny na telefony komórkowe (dane na rok 2015), a w mowie potocznej okreœlenie "smartfon" jest uto¿samianie z telefonem z panelem dotykowym, na którym zainstalowany jest system operacyjny Android.
-
-\qquad Android jest rozwi¹zaniem typu Open Source\cite{[9]}, co oznacza, ¿e jego kod Ÿród³owy jest powszechnie dostêpny. Jest to jeden z elementów otwartej polityki aktualnego w³aœciciela systemu operacyjnego Android - firmy Google, która rozwija Androida jako otwart¹ platformê zarówno dla programistów jak i dla u¿ytkowników.
-
-\qquad Najczêœciej u¿ywanym œrodowiskiem programistycznym do pisania aplikacji na system operacyjny Android jest program Android Studio, przedstawiony na rysunku \ref{fig:android_studio}. Œrodowisko te jest dostêpne na systemy operacyjne Windows, Mac OS X oraz Linux i stanowi ono kompletn¹ platformê programistyczn¹ dla potrzeb tworzenia aplikacji na Androida.
-
-\qquad Zarówno system operacyjny Android jak i œrodowisko Android Studio wymagaj¹ zainstalowanego œrodowiska do programowania w jêzyku Java, ze wzglêdu na to, ¿e jest to g³ówny jêzyk programowania wykorzystywany na tej platformie. Istniej¹ rozwi¹zania pozwalaj¹ce kompilowaæ i uruchamiaæ kod napisany w innych jêzykach (np. Objective-C lub JavaScript) na platformie Android, jednak zaleca siê tworzenie aplikacji w jêzyku Java, ze wzglêdu na najlepsze wsparcie ze strony firmy Google.
-
-\begin{figure}[!htbp]
-	\centering
-\includegraphics[scale=0.3,natwidth=1920,natheight=1040]{android_studio.png}
-	\caption{Tworzenie aplikacji na system operacyjny Android w œrodowisku Android Studio}
-	\label{fig:android_studio}
-\end{figure}
-
-\qquad Poza œrodowiskiem programistycznym, Android Studio zawiera tak¿e wizualny edytor s³u¿¹cy do przygotowania wygl¹du aplikacji, a tak¿e wbudowany emulator, który pozwala na przetestowanie powstaj¹cej aplikacji na ró¿nych typach urz¹dzeñ (np. tablety o ró¿nych przek¹tnych ekranu) bez koniecznoœci zakupu sprzêtu. 
-
-
-\subsection{Opis aplikacji pe³ni¹cej funkcjê serwera na komputer PC}
+\section{Opis aplikacji pe³ni¹cej funkcjê serwera na komputer PC}
 \begin{figure}[!htbp]
 	\centering
 \includegraphics[scale=1,natwidth=549,natheight=332]{server_source_code.png}
@@ -289,7 +319,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Zarówno program pe³ni¹cy funkcjê serwera dla zapytañ HTTP jak i serwer transmituj¹cy pakiety TCP mo¿na uruchomiæ na ka¿dym komputerze z systemem Windows, Linux lub OSX na którym zainstalowany zosta³ jêzyk programowania Python i biblioteka Flask.
 
-\subsection{Opis aplikacji na smartfon z systemem Android}
+\section{Opis aplikacji na smartfon z systemem Android}
 \begin{figure}[h]
 	\centering
 \includegraphics[scale=0.35,natwidth=540,natheight=960]{main_screen.jpg}
@@ -430,12 +460,12 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 \subsection{Sposób pomiaru po³o¿enia terminala mobilnego}
 
 \newpage
-\section{Wyniki pomiarów}
-\subsection{Pomiar nieruchomego terminala mobilnego}
+\chapter{Przyk³adowe wyniki pomiarów}
+\section{Pomiar nieruchomego terminala mobilnego}
 
 Poni¿sze wyniki przedstawiaj¹ pomiary dokonane w œrodowisku miejskim, terminal mobilny pozostawa³ nieruchomy przez ca³y czas pomiaru. Nadano 200 pakietów o rozmiarze 1024 bajtów, z odstêpem 2s pomiêdzy kolejnymi pakietami.
 
-\subsubsection{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietów, sieæ LTE)}
+\section{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietów, sieæ LTE)}
 
 \begin{figure}[H]
 	\centering
@@ -458,7 +488,7 @@ Poni¿sze wyniki przedstawiaj¹ pomiary dokonane w œrodowisku miejskim, terminal m
 	\label{fig:stationary_lte_http_chart}
 \end{figure}
 
-\subsubsection{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietów, sieæ WCDMA)}
+\section{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietów, sieæ WCDMA)}
 
 \begin{figure}[H]
 	\centering
@@ -482,7 +512,7 @@ Poni¿sze wyniki przedstawiaj¹ pomiary dokonane w œrodowisku miejskim, terminal m
 \end{figure}
 
 
-\subsubsection{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietów, sieæ EDGE)}
+\section{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietów, sieæ EDGE)}
 
 \begin{figure}[H]
 	\centering
@@ -505,12 +535,13 @@ Poni¿sze wyniki przedstawiaj¹ pomiary dokonane w œrodowisku miejskim, terminal m
 	\label{fig:stationary_edge_http_chart}
 \end{figure}
 
-\subsection{Pomiar ruchomego terminala mobilnego w œrodowisku miejskim}
-
-
+\section{Pomiar ruchomego terminala mobilnego w œrodowisku miejskim}
 
 \newpage
-\begin{thebibliography}{11}
+\chapter{Podsumowanie}
+
+\newpage
+\begin{thebibliography}{10}
 	\bibitem{[1]} \textit{Podstawy cyfrowych systemów telekomunikacyjnych} - Krzysztof Weso³owski, WK£, Warszawa 2006
 	\bibitem{[2]} \textit{Systemy radiokomunikacji ruchomej} - Krzysztof Weso³owski, WK£, Warszawa 2006 
 	\bibitem{[3]} ród³o internetowe: \textit{"MIMO transmission schemes for LTE and HSPA networks"} \\
@@ -527,6 +558,8 @@ Poni¿sze wyniki przedstawiaj¹ pomiary dokonane w œrodowisku miejskim, terminal m
 	http://tools.ietf.org/html/rfc793
 	\bibitem{[9]} ród³o internetowe: \textit{Android Open Source Project} \\
 	https://source.android.com/
+	\bibitem{[10]} \textit{Sieci Komputerowe} - Karol Krysiak, Helion, Gliwice 2005
+	\bibitem{[11]} ród³o internetowe: \textit{TCP, Transmission Control Protocol} \\ http://networksorcery.com/enp/protocol/tcp.htm
 	
 \end{thebibliography}
 \end{document}
