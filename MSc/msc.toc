@@ -25,7 +25,7 @@
 \contentsline {section}{\numberline {3.3}Opis aplikacji na smartfon z systemem Android}{25}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Opis realizacji programowej transmisji z wykorzystaniem zapyta\'n HTTP}{30}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } TCP/IP}{31}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Spos\'ob pomiaru rejestracji czasu przesy\IeC {\l }ania pakietu}{33}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Spos\'ob pomiaru czasu przesy\IeC {\l }ania pakietu}{33}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Spos\'ob pomiaru po\IeC {\l }o\.zenia terminala mobilnego}{34}{subsection.3.3.4}
 \contentsline {chapter}{\numberline {4}Przyk\IeC {\l }adowe wyniki pomiar\'ow}{35}{chapter.4}
 \contentsline {section}{\numberline {4.1}Pomiar nieruchomego terminala mobilnego}{35}{section.4.1}

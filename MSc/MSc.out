@@ -25,7 +25,7 @@
 \BOOKMARK [1][-]{section.3.3}{Opis aplikacji na smartfon z systemem Android}{chapter.3}% 25
 \BOOKMARK [2][-]{subsection.3.3.1}{Opis realizacji programowej transmisji z wykorzystaniem zapytan HTTP}{section.3.3}% 26
 \BOOKMARK [2][-]{subsection.3.3.2}{Opis realizacji programowej transmisji pakiet\363w poprzez protok\363\233 TCP/IP}{section.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.3}{Spos\363b pomiaru rejestracji czasu przesy\233ania pakietu}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.3}{Spos\363b pomiaru czasu przesy\233ania pakietu}{section.3.3}% 28
 \BOOKMARK [2][-]{subsection.3.3.4}{Spos\363b pomiaru po\233ozenia terminala mobilnego}{section.3.3}% 29
 \BOOKMARK [0][-]{chapter.4}{Przyk\233adowe wyniki pomiar\363w}{}% 30
 \BOOKMARK [1][-]{section.4.1}{Pomiar nieruchomego terminala mobilnego}{chapter.4}% 31
