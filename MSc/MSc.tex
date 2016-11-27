@@ -616,10 +616,10 @@ Nastêpnie w pêtli wykonywane s¹ nastêpuj¹ce kroki:
 
 \qquad Aby korzystaæ z us³ug lokalizacji konieczne jest ustawienie w pliku \textit{AndroidManifest.xml} uprawnieñ aplikacji przedstawionych na rysunku \ref{fig:gps_permission}. Jest to wymagane, ze wzglêdu na fakt, ¿e w trakcie instalacji aplikacji u¿ytkownik musi zgodziæ siê na mierzenie pozycji terminala mobilnego.
 
-begin{figure}[h]
+\begin{figure}[h]
 	\centering
 \includegraphics[scale=1,natwidth=499,natheight=60]{android_gps_api_key.png}
-	\caption{Wygenerowany klucz do us³ugi nawigacji google umieszczony w pliku AndroidManifest.xml}
+	\caption{Wygenerowany klucz do us³ugi nawigacji Google umieszczony w pliku AndroidManifest.xml}
 	\label{fig:gps_api_key}
 \end{figure}
 
@@ -651,6 +651,69 @@ begin{figure}[h]
 \qquad Po ka¿dej zmianie aktualnej pozycji wykonywana jest funkcja \textit{updateCamera} (rysunek \ref{fig:gps_update_camera}, która odpowiada za aktualizacjê danych o aktualnej pozycji, oraz wyœwietlenie pozycji na mapie widocznej w aplikacji.
 
 \subsection{Sposób zapisywania wyników pomiaru do pliku}
+
+\qquad Aplikacja \textit{Android Ping} posiada mo¿liwoœæ zapisywania wyników aktualnie wykonywanego pomiaru do pliku z rozszerzeniem .csv (ang. \textit{Comma Separated Values} - wartoœci rozdzielone przecinkiem). Wybrano ten typ pliku ze wzglêdu na mo¿liwoœæ importowania go do dalszej analizy danych w takich programach jak Microsoft Excel czy MatLAB. Plik ten jest automatycznie w trakcie dokonywania pomiaru, istnieje tak¿e mo¿liwoœc manualnego wygenerowania pliku na ekranie przedstawiaj¹cym wykres wyników pomiaru.
+
+\qquad Do zapisywania wyników pomiaru s³u¿y zaimplementowana na potrzeby aplikacji klasa \textit{ResultsSaver}, która odpowiedzialna jest za utworzenie pliku, przygotowanie danych do zapisania oraz wykonanie zapisu pliku do pamiêci urz¹dzenia.
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=592,natheight=379]{android_create_file.png}
+	\caption{Tworzenie pliku z rozszerzeniem .csv w pamiêci urz¹dzenia}
+	\label{fig:create_file}
+\end{figure}
+
+\qquad Rysunek \ref{fig:create_file} przedstawia sposób tworzenia pliku .csv w systemie Android. Zaimplementowano dwie funkcje \textit{createFilePath} oraz \textit{createFile}. Pierwsza z nich tworzy œcie¿kê do pliku pobieraj¹c œcie¿kê do g³ównego katalogu pamiêci urz¹dzenia i dodaj¹c do niej nazwê pliku o formacie:
+
+\qquad \textit{AndroidPingData[AKTUALNY_CZAS].csv}
+
+\qquad Funkcja \textit{createFile} tworzy pusty plik w pamiêci urz¹dzenia. W przypadku b³êdu w trakcie tworzenia pliku (np. brak wolnej pamiêci wewn¹trz urz¹dzenia), dalszy zapis danych nie bêdzie kontynuowany.
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=428,natheight=210]{android_write_file.png}
+	\caption{Sposób realizacji zapisu danych do pliku .csv}
+	\label{fig:write_file}
+\end{figure}
+
+\qquad Za zapis danych odpowiada funkcja \textit{writeDataToFile} przedstawiona na rysunku \ref{fig:write_file}. Funkcja ta jest wykonywana za ka¿dym razem, gdy przes³any przez serwer pakiet zostanie poprawnie odebrany przez aplikacjê. W pierwszej kolejnoœci pobierane s¹ z pamiêci aplikacji aktualne wartoœci pomiaru. Nastêpnie tworzony jest pierwszy wiersz pliku, który zawiera informacje o aktualnie dokonywanym pomiarze:
+
+\begin{itemize}
+	\item Protokó³ transmisji
+	\item Aktualna sieæ (EDGE/WCDMA/LTE)
+	\item Rozmiar pakietu
+	\item Liczba nadawanych pakietów
+	\item Odstêp czasu pomiêdzy pakietami
+	\item Œredni czas transferu pakietu
+	\item Mediana czasu transferu pakietu
+	\item Minimalny czas transferu pakietu
+	\item Maksymalny czas transferu pakietu
+	\item Odchylenie æwiartkowe czasu transmisji pakietu
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=442,natheight=365]{android_add_results_file.png}
+	\caption{Realizacja dodania wyników pomiaru do pliku}
+	\label{fig:add_data_to_file}
+\end{figure}
+
+\qquad Kolejno do pliku dodawana jest tabela wyników pomiaru, której sposób tworzenia zaprezentowano na rysunku \ref{fig:add_data_to_file}. Sk³ada siê ona z nastêpuj¹cych kolumn:
+
+\begin{itemize}
+	\item Czas transmisji pakietu [ms]
+	\item Moc sygna³u [dBm]
+	\item D³ugoœæ geograficzna
+	\item Szerokoœæ geograficzna
+\end{itemize}
+
+\qquad Przyk³adowe wyniki pomiaru zapisane do pliku przedstawia rysunek \ref{fig:sample_save_file}.
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=519,natheight=267]{android_sample_results.png}
+	\caption{Przyk³adowe wyniki pomiarów zaimportowane do programu Microsoft Excel}
+	\label{fig:sample_save_file}
+\end{figure}
 
 \newpage
 \chapter{Przyk³adowe wyniki pomiarów}

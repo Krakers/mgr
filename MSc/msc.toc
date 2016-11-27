@@ -28,10 +28,11 @@
 \contentsline {subsection}{\numberline {3.3.3}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } UDP}{35}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Spos\'ob pomiaru czasu przesy\IeC {\l }ania pakietu}{37}{subsection.3.3.4}
 \contentsline {subsection}{\numberline {3.3.5}Spos\'ob pomiaru po\IeC {\l }o\.zenia terminala mobilnego}{39}{subsection.3.3.5}
-\contentsline {chapter}{\numberline {4}Przyk\IeC {\l }adowe wyniki pomiar\'ow}{40}{chapter.4}
-\contentsline {section}{\numberline {4.1}Pomiar nieruchomego terminala mobilnego}{40}{section.4.1}
-\contentsline {section}{\numberline {4.2}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c LTE)}{41}{section.4.2}
-\contentsline {section}{\numberline {4.3}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c WCDMA)}{43}{section.4.3}
-\contentsline {section}{\numberline {4.4}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c EDGE)}{44}{section.4.4}
-\contentsline {section}{\numberline {4.5}Pomiar ruchomego terminala mobilnego w \'srodowisku miejskim}{45}{section.4.5}
-\contentsline {chapter}{\numberline {5}Podsumowanie}{46}{chapter.5}
+\contentsline {subsection}{\numberline {3.3.6}Spos\'ob zapisywania wynik\'ow pomiaru do pliku}{40}{subsection.3.3.6}
+\contentsline {chapter}{\numberline {4}Przyk\IeC {\l }adowe wyniki pomiar\'ow}{42}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pomiar nieruchomego terminala mobilnego}{42}{section.4.1}
+\contentsline {section}{\numberline {4.2}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c LTE)}{43}{section.4.2}
+\contentsline {section}{\numberline {4.3}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c WCDMA)}{45}{section.4.3}
+\contentsline {section}{\numberline {4.4}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c EDGE)}{46}{section.4.4}
+\contentsline {section}{\numberline {4.5}Pomiar ruchomego terminala mobilnego w \'srodowisku miejskim}{47}{section.4.5}
+\contentsline {chapter}{\numberline {5}Podsumowanie}{48}{chapter.5}
