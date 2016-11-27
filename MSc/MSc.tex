@@ -416,7 +416,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Po ustawieniu parametrów pomiaru i wciœniêciu przycisku \textit{START MEASURING} (ang. \textit{rozpocznij pomiar}) aplikacja przechodzi do ekranu pomiaru (rysunek \ref{fig:measurement_screen_android}). W jego centralnym punkcie (zak³adajac, ¿e u¿ytkownik ma w³¹czon¹ us³ugê nawigacji w telefonie) znajduje siê mapa pochodz¹ca od us³ugi Google Maps przedstawiaj¹ca aktualne po³o¿enie terminala mobilnego.
 
-\qquad W trakcie trwania pomiaru terminal mobilny mo¿e zmieniæ swoj¹ pozycjê - jest ona oznaczana w trakcie kolejno dodawanych do mapy punktów. Ka¿dy punkt oznacza pomiar dokonany w danym miejscu, a jego kolor oznacza czas transmisji danego pakietu - barwa jaœniejsza oznacza szybszy czas transmisji, barwa ciemniejsza, wolniejszy. Dziêki temu rozwi¹zaniu, w trakcie trwania pomiaru istnieje mo¿liwoœc œledzenia pozycji terminala mobilnego i wykonywania pomiarów w trakcie np. podró¿y samochodem lub poci¹giem. 
+\qquad W trakcie trwania pomiaru terminal mobilny mo¿e zmieniæ swoj¹ pozycjê - jest ona oznaczana w trakcie kolejno dodawanych do mapy punktów. Ka¿dy punkt oznacza pomiar dokonany w danym miejscu, a jego kolor oznacza czas transmisji danego pakietu - barwa jaœniejsza oznacza krótszy czas transmisji, barwa ciemniejsza - d³u¿szy. Dziêki temu rozwi¹zaniu, w trakcie trwania pomiaru istnieje mo¿liwoœc œledzenia pozycji terminala mobilnego i wykonywania pomiarów w trakcie np. podró¿y samochodem lub poci¹giem. 
 
 \begin{figure}[h]
 	\centering
@@ -448,65 +448,154 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \begin{figure}[h]
 	\centering
-\includegraphics[scale=0.5,natwidth=779,natheight=739]{http_requests_source.png}
+\includegraphics[scale=1,natwidth=649,natheight=107]{http_requests_source.png}
 	\caption{Realizacja programowa transmisji z wykorzystaniem zapytañ HTTP}
 	\label{fig:http_requests_android}
 \end{figure}
 
-\qquad Na pocz¹tku definicji tej funkcji tworzone s¹ funkcje pomocnicze, które s¹ wykonywane w przypadku poprawnego przesy³u pakietu lub b³êdu (odpowiednio: \textit{successHandler} oraz \textit{errorHandler}). W przypadku b³êdu wyœwietlany jest odpowiedni komunikat, w przypadku poprawnej transmisji wykonwane s¹ funkcje odpowiedzialne za aktualizacje wyników i wyœwietlenia aktualnego œredniego czasu transmisji na ekranie.
-
-\qquad Sama transmisja odbywa siê za pomoc¹ obiektu \textit{stringRequest}, który odpowiada za wysy³anie zapytañ POST protoko³u HTTP, do³¹czaj¹c do parametrów tego zapytania zarówno unikalny identyfikator czasowy jak i losowo wygenerowane dane o zadanym przez u¿ytkownika rozmiarze. Ka¿de takie zapytanie otrzymuje najwy¿szy mo¿liwy priorytet (\textit{Priority.IMMEDIATE} - ang. \textit{natychmiast}), co gwarantuje najszybszy mo¿liwy czas startu transmisji danego pakietu.
-
-\qquad Ostatnia linia tworzy tzw. kolejkê zapytañ co oznacza, ¿e dana transmisja za poœrednictwem zapytania HTTP bêdzie dodawana na kolejkê po up³yniêciu interwa³u okreœlonego przez u¿ytkownika aplikacji w trakcie ustalania parametrów pomiaru. Przyk³adowo, ustawienie czasu pomiêdzy pakietami na 5 sekund spowoduje dodanie nowego pakietu na kolejkê po up³ywie 5 sekund od poprzednio wys³anego pakietu.
-
-
-\subsection{Opis realizacji programowej transmisji pakietów poprzez protokó³ TCP/IP}
-
-\qquad Rysunek \ref{fig:tcp_requests_android} przedstawia definicjê klasy \textit{SocketRequestTask}, która jest sercem realizacji programowej transmisji pakietów poprzez protokó³ TCP/IP. Klasa ta dziedziczy po wbudowanej w system operacyjny Android klasie \textit{AsyncTask}. Klasa \textit{AsyncTask} pozwala na realizacje asynchronicznych zadañ wykonuj¹cych siê w tle bez blokowania g³ównego w¹tku aplikacji. Dziêki czemu istnieje mo¿liwoœc wysy³ania i odbierania pakietów TCP bez przerywania pracy g³ównego w¹tku interfejsu u¿ytkownika.
+\qquad Wewn¹trz definicji funkcji \textit{performHttpRequests()} powstaje obiekt zaimplementowanej na potrzeby aplikacji klasy \textit{HttpRequestTask}. Jest to klasa, która dziedziczy po wbudowanej w system Android klasie \textit{AsyncTask}. Klasa \textit{AsyncTask} pozwala programistom aplikacji na system Android na tworzenie kodu, który wykonywany jest asynchronicznie, bez blokowania g³ównego w¹tku aplikacji. Dziêki temu, pêtla, która wysy³a zapytania HTTP co okreœlony interwa³ nie blokuje innych funkcji aplikacji (np. œledzenia pozycji terminalu mobilnego).
 
 \begin{figure}[h]
 	\centering
-\includegraphics[scale=0.5,natwidth=779,natheight=739]{tcp_requests_source.png}
-	\caption{Realizacja programowa transmisji poprzez protokó³ TCP/IP}
+\includegraphics[scale=1,natwidth=534,natheight=244]{http_request_task_handlers.png}
+	\caption{Funkcje pomocnicze odpowiadaj¹ce za obs³ugê poprawnej lub b³êdnej transmisji HTTP}
+	\label{fig:http_requests_handlers_android}
+\end{figure}
+
+\qquad Wewn¹trz definicji klasy \textit{HttpRequestTask} tworzone s¹ m.in. funkcje pomocnicze przedstawione na rysunku \ref{fig:http_requests_handlers_android} , które s¹ wykonywane w przypadku poprawnego przesy³u pakietu lub b³êdu (odpowiednio: \textit{successHandler} oraz \textit{errorHandler}). W przypadku b³êdu wyœwietlany jest odpowiedni komunikat, w przypadku poprawnej transmisji wykonywane s¹ funkcje odpowiedzialne za aktualizacje wyników i wyœwietlenia aktualnego œredniego czasu transmisji na ekranie.
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=521,natheight=263]{http_request_task_string_request.png}
+	\caption{Definicja funkcji \textit{getStringRequest}}
+	\label{fig:http_request_task_string_request}
+\end{figure}
+
+\qquad Sama transmisja odbywa siê za pomoc¹ obiektu \textit{stringRequest}, który jest tworzony za pomoc¹ funkcji \textit{getStringRequest} (rysunek \ref{fig:http_request_task_string_request}). Obiekt ten odpowiada za wysy³anie zapytañ POST protoko³u HTTP, do³¹czaj¹c do parametrów tego zapytania zarówno unikalny identyfikator czasowy jak i losowo wygenerowane dane o zadanym przez u¿ytkownika rozmiarze. Ka¿de takie zapytanie otrzymuje najwy¿szy mo¿liwy priorytet (\textit{Priority.IMMEDIATE} - ang. \textit{natychmiast}), co gwarantuje najszybszy mo¿liwy czas startu transmisji danego pakietu.
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=503,natheight=295]{http_request_task_background.png}
+	\caption{Pêtla wysy³aj¹ca zapytania HTTP do serwera}
+	\label{fig:http_request_task_background}
+\end{figure}
+
+
+\qquad Funkcja \textit{doInBackground} przedstawiona na rysunku \ref{fig:http_request_task_background}) tworzy tzw. kolejkê zapytañ co oznacza, ¿e dana transmisja za poœrednictwem zapytania HTTP bêdzie dodawana na kolejkê po up³yniêciu interwa³u okreœlonego przez u¿ytkownika aplikacji w trakcie ustalania parametrów pomiaru. Przyk³adowo, ustawienie czasu pomiêdzy pakietami na 5 sekund spowoduje dodanie nowego pakietu na kolejkê po up³ywie 5 sekund od poprzednio wys³anego pakietu.
+
+
+\subsection{Opis realizacji programowej transmisji pakietów poprzez protokó³ TCP}
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=0.8,natwidth=552,natheight=523]{tcp_requests_source.png}
+	\caption{Realizacja programowa transmisji poprzez protokó³ TCP}
 	\label{fig:tcp_requests_android}
 \end{figure}
 
+\qquad Rysunek \ref{fig:tcp_requests_android} przedstawia definicjê klasy \textit{TcpSocketRequestTask}, która jest sercem realizacji programowej transmisji pakietów poprzez protokó³ TCP. Klasa ta (podobnie jak \textit{HttpRequestTask}) dziedziczy po wbudowanej w system operacyjny Android klasie \textit{AsyncTask}. Klasa \textit{AsyncTask} pozwala na realizacje asynchronicznych zadañ wykonuj¹cych siê w tle bez blokowania g³ównego w¹tku aplikacji. Dziêki czemu istnieje mo¿liwoœc wysy³ania i odbierania pakietów TCP bez przerywania pracy g³ównego w¹tku interfejsu u¿ytkownika.
+
 \qquad Najwa¿niejsz¹ metod¹ klasy \textit{SocketRequestTask} jest przedstawiona na rysunku \ref{fig:tcp_requests_android} metoda \textit{doInBackground} (ang. \textit{Wykonuj w tle}), która okreœla jakie instrukcje maj¹ byæ wykonane w osobnym w¹tku aplikacji bez blokowania w¹tku interfejsu u¿ytkownika. Instrukcje te rozpoczynaj¹ siê od utworzenia obiektu klasy \textit{Socket}. Klasa ta jest czêœci¹ biblioteki standardowej jêzyka Java i pozwala na implementacjê gniazda TCP po stronie klienta. Utworzone w ten sposób gniazdo nale¿y pod³¹czyæ pod strumieñ danych, w tym przypadku jest to kolejny strumieñ z biblioteki standardowej jêzyka Java jakim jest \textit{PrintWriter}.
 
-\qquad Jak wspomniano w rozdziale poœwiêconym aplikacji pe³ni¹cej funkcjê serwera odbieraj¹cego i wysy³aj¹cego pakiety TCP na komputer PC, pierwsze dane jakich spodziewa siê serwer zawieraj¹ ci¹g znaków \textit{PACKET\_SIZE:N} (ang. \textit{ROZMIAR\_PAKIETU:N}), gdzie N okreœla liczbê przesy³anych bajtów danych (okreœlon¹ przez u¿ytkownika w trakcie ustalania parametrów danego pomiaru). Dane te s¹ wysy³ane asynchronicznie, a wiêc wpisanie do strumienia danych \textit{PrintWriter} ci¹gu okreœlaj¹cego rozmiar wysy³anych pakietów powoduje przes³anie tych danych natychmiast na serwer.
-
-\qquad Po ustaleniu rozmiaru wysy³anych pakietów, program zapisuje w pamiêci aktualny czas, co pozwala zmierzyæ i wyœwietliæ czas nadania i odbioru danego pakietu w sieci w g³ównym w¹tku programu. Nastêpnie dane s¹ wysy³ane i tworzony jest bufor odbiorczy klasy \textit{InputStream} (ang. \textit{StrumieñWejœciowy}), który odbiera od serwera dok³adnie ten sam ci¹g danych, który zosta³ wys³any poprzednio. W programie zosta³a zaimplementowana tak¿e obs³uga b³êdów transmisji - w przypadku wyst¹pienia takiego b³êdu, u¿ytkownik zostanie o nim poinformowany stosownym komunikatem.
-
-\subsection{Sposób pomiaru czasu przesy³ania pakietu}
-
-\qquad W poprzednich rozdzia³ach opisano w jaki sposób aplikacja na system operacyjny Android wysy³a dane, zarówno za poœrednictwem protoko³u HTTP jak i TCP, do serwera, który je odbiera i wys³a z powrotem do terminalu mobilnego.
-
-\qquad Rysunki \ref{fig:time_measurement_timestamp} oraz \ref{fig:time_measurement_after_receiving_packet} przedstawiaj¹ metodê pomiaru czasu przesy³u pakietu przez sieæ komórkow¹. Przed ka¿dym takim zapytaniem (zarówno za poœrednictwem protoko³u HTTP jak i TCP) pobierany jest aktualny czas (rysunek \ref{fig:time_measurement_timestamp}) systemowy i zapisywany do zmiennej \textit{timeBeforeRequest} (ang. \textit{czasPrzedZapytaniem}). Pozwala to na póŸniejsze porównanie czasu aktualnego (jest to zmienna zawieraj¹ca liczbê sekund, które up³ynê³y od 1 stycznia 1970 roku) z czasem zmierzonym jako czas bezpoœrednio przed wys³aniem pakietu.
+Nastêpnie w pêtli wykonywane s¹ nastêpuj¹ce kroki:
+\begin{enumerate}
+\item Otwórz gniazdo po stronie klienta (w przypadku odstêpu czasu pomiêdzy kolejnymi pakietami wiêkszego ni¿ 1 minuta, gniazdo jest zamykane po ka¿dym przes³anym pakiecie danych).
+\item Wyœlij dane
+\item Odbierz dane
+\item Zamknij gniazdo po stronie serwera (je¿eli jest to konieczne)
+\item Zamknij gniazdo po stronie klienta (je¿eli jest to konieczne)
+\end{enumerate}
 
 \begin{figure}[h]
 	\centering
-\includegraphics[scale=0.5,natwidth=768,natheight=166]{android_time_measurement_create_timestamp.png}
+\includegraphics[scale=0.8,natwidth=507,natheight=281]{tcp_requests_send.png}
+	\caption{Wysy³anie pakietów TCP po stronie klienta}
+	\label{fig:tcp_requests_android_send}
+\end{figure}
+
+\qquad Rysunek \ref{fig:tcp_requests_android_send} przedstawia sposób realizacji wysy³ania pakietów TCP w aplikacji. Jak wspomniano w rozdziale poœwiêconym aplikacji pe³ni¹cej funkcjê serwera odbieraj¹cego i wysy³aj¹cego pakiety TCP na komputer PC, pierwsze dane jakich spodziewa siê serwer zawieraj¹ ci¹g znaków \textit{PACKET\_SIZE:N} (ang. \textit{ROZMIAR\_PAKIETU:N}), gdzie N okreœla liczbê przesy³anych bajtów danych (okreœlon¹ przez u¿ytkownika w trakcie ustalania parametrów danego pomiaru).
+
+\qquad Dane te s¹ wysy³ane asynchronicznie, a wiêc wpisanie do strumienia danych \textit{PrintWriter} ci¹gu okreœlaj¹cego rozmiar wysy³anych pakietów powoduje przes³anie tych danych natychmiast na serwer. Po ustaleniu rozmiaru wysy³anych pakietów, program zapisuje w pamiêci aktualny czas, co pozwala zmierzyæ i wyœwietliæ czas nadania i odbioru danego pakietu w sieci w g³ównym w¹tku programu. 
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=0.8,natwidth=624,natheight=327]{tcp_requests_receive.png}
+	\caption{Odbieranie pakietów TCP po stronie klienta}
+	\label{fig:tcp_requests_android_receive}
+\end{figure}
+
+\qquad Po wys³aniu danych tworzony jest bufor odbiorczy klasy \textit{InputStream} (ang. \textit{StrumieñWejœciowy}), który odbiera od serwera dok³adnie ten sam ci¹g danych, który zosta³ wys³any poprzednio (rysunek \ref{fig:tcp_requests_android_receive}). W programie zosta³a zaimplementowana tak¿e obs³uga b³êdów transmisji - w przypadku wyst¹pienia takiego b³êdu, u¿ytkownik zostanie o nim poinformowany stosownym komunikatem.
+
+\subsection{Opis realizacji programowej transmisji pakietów poprzez protokó³ UDP}
+
+\qquad Realizacja programowa transmisji pakietów poprzez protokó³ UDP jest zbli¿ona do TCP. Odpowiada za ni¹ klasa \textit{UdpSocketRequestTask}, która podobnie jak opisane poprzednio \textit{HttpSocketRequestTask} oraz \textit{TcpSocketRequestTask} dziedziczy po klasie \textit{AsyncTask}, co pozwala na asynchroniczne przesy³anie danych do serwera oraz ich odbiór.
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=482,natheight=403]{udp_requests_transmission.png}
+	\caption{Realizacja programowa transmisji poprzez protokó³ UDP}
+	\label{fig:udp_requests_android}
+\end{figure}
+
+\qquad Zaimplementowana w aplikacji transmisja danych (rysunek \ref{fig:udp_requests_android}) za pomoc¹ protoko³u UDP nie wymaga otwierania b¹dŸ zamykania gniazda po stronie serwera i sk³ada siê z nastêpuj¹cych kroków:
+
+\begin{enumerate}
+\item Przed rozpoczêciem transmisji otwórz gniazdo do przesy³ania datagramów UDP
+\item Wyœlij dane
+\item Odbierz dane
+\item Po zakoñczonej transmisji zamknij gniazdo
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=515,natheight=213]{udp_requests_send.png}
+	\caption{Wysy³anie pakietu UDP po stronie klienta}
+	\label{fig:udp_requests_android_send}
+\end{figure}
+
+\qquad Na rysunku \ref{fig:udp_requests_android_send} zosta³ przedstawiony sposób realizacji wysy³ania danych za pomoc¹ protoko³u UDP w aplikacji. Na pocz¹tku tworzony jest ci¹g losowych danych o d³ugoœci zadanej przez u¿ytkownika (\textit{packetSize}). Nastêpnie tworzony jest obiekt typu \textit{DatagramPacket}. 
+
+\qquad \textit{DatagramPacket} jest to klasa bêd¹ca czêœci¹ systemu Android, która pozwala programiœcie na realizacji transmisji poprzez protokó³ UDP w aplikacji. Aby utworzyæ obiekt tej klasy nale¿y przekazaæ do konstruktora tej klasy: bajty przesy³anych danych, d³ugoœæ przesy³anych danych, adres oraz port na który dane maj¹ byæ przes³ane. Nastêpnie odczytywany jest czas w celu póŸniejszego zmierzenia czasu transmisji i wys³anie pakietu do serwera.
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=555,natheight=127]{udp_requests_receive.png}
+	\caption{Odbieranie pakietu UDP po stronie klienta}
+	\label{fig:udp_requests_android_receive}
+\end{figure}
+
+\qquad Rysunek \ref{fig:udp_requests_android_receive} pokazuje sposób odbioru uprzednio przes³anego datagramu UDP po jego retransmisji przez serwer. Polega on na utworzeniu bufora danych o d³ugoœci takiej samej jak wys³any pakiet, a nastêpnie stworzenie obiektu \textit{DatagramPacket}, którego zadaniem jest odebranie przesy³anego przez serwer datagramu. Po jego odebraniu odbywa siê aktualizacja aktualnych wyników pomiaru. 
+
+\subsection{Sposób pomiaru czasu przesy³ania pakietu}
+
+\qquad W poprzednich rozdzia³ach opisano w jaki sposób aplikacja na system operacyjny Android wysy³a dane do serwera, który je odbiera i wys³a z powrotem do terminalu mobilnego. Zadaniem aplikacji jest tak¿e pomiar czasu przesy³ania pakietu przez sieæ oraz obliczanie statystyk aktualnie dokonywanego pomiaru.
+
+\qquad Rysunki \ref{fig:time_measurement_timestamp} oraz \ref{fig:time_measurement_after_receiving_packet} przedstawiaj¹ metodê pomiaru czasu przesy³u pakietu przez sieæ komórkow¹. Przed ka¿dym takim zapytaniem (za poœrednictwem dowolnego z dostêpnych w aplikacji protoko³ów) pobierany jest aktualny czas (rysunek \ref{fig:time_measurement_timestamp}) systemowy i zapisywany do zmiennej \textit{timeBeforeRequest} (ang. \textit{czasPrzedZapytaniem}). Pozwala to na póŸniejsze porównanie czasu aktualnego (jest to zmienna zawieraj¹ca liczbê sekund, które up³ynê³y od 1 stycznia 1970 roku) z czasem zmierzonym jako czas bezpoœrednio przed wys³aniem pakietu.
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=478,natheight=58]{android_time_measurement_create_timestamp.png}
 	\caption{Pobieranie aktualnego czasu przed wys³aniem pakietu}
 	\label{fig:time_measurement_timestamp}
 \end{figure}
 
-\qquad Po ka¿dym poprawnym odbiorze pakietu wykonywane s¹ funkcje przedstawione na rysunku \ref{fig:time_measurement_after_receiving_packet}. Odpowiadaj¹ one za:
-
-\begin{itemize}
-  \item Weryfikacjê numeru aktualnie odebranego pakietu (tj. czy dany pakiet jest ostatnim pakietem w danym pomiarze i nale¿y zaprzestaæ wysy³ania kolejnych pakietów).
-  \item Porównanie aktualnego czasu z poprzednio zapisanym czasem sprzed wys³ania pakietu oraz wyznaczenie aktualnego œredniego czasu transferu pakietu przez sieæ komórkow¹
-  \item Aktualizacjê wyników wyœwietlanych na ekranie - je¿eli pomiar siê jeszcze nie zakoñczy³ wyœwietlany jest aktualny numer pakietu, iloœæ wysy³anych pakietów oraz œredni czas transferu. W przypadku przes³ania ju¿ okreœlonej przez u¿ytkownika liczby pakietów wyœwietlana jest informacja o zakoñczeniu pomiaru
-\end{itemize}
- 
-
 \begin{figure}[h]
 	\centering
-\includegraphics[scale=0.5,natwidth=544,natheight=432]{android_time_measurement.png}
-	\caption{Pomiar czasu przesy³ania pakietu po jego odbiorze}
+\includegraphics[scale=1,natwidth=517,natheight=193]{android_time_measurement.png}
+	\caption{Pomiar czasu transmisji pakietu oraz pobieranie statystyk pomiaru}
 	\label{fig:time_measurement_after_receiving_packet}
 \end{figure}
 
-\qquad 
+\qquad Po ka¿dym poprawnym odbiorze pakietu wykonywana jest funkcja \textit{updateRequestStatistics} przedstawiona na rysunku \ref{fig:time_measurement_after_receiving_packet}. Odpowiada ona za:
+
+\begin{itemize}
+	\item Wyznaczenie aktualnego czasu transmisji
+	\item Dodanie aktualnego czasu transmisji do tablicy zawieraj¹cej pozosta³e czasy transmisji w trakcie aktualnego pomiaru
+	\item Dodanie aktualne zmierzonej mocy sygna³u do tablicy zawieraj¹cej moce sygna³u zmierzone w trakcie aktualnego pomiaru
+	\item Dodanie aktualnej pozycji terminala mobilnego do tablicy zawieraj¹cej informacje o pozycji terminala mobilnego w trakcie aktualnego pomiaru
+	\item Wyznaczenie statystyk aktualnego pomiaru: œredniej, mediany, odchylenia æwiartkowego, maksymalnego i minimalnego czasu transmisji.
+	\item Dodanie poprzednio zebranych danych do pliku w pamiêci urz¹dzenia
+\end{itemize}
 
 \subsection{Sposób pomiaru po³o¿enia terminala mobilnego}
 

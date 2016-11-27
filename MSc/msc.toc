@@ -24,13 +24,14 @@
 \contentsline {subsection}{\numberline {3.2.3}Protok\'o\IeC {\l } UDP}{25}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Opis aplikacji na smartfon z systemem Android}{25}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Opis realizacji programowej transmisji z wykorzystaniem zapyta\'n HTTP}{30}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } TCP/IP}{31}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Spos\'ob pomiaru czasu przesy\IeC {\l }ania pakietu}{33}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Spos\'ob pomiaru po\IeC {\l }o\.zenia terminala mobilnego}{34}{subsection.3.3.4}
-\contentsline {chapter}{\numberline {4}Przyk\IeC {\l }adowe wyniki pomiar\'ow}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}Pomiar nieruchomego terminala mobilnego}{35}{section.4.1}
-\contentsline {section}{\numberline {4.2}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c LTE)}{36}{section.4.2}
-\contentsline {section}{\numberline {4.3}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c WCDMA)}{38}{section.4.3}
-\contentsline {section}{\numberline {4.4}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c EDGE)}{39}{section.4.4}
-\contentsline {section}{\numberline {4.5}Pomiar ruchomego terminala mobilnego w \'srodowisku miejskim}{40}{section.4.5}
-\contentsline {chapter}{\numberline {5}Podsumowanie}{41}{chapter.5}
+\contentsline {subsection}{\numberline {3.3.2}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } TCP}{32}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } UDP}{35}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Spos\'ob pomiaru czasu przesy\IeC {\l }ania pakietu}{37}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Spos\'ob pomiaru po\IeC {\l }o\.zenia terminala mobilnego}{38}{subsection.3.3.5}
+\contentsline {chapter}{\numberline {4}Przyk\IeC {\l }adowe wyniki pomiar\'ow}{40}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pomiar nieruchomego terminala mobilnego}{40}{section.4.1}
+\contentsline {section}{\numberline {4.2}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c LTE)}{41}{section.4.2}
+\contentsline {section}{\numberline {4.3}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c WCDMA)}{43}{section.4.3}
+\contentsline {section}{\numberline {4.4}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c EDGE)}{44}{section.4.4}
+\contentsline {section}{\numberline {4.5}Pomiar ruchomego terminala mobilnego w \'srodowisku miejskim}{45}{section.4.5}
+\contentsline {chapter}{\numberline {5}Podsumowanie}{46}{chapter.5}
