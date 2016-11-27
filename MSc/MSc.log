@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  27 NOV 2016 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  27 NOV 2016 12:31
 entering extended mode
 **msc.tex
 (msc.tex
@@ -1276,22 +1276,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [37 <./udp_requests_send.png> <./udp_requests_receive.png>]
-<android_time_measurement_create_timestamp.png, id=491, 578.16pt x 124.96687pt>
+<android_time_measurement_create_timestamp.png, id=491, 359.84438pt x 43.66313p
+t>
 File: android_time_measurement_create_timestamp.png Graphic file (type png)
-<use android_time_measurement_create_timestamp.png>
+ <use android_time_measurement_create_timestamp.png>
 Package pdftex.def Info: android_time_measurement_create_timestamp.png used on 
 input line 577.
-(pdftex.def)             Requested size: 289.07928pt x 62.48328pt.
+(pdftex.def)             Requested size: 359.84349pt x 43.66301pt.
 
-<android_time_measurement.png, id=493, 409.53pt x 325.215pt>
+<android_time_measurement.png, id=492, 389.20406pt x 145.29282pt>
 File: android_time_measurement.png Graphic file (type png)
 
 <use android_time_measurement.png>
-Package pdftex.def Info: android_time_measurement.png used on input line 593.
-(pdftex.def)             Requested size: 204.7645pt x 162.6071pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package pdftex.def Info: android_time_measurement.png used on input line 584.
+(pdftex.def)             Requested size: 389.20311pt x 145.29245pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1299,14 +1297,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38 <./android_time_measurement_create_timestamp.png>]
+[38 <./android_time_measurement_create_timestamp.png> <./android_time_measureme
+nt.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39 <./android_time_measurement.png>]
+[39]
 Rozdzia\PlPrIeC {\l } 4.
 
 Overfull \hbox (9.22188pt too wide) in paragraph at lines 608--608
@@ -1463,7 +1462,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 710.
 Here is how much of TeX's memory you used:
  19318 strings out of 493673
  385653 string characters out of 3141527
- 469592 words of memory out of 3000000
+ 469608 words of memory out of 3000000
  22119 multiletter control sequences out of 15000+200000
  17869 words of font info for 55 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -1475,7 +1474,7 @@ les (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}<C:/Program Files (x86)/MiKTeX
 pe1/public/pl/plr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/p
 l/plr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb
 >
-Output written on msc.pdf (49 pages, 1670120 bytes).
+Output written on msc.pdf (49 pages, 1642634 bytes).
 PDF statistics:
  626 PDF objects out of 1000 (max. 8388607)
  156 named destinations out of 1000 (max. 500000)

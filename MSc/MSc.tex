@@ -586,6 +586,13 @@ NastÍpnie w pÍtli wykonywane sπ nastÍpujπce kroki:
 	\label{fig:time_measurement_after_receiving_packet}
 \end{figure}
 
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=457,natheight=177]{android_statistics.png}
+	\caption{Obliczanie statystyk aktualnego pomiaru}
+	\label{fig:calculating_statistics}
+\end{figure}
+
 \qquad Po kaødym poprawnym odbiorze pakietu wykonywana jest funkcja \textit{updateRequestStatistics} przedstawiona na rysunku \ref{fig:time_measurement_after_receiving_packet}. Odpowiada ona za:
 
 \begin{itemize}
@@ -593,11 +600,57 @@ NastÍpnie w pÍtli wykonywane sπ nastÍpujπce kroki:
 	\item Dodanie aktualnego czasu transmisji do tablicy zawierajπcej pozosta≥e czasy transmisji w trakcie aktualnego pomiaru
 	\item Dodanie aktualne zmierzonej mocy sygna≥u do tablicy zawierajπcej moce sygna≥u zmierzone w trakcie aktualnego pomiaru
 	\item Dodanie aktualnej pozycji terminala mobilnego do tablicy zawierajπcej informacje o pozycji terminala mobilnego w trakcie aktualnego pomiaru
-	\item Wyznaczenie statystyk aktualnego pomiaru: úredniej, mediany, odchylenia Êwiartkowego, maksymalnego i minimalnego czasu transmisji.
+	\item Wyznaczenie statystyk aktualnego pomiaru: úredniej, mediany, odchylenia Êwiartkowego, maksymalnego i minimalnego czasu transmisji (rysunek \ref{fig:calculating_statistics})
 	\item Dodanie poprzednio zebranych danych do pliku w pamiÍci urzπdzenia
 \end{itemize}
 
 \subsection{SposÛb pomiaru po≥oøenia terminala mobilnego}
+\qquad Aplikacja \textit{Android Ping} posiada funkcjonalnoúc pomiaru aktualnej pozycji terminala mobilnego, wyúwietlania jej na mapie, oraz zapisywania pozycji do pliku. W tym celu skorzystano z us≥ugi udostÍpnianej przez twÛrcÛw Androida jakπ jest Google Maps \cite{[15]}. 
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=552,natheight=32]{android_gps_manifest.png}
+	\caption{Ustawienia pliku AndroidManifest.xml pozwalajπce na pomiar pozycji terminala mobilnego}
+	\label{fig:gps_permission}
+\end{figure}
+
+\qquad Aby korzystaÊ z us≥ug lokalizacji konieczne jest ustawienie w pliku \textit{AndroidManifest.xml} uprawnieÒ aplikacji przedstawionych na rysunku \ref{fig:gps_permission}. Jest to wymagane, ze wzglÍdu na fakt, øe w trakcie instalacji aplikacji uøytkownik musi zgodziÊ siÍ na mierzenie pozycji terminala mobilnego.
+
+begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=499,natheight=60]{android_gps_api_key.png}
+	\caption{Wygenerowany klucz do us≥ugi nawigacji google umieszczony w pliku AndroidManifest.xml}
+	\label{fig:gps_api_key}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=406,natheight=124]{android_gps_connect_api.png}
+	\caption{SposÛb realizacji po≥πczenia aplikacji z us≥ugπ nawigacji Google}
+	\label{fig:gps_connect_api}
+\end{figure}
+
+\qquad W celu rozpoczÍcia pomiaru aktualnej pozycji uøytkownika niezbÍdne jest wygenerowanie klucza us≥ugi nawigacji Google \cite{[15]} (rysunek \ref{fig:gps_api_key}), dodanie go do pliku \textit{AndroidManifest.xml} oraz po≥πczenie siÍ z us≥ugπ nawigacji. Po≥πczenie te jest przedstawione na rysunku \ref{fig:gps_connect_api} i polega na stworzeniu nowego obiektu typu \textit{GoogleApiClient}, dodaniu funkcji, ktÛre bÍdπ wykonywane w przypadku zmiany pozycji, b≥Ídu transmisji itd.
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=607,natheight=325]{android_gps_listener.png}
+	\caption{SposÛb realizacji nas≥uchiwania na zmiany pozycji terminala mobilnego}
+	\label{fig:gps_listener}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+\includegraphics[scale=1,natwidth=592,natheight=244]{android_gps_update_camera.png}
+	\caption{SposÛb realizacji rejestracji aktualnej pozycji oraz aktualizacji mapy}
+	\label{fig:gps_update_camera}
+\end{figure}
+
+\qquad Po po≥πczeniu siÍ z us≥ugπ nawigacji naleøy zdefiniowaÊ funkcje przedstawione na rysunku \ref{fig:gps_listener}, ktÛre zostanπ wykonane w przypadku np. zmiany pozycji terminala mobilnego. Najbardziej istotnπ z nich jest \textit{onLocationChanged}, ktÛra wykonywana jest za kaødym razem, gdy us≥uga nawigacji Google odczyta nowπ pozycjÍ. 
+
+\qquad Po kaødej zmianie aktualnej pozycji wykonywana jest funkcja \textit{updateCamera} (rysunek \ref{fig:gps_update_camera}, ktÛra odpowiada za aktualizacjÍ danych o aktualnej pozycji, oraz wyúwietlenie pozycji na mapie widocznej w aplikacji.
+
+\subsection{SposÛb zapisywania wynikÛw pomiaru do pliku}
 
 \newpage
 \chapter{Przyk≥adowe wyniki pomiarÛw}
@@ -703,6 +756,8 @@ Poniøsze wyniki przedstawiajπ pomiary dokonane w úrodowisku miejskim, terminal m
 	\bibitem{[12]} èrÛd≥o internetowe: \textit{Smartphone OS market share} \\ http://www.idc.com/prodserv/smartphone-os-market-share.jsp
 	\bibitem{[13]} \textit{Python. Leksykon kieszonkowy} - Mark Lutz, Helion, Gliwice 2014
 	\bibitem{[14]} èrÛd≥o internetowe: \textit{Strona internetowa Python Software Foundation} \\ https://www.python.org/
+	\bibitem{[15]} èrÛd≥o internetowe: \textit{Dokumentacja us≥ugi Google Maps} \\ https://developers.google.com/maps/documentation/android-api/
+
 
 
 	
