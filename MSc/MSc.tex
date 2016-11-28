@@ -75,22 +75,22 @@
 
 \qquad GSM jest aktualnie najpowszechniej wykorzystywanym standardem telefonii komÛrkowej na úwiecie, jest on dostÍpny w 219 paÒstwach. Pierwotnie by≥ to standard pozwalajπcy jedynie na transmisje mowy, jednakøe po latach ewolucji pojawi≥y siÍ bazujπce na GSM technologie transmisji danych takie jak GPRS (ang. \textit{General Packet Radio Service}) czy jego nastÍpca, EDGE (ang. \textit{Enchanced Data Rules for GSM evolution}). W przypadku, gdy uøytkownik terminala mobilnego wybra≥ korzystanie np. z sieci LTE (ang. \textit{Long Term Evolution}) do transmisji danych i z jakiú powodÛw transmisja ta nie jest moøliwa (przyk≥adowo z powodu zbyt s≥abego zasiÍgu sieci LTE), transmisja moøe byÊ przeprowadzona za pomocπ technologii EDGE, ktÛra jest dostÍpna niemaløe wszÍdzie tam, gdzie dostÍpna jest sieÊ GSM.
 
-\begin{table}[h!]
-	\begin{center}
-		\begin{tabular}{ | l | p{4cm} | p{4cm} | p{3cm} | }
-		\hline
-		\textbf{Standard} & \textbf{CzÍstotliwoúci wykorzystywane w ≥πczu w gÛrÍ [MHz]} & \textbf{CzÍstotliwoúci wykorzystywane w ≥πczu w dÛ≥ [MHz]} & \textbf{Liczba dostÍpnych pasm czÍstotliwoúci} \\ \hline
-		GSM 400 & 450,4 - 457,6
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{ | l | p{4cm} | p{4cm} | p{3cm} | }
+        \hline
+        \textbf{Standard} & \textbf{CzÍstotliwoúci wykorzystywane w ≥πczu w gÛrÍ [MHz]} & \textbf{CzÍstotliwoúci wykorzystywane w ≥πczu w dÛ≥ [MHz]} & \textbf{Liczba dostÍpnych pasm czÍstotliwoúci} \\ \hline
+        GSM 400 & 450,4 - 457,6
 lub 478,8 - 486 & 460,4 - 467,6
 lub 488,8 - 496 & 35 \\ \hline
-		GSM 850 & 824 - 849 & 869 - 894 & 124 \\ \hline
-		GSM 900 & 880 - 915 & 925 - 960 & 174 \\ \hline
-		GSM 1800 & 1710 - 1785 & 1805 - 1880 & 374 \\ \hline
-		GSM 1900 & 1850 - 1910 & 1930 - 1990 & 299 \\ \hline
-		\end{tabular}
-		\caption{Tabela porÛwnujπca standardy sieci GSM}
-		\label{tab:GSM_standards}
-	\end{center}
+        GSM 850 & 824 - 849 & 869 - 894 & 124 \\ \hline
+        GSM 900 & 880 - 915 & 925 - 960 & 174 \\ \hline
+        GSM 1800 & 1710 - 1785 & 1805 - 1880 & 374 \\ \hline
+        GSM 1900 & 1850 - 1910 & 1930 - 1990 & 299 \\ \hline
+        \end{tabular}
+        \caption{Tabela porÛwnujπca standardy sieci GSM}
+        \label{tab:GSM_standards}
+    \end{center}
 \end{table}
 
 \qquad Istnieje piÍÊ g≥Ûwnych standardÛw sieci GSM, rÛøniπcych siÍ od siebie wykorzystywanym pasmem radiowym oraz liczbπ dostÍpnych pasm czÍstotliwoúci, co przedstawia tabela \ref{tab:GSM_standards}
@@ -110,24 +110,24 @@ lub 488,8 - 496 & 35 \\ \hline
 
 \qquad EDGE dla celÛw modulacji danych wykorzystuje modulacjÍ GMSK (podobnie jak GSM dla transmisji mowy), jednakøe moøliwe jest takøe wykorzystanie nowszego rozwiπzania, jakim jest modulacja 8-PSK (ang. \textit{8 Phase Shift Keying}), ktÛra oferuje wiÍkszπ przep≥ywnoúÊ, kosztem wraøliwoúci na warunki transmisji. EDGE zak≥ada 9 rÛønych schematÛw transmisji, z ktÛrych kaødy charakteryzuje siÍ innπ szybkoúciπ danych, co wynika z zastosowanej modulacji oraz iloúci zastosowanych nadmiarowych danych (tzw. \textit{code rate}). Tabela \ref{tab:EDGE_transmission_scheme} przedstawia moøliwe schematy transmisji. Schematy transmisji sπ podzielone na trzy rodziny A, B i C, ktÛrych zastosowanie sprowadza siÍ do tego, øe gdy warunki dla przeprowadzenia danej transmisji sπ nieodpowiednie, wybierany jest inny schemat transmisji pochodzπcy z danej rodziny.
 
-\begin{table}[h!]
-	\begin{center}
-		\begin{tabular}{ | l | l | l | l | l | }
-		\hline
-		\textbf{Schemat} & \textbf{Code rate} & \textbf{Modulacja} & \textbf{Transfer} & \textbf{Rodzina}\\ \hline
-		MCS-1 & 0,53 & GMSK & 8,8 kbit/s & C\\ \hline
-		MCS-2 & 0,66 & GMSK & 11,2 kbit/s & B\\ \hline
-		MCS-3 & 0,85 & GMSK & 14,8 kbit/s & A\\ \hline
-		MCS-4 & 1 & GMSK & 17,6 kbit/s & C\\ \hline
-		MCS-5 & 0,37 & 8-PSK & 22,4 kbit/s & B\\ \hline
-		MCS-6 & 0,49 & 8-PSK & 29,6 kbit/s & A\\ \hline
-		MCS-7 & 0,76 & 8-PSK & 47,8 kbit/s & B\\ \hline
-		MCS-8 & 0,92 & 8-PSK & 54,4 kbit/s & A\\ \hline
-		MCS-9 & 1 & 8-PSK & 59,2 kbit/s & A\\ \hline
-		\end{tabular}
-		\caption{Tabela przedstawiajπca schematy transmisji w sieci EDGE}
-		\label{tab:EDGE_transmission_scheme}
-	\end{center}
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{ | l | l | l | l | l | }
+        \hline
+        \textbf{Schemat} & \textbf{Code rate} & \textbf{Modulacja} & \textbf{Transfer} & \textbf{Rodzina}\\ \hline
+        MCS-1 & 0,53 & GMSK & 8,8 kbit/s & C\\ \hline
+        MCS-2 & 0,66 & GMSK & 11,2 kbit/s & B\\ \hline
+        MCS-3 & 0,85 & GMSK & 14,8 kbit/s & A\\ \hline
+        MCS-4 & 1 & GMSK & 17,6 kbit/s & C\\ \hline
+        MCS-5 & 0,37 & 8-PSK & 22,4 kbit/s & B\\ \hline
+        MCS-6 & 0,49 & 8-PSK & 29,6 kbit/s & A\\ \hline
+        MCS-7 & 0,76 & 8-PSK & 47,8 kbit/s & B\\ \hline
+        MCS-8 & 0,92 & 8-PSK & 54,4 kbit/s & A\\ \hline
+        MCS-9 & 1 & 8-PSK & 59,2 kbit/s & A\\ \hline
+        \end{tabular}
+        \caption{Tabela przedstawiajπca schematy transmisji w sieci EDGE}
+        \label{tab:EDGE_transmission_scheme}
+    \end{center}
 \end{table}
 
 
@@ -142,11 +142,11 @@ lub 488,8 - 496 & 35 \\ \hline
 
 \qquad W dzisiejszych czasach UMTS jest najpopularniejszπ sieciπ komÛrkowπ trzeciej generacji, a polscy operatorzy komÛrkowi objeli jej zasiÍgiem niemaløe ca≥y kraj. \cite{[4]}\cite{[5]}\cite{[6]}\cite{[7]}
 
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[scale=0.8,natwidth=701,natheight=600]{t_mobile_zasieg.jpg}
-	\caption{ZasiÍg sieci 3G operatora T-Mobile w wrzeúniu 2015 roku}
-	\label{fig:t_mobile_coverage}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8,natwidth=701,natheight=600]{t_mobile_zasieg.jpg}
+    \caption{ZasiÍg sieci 3G operatora T-Mobile w wrzeúniu 2015 roku}
+    \label{fig:t_mobile_coverage}
 \end{figure}
 
 \subsubsection{WCDMA}
@@ -166,23 +166,21 @@ lub 488,8 - 496 & 35 \\ \hline
 
 \qquad Pierwszπ implementacjÍ standardu opisuje dokument 3GPP LTE Release 8, opublikowany w grudniu 2008 roku. Opisano w nim nowo projektowany standard oraz przedstawiono jego specyfikacjÍ. Kolejny dokument (Release 9) zosta≥ wydany rok pÛüniej, a wydanie Release 10 zawierajπcego opis LTE-Advanced pozwoli≥o 3GPP na spe≥nienie wymagaÒ dotyczπcych sieci 4G. W Release 8 zosta≥y opisane podstawowe w≥aúciwoúci systemu LTE, ktÛre przedstawiono w tabeli \ref{LTE_requirements}
 
-\begin{table}[h!]
-	\begin{center}
-		\begin{tabular}{ | l | l |}
-		\hline
-		\textbf{Parametr} & \textbf{Standard LTE } \\ \hline
-		Max przep≥ywnoúÊ - ≥πcze w dÛ≥ & 300 Mb/s \\ \hline
-		Maksymalna przep≥ywnoúÊ - ≥πczÍ w gÛrÍ & 50Mb/s \\ \hline
-		Maksymalne opÛünienie pakietu & ok. 10ms  \\ \hline
-		Wykorzystana metoda wielodostÍpu - downlink & OFDMA \\ \hline
-		Wykorzystana metoda wielodostÍpu - uplink & SC-FDMA \\ \hline
-		\end{tabular}
-		\caption{Podstawowe w≥aúciwoúci systemu LTE}
-		\label{LTE_requirements}
-	\end{center}
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{ | l | l |}
+        \hline
+        \textbf{Parametr} & \textbf{Standard LTE } \\ \hline
+        Max przep≥ywnoúÊ - ≥πcze w dÛ≥ & 300 Mb/s \\ \hline
+        Maksymalna przep≥ywnoúÊ - ≥πczÍ w gÛrÍ & 50Mb/s \\ \hline
+        Maksymalne opÛünienie pakietu & ok. 10ms  \\ \hline
+        Wykorzystana metoda wielodostÍpu - downlink & OFDMA \\ \hline
+        Wykorzystana metoda wielodostÍpu - uplink & SC-FDMA \\ \hline
+        \end{tabular}
+        \caption{Podstawowe w≥aúciwoúci systemu LTE}
+        \label{LTE_requirements}
+    \end{center}
 \end{table}
-
-
 
 Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wykorzystano szereg technik: 
 
@@ -246,11 +244,11 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad ZarÛwno system operacyjny Android jak i úrodowisko Android Studio wymagajπ zainstalowanego úrodowiska do programowania w jÍzyku Java, ze wzglÍdu na to, øe jest to g≥Ûwny jÍzyk programowania wykorzystywany na tej platformie. Istniejπ rozwiπzania pozwalajπce kompilowaÊ i uruchamiaÊ kod napisany w innych jÍzykach (np. Objective-C lub JavaScript) na platformie Android, jednak zaleca siÍ tworzenie aplikacji w jÍzyku Java, ze wzglÍdu na najlepsze wsparcie ze strony firmy Google.
 
-\begin{figure}[!htbp]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=0.3,natwidth=1920,natheight=1040]{android_studio.png}
-	\caption{Tworzenie aplikacji na system operacyjny Android w úrodowisku Android Studio}
-	\label{fig:android_studio}
+    \caption{Tworzenie aplikacji na system operacyjny Android w úrodowisku Android Studio}
+    \label{fig:android_studio}
 \end{figure}
 
 \qquad Poza úrodowiskiem programistycznym, Android Studio zawiera takøe wizualny edytor s≥uøπcy do przygotowania wyglπdu aplikacji, a takøe wbudowany emulator, ktÛry pozwala na przetestowanie powstajπcej aplikacji na rÛønych typach urzπdzeÒ (np. tablety o rÛønych przekπtnych ekranu) bez koniecznoúci zakupu sprzÍtu. 
@@ -265,14 +263,14 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Interpreter jÍzyka Python jest dostÍpny do pobrania w Internecie na oficjalnej stronie tego jÍzyka \cite{[14]} w wersjach na komputery z systemem Windows, Linux, MacOS, a takøe z zdecydowanie rzadziej wykorzystywanymi obecnie systemami takimi jak MS-DOS, Solaris czy BeOS.
 
-\qquad Python jest jÍzykiem interpretowanym, co pozwala na pisanie programÛw w tym jÍzyku nawet na stronie python.org, gdzie dostÍpny jest Python Interpreter Online. Pozwala on na naukÍ jÍzyka, a takøe na pisanie w≥asnych prostych programÛw bez pobierania jakiegokolwiek dodatkowego oprogramowania (rysunek \ref{fig:python_interpreter}). W celu pisania bardziej skompilkowanych programÛw zalecane jest pobranie interpretera oraz edytora tekstu takiego jak PyCharm czy SublimeText.
-
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=641,natheight=103]{python_interpreter.png}
-	\caption{Interpreter jÍzyka Python}
-	\label{fig:python_interpreter}
+    \caption{Interpreter jÍzyka Python}
+    \label{fig:python_interpreter}
 \end{figure}
+
+\qquad Python jest jÍzykiem interpretowanym, co pozwala na pisanie programÛw w tym jÍzyku nawet na stronie python.org, gdzie dostÍpny jest Python Interpreter Online. Pozwala on na naukÍ jÍzyka, a takøe na pisanie w≥asnych prostych programÛw bez pobierania jakiegokolwiek dodatkowego oprogramowania (rysunek \ref{fig:python_interpreter}). W celu pisania bardziej skompilkowanych programÛw zalecane jest pobranie interpretera oraz edytora tekstu takiego jak PyCharm czy SublimeText.
 
 \section{Aktualnie dostÍpne narzÍdzia do pomiarÛw parametrÛw transmisji dla urzπdzeÒ z systemem Android}
 
@@ -330,11 +328,11 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \section{Opis aplikacji pe≥niπcej funkcjÍ serwera na komputer PC}
 \subsection{ProtokÛ≥ HTTP}
-\begin{figure}[!htbp]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=549,natheight=332]{server_source_code.png}
-	\caption{Kod ürÛd≥owy serwera odbierajπcego i nadajπcego przy pomocy zapytaÒ HTTP}
-	\label{fig:server_source_code}
+    \caption{Kod ürÛd≥owy serwera odbierajπcego i nadajπcego przy pomocy zapytaÒ HTTP}
+    \label{fig:server_source_code}
 \end{figure}
 
 \qquad Rysunek \ref{fig:server_source_code} przedstawia kod ürÛd≥owy jednego z programÛw, ktÛre powsta≥y w celu odbierania pakietÛw od terminala mobilnego, a nastÍpnie odsy≥ania ich z powrotem. Zosta≥ on napisany w jÍzyku programowania Python, ktÛry jest jÍzykiem skryptowym znajdujπcym szerokie zastosowania w serwerach, przetwarzaniu danych, a nawet sztucznej inteligencji. 
@@ -343,14 +341,15 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Zasada dzia≥ania tego programu pe≥niπcego funkcjÍ serwera HTTP jest nastÍpujπca: jeøeli do serwera dotrze zapytanie typu POST, odeúlij przes≥ane dane do nadawcy w niezmienionej postaci. W przeciwnym przypadku odeúlij tekst 'Hello World!' (ang. \textit{Witaj åwiecie!}), co pozwala w prosty sposÛb przetestowaÊ czy serwer dzia≥a poprawnie, oraz czy dany komputer bπdü terminal mobilny moøe siÍ z nim po≥πczyÊ.
 
-\begin{figure}[!htbp]
-	\centering
+\subsection{ProtokÛ≥ TCP}
+
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=0.8,natwidth=634,natheight=778]{server_socket_source_code.png}
-	\caption{Kod ürÛd≥owy serwera odbierajπcego i nadajπcego pakiety protoko≥u TCP}
-	\label{fig:server_socket_source_code}
+    \caption{Kod ürÛd≥owy serwera odbierajπcego i nadajπcego pakiety protoko≥u TCP}
+    \label{fig:server_socket_source_code}
 \end{figure}
 
-\subsection{ProtokÛ≥ TCP}
 \qquad Rysunek \ref{fig:server_socket_source_code} przedstawia kod ürÛd≥owy programu pe≥niπcego funkcjÍ serwera wysy≥ajπcego i odbierajπcego pakiety TCP. Podobnie jak poprzedni program-serwer, zosta≥ on napisany w jÍzyku programowania Python, ze wzglÍdu na prostotÍ implementacji i szerokπ gamÍ gotowych do uøycia bibliotek. 
 
 \qquad Poprzednio wspomniania biblioteka do obs≥ugi zapytaÒ HTTP jakπ jest Flask nie posiada moøliwoúci obs≥ugi transmisji pakietÛw TCP. Ze wzglÍdu na to, zdecydowano siÍ na zastosowanie biblioteki o nazwie socket (ang. \textit{gniazdo}). Pozwala ona na utworzenie tzw. gniazda po stronie serwera, do ktÛrego terminal mobilny moøe wysy≥aÊ pakiety protoko≥u TCP. 
@@ -361,21 +360,32 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \subsection{ProtokÛ≥ UDP}
 
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=1,natwidth=545,natheight=439]{server_tcp_source.png}
+    \caption{Kod ürÛd≥owy serwera odbierajπcego i nadajπcego datagramy UDP}
+    \label{fig:server_udp_source_code}
+\end{figure}
+
+\qquad Rysunek \ref{fig:server_udp_source_code} przedstawia kod ürÛd≥owy aplikacji \textit{server\_tcp.py} bÍdπcej serwerem zaimplementowanym w jÍzyku Python pozwalajπcym na odbiÛr i retransmisjÍ datagramÛw protoko≥u UDP. Podobnie jak w przypadku poprzednio opisane serwera obs≥ugujπcego pakiety TCP zdecydowano siÍ na skorzystanie z dostÍpnej w jÍzyku Python biblioteki \textit{socket} do przeprowadzenia transmisji.
+
+\qquad Uøytkownik uruchamiajπc serwer ma moøliwoúÊ zdefiniowania pod jakim portem zostanie on uruchomiony, w przypadku braku zdefiniowania portu domyúlnym portem jest port 8000. NastÍpnie tworzona jest nieskoÒczona pÍtla, ktÛra oczekuje na wiadomoúci przesy≥ane przez aplikacjÍ mobilnπ a nastÍpnie retransmituje je uøywajπc tego gniazda z ktÛrego nadano pierwotne dane. Serwer umoøliwia odebranie w jednym datagramie UDP 65565 bajtÛw danych, poniewaø taki jest maksymalny rozmiar datagramu protoko≥u UDP. 
+
 \section{Opis aplikacji na smartfon z systemem Android}
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=0.35,natwidth=540,natheight=960]{main_screen.jpg}
-	\caption{G≥Ûwny ekran aplikacji}
-	\label{fig:main_screen_android}
+    \caption{G≥Ûwny ekran aplikacji}
+    \label{fig:main_screen_android}
 \end{figure}
 
 \qquad Aplikacja na smartfon z systemem Android zosta≥a przygotowana w úrodowisku Android Studio w wersji 1.3.1 i zaimplementowana w jÍzyku programowania Java. Aplikacja zosta≥a napisana wspierajπc wersjÍ systemu operacyjnego Android poczπwszy od 4.0.0, co w praktyce oznacza, øe ponad 94\% telefonÛw z systemem Android jest w stanie jπ poprawnie uruchomiÊ. Dane te potwierdza rysunek \ref{fig:android_device_support}.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=563,natheight=93]{android_device_support.png}
-	\caption{Wsparcie sprzÍtowe aplikacji na system Android}
-	\label{fig:android_device_support}
+    \caption{Wsparcie sprzÍtowe aplikacji na system Android}
+    \label{fig:android_device_support}
 \end{figure}
 
 \qquad Rysunek \ref{fig:main_screen_android} przedstawia g≥Ûwny ekran aplikacji napisanej na system Android. Aplikacja ta zosta≥a nazwana \textit{Android Ping!}, co podkreúla fakt, øe jej dzia≥anie zbliøone jest do programu \textit{ping} z systemÛw Unixowych. Przed rozpoczÍciem pomiaru, aplikacja prosi uøytkownika o podanie nastÍpujπcych danych:
@@ -407,22 +417,22 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
   \item Tylko GSM
 \end{itemize}
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=0.35,natwidth=540,natheight=960]{network_settings.jpg}
-	\caption{Ustawienia sieci komÛrkowej w systemie Android}
-	\label{fig:network_settings_android}
+    \caption{Ustawienia sieci komÛrkowej w systemie Android}
+    \label{fig:network_settings_android}
 \end{figure}
 
 \qquad Po ustawieniu parametrÛw pomiaru i wciúniÍciu przycisku \textit{START MEASURING} (ang. \textit{rozpocznij pomiar}) aplikacja przechodzi do ekranu pomiaru (rysunek \ref{fig:measurement_screen_android}). W jego centralnym punkcie (zak≥adajac, øe uøytkownik ma w≥πczonπ us≥ugÍ nawigacji w telefonie) znajduje siÍ mapa pochodzπca od us≥ugi Google Maps przedstawiajπca aktualne po≥oøenie terminala mobilnego.
 
 \qquad W trakcie trwania pomiaru terminal mobilny moøe zmieniÊ swojπ pozycjÍ - jest ona oznaczana w trakcie kolejno dodawanych do mapy punktÛw. Kaødy punkt oznacza pomiar dokonany w danym miejscu, a jego kolor oznacza czas transmisji danego pakietu - barwa jaúniejsza oznacza krÛtszy czas transmisji, barwa ciemniejsza - d≥uøszy. DziÍki temu rozwiπzaniu, w trakcie trwania pomiaru istnieje moøliwoúc úledzenia pozycji terminala mobilnego i wykonywania pomiarÛw w trakcie np. podrÛøy samochodem lub pociπgiem. 
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=0.35,natwidth=540,natheight=960]{measurement_screen.jpg}
-	\caption{Ekran pomiaru}
-	\label{fig:measurement_screen_android}
+    \caption{Ekran pomiaru}
+    \label{fig:measurement_screen_android}
 \end{figure}
 
 \qquad Pod mapπ znajdujπ siÍ informacje na temat biÍøπcego pomiaru takie jak:
@@ -435,49 +445,49 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Po zakoÒczeniu pomiaru uøytkownik moøe zobaczyÊ úredni czas transferu pakietu dla uprzednio ustalonych parametrÛw, a takøe uøyÊ przycisku \textit{RESULTS} (ang. \textit{wyniki}), aby zobaczyÊ wykres obrazujπcy w jaki sposÛb zmienia≥y siÍ czasy przesy≥u poszczegÛlnych pakietÛw. Przyk≥ad takiego wykresu obrazuje rysunek \ref{fig:results_android}. Dodatkowo aplikacja posiada moøliwoúÊ zapisu wynikÛw pomiaru do pliku z rozszerzeniem csv (ang. \textit{Comma Separated Values} - wartoúci oddzielone úrednikiem). Plik tego typu moøe byÊ pÛüniej odczytany w programach do analizy danych takich jak Microsoft Office Excel czy Matlab. Pozwala to na dowolnπ analizÍ wynikÛw pomiaru juø po ich wykonaniu i np. zamkniÍciu aplikacji.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=0.35,natwidth=540,natheight=960]{results.jpg}
-	\caption{Ekran pomiaru}
-	\label{fig:results_android}
+    \caption{Ekran pomiaru}
+    \label{fig:results_android}
 \end{figure}
 
 \subsection{Opis realizacji programowej transmisji z wykorzystaniem zapytaÒ HTTP}
 
 \qquad Rysunek \ref{fig:http_requests_android} przedstawia sposÛb realizacji programowej transmisji z wykorzystaniem zapytaÒ HTTP. Pokazuje on funkcjÍ \textit{performHttpRequests()} (ang. \textit{wykonajZapytaniaHttp()}), ktÛra odpowiada za realizacje transmisji za pomocπ protoko≥u HTTP.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=649,natheight=107]{http_requests_source.png}
-	\caption{Realizacja programowa transmisji z wykorzystaniem zapytaÒ HTTP}
-	\label{fig:http_requests_android}
+    \caption{Realizacja programowa transmisji z wykorzystaniem zapytaÒ HTTP}
+    \label{fig:http_requests_android}
 \end{figure}
 
 \qquad Wewnπtrz definicji funkcji \textit{performHttpRequests()} powstaje obiekt zaimplementowanej na potrzeby aplikacji klasy \textit{HttpRequestTask}. Jest to klasa, ktÛra dziedziczy po wbudowanej w system Android klasie \textit{AsyncTask}. Klasa \textit{AsyncTask} pozwala programistom aplikacji na system Android na tworzenie kodu, ktÛry wykonywany jest asynchronicznie, bez blokowania g≥Ûwnego wπtku aplikacji. DziÍki temu, pÍtla, ktÛra wysy≥a zapytania HTTP co okreúlony interwa≥ nie blokuje innych funkcji aplikacji (np. úledzenia pozycji terminalu mobilnego).
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=534,natheight=244]{http_request_task_handlers.png}
-	\caption{Funkcje pomocnicze odpowiadajπce za obs≥ugÍ poprawnej lub b≥Ídnej transmisji HTTP}
-	\label{fig:http_requests_handlers_android}
+    \caption{Funkcje pomocnicze odpowiadajπce za obs≥ugÍ poprawnej lub b≥Ídnej transmisji HTTP}
+    \label{fig:http_requests_handlers_android}
 \end{figure}
 
 \qquad Wewnπtrz definicji klasy \textit{HttpRequestTask} tworzone sπ m.in. funkcje pomocnicze przedstawione na rysunku \ref{fig:http_requests_handlers_android} , ktÛre sπ wykonywane w przypadku poprawnego przesy≥u pakietu lub b≥Ídu (odpowiednio: \textit{successHandler} oraz \textit{errorHandler}). W przypadku b≥Ídu wyúwietlany jest odpowiedni komunikat, w przypadku poprawnej transmisji wykonywane sπ funkcje odpowiedzialne za aktualizacje wynikÛw i wyúwietlenia aktualnego úredniego czasu transmisji na ekranie.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=521,natheight=263]{http_request_task_string_request.png}
-	\caption{Definicja funkcji \textit{getStringRequest}}
-	\label{fig:http_request_task_string_request}
+    \caption{Definicja funkcji \textit{getStringRequest}}
+    \label{fig:http_request_task_string_request}
 \end{figure}
 
 \qquad Sama transmisja odbywa siÍ za pomocπ obiektu \textit{stringRequest}, ktÛry jest tworzony za pomocπ funkcji \textit{getStringRequest} (rysunek \ref{fig:http_request_task_string_request}). Obiekt ten odpowiada za wysy≥anie zapytaÒ POST protoko≥u HTTP, do≥πczajπc do parametrÛw tego zapytania zarÛwno unikalny identyfikator czasowy jak i losowo wygenerowane dane o zadanym przez uøytkownika rozmiarze. Kaøde takie zapytanie otrzymuje najwyøszy moøliwy priorytet (\textit{Priority.IMMEDIATE} - ang. \textit{natychmiast}), co gwarantuje najszybszy moøliwy czas startu transmisji danego pakietu.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=503,natheight=295]{http_request_task_background.png}
-	\caption{PÍtla wysy≥ajπca zapytania HTTP do serwera}
-	\label{fig:http_request_task_background}
+    \caption{PÍtla wysy≥ajπca zapytania HTTP do serwera}
+    \label{fig:http_request_task_background}
 \end{figure}
 
 
@@ -486,11 +496,11 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \subsection{Opis realizacji programowej transmisji pakietÛw poprzez protokÛ≥ TCP}
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=0.8,natwidth=552,natheight=523]{tcp_requests_source.png}
-	\caption{Realizacja programowa transmisji poprzez protokÛ≥ TCP}
-	\label{fig:tcp_requests_android}
+    \caption{Realizacja programowa transmisji poprzez protokÛ≥ TCP}
+    \label{fig:tcp_requests_android}
 \end{figure}
 
 \qquad Rysunek \ref{fig:tcp_requests_android} przedstawia definicjÍ klasy \textit{TcpSocketRequestTask}, ktÛra jest sercem realizacji programowej transmisji pakietÛw poprzez protokÛ≥ TCP. Klasa ta (podobnie jak \textit{HttpRequestTask}) dziedziczy po wbudowanej w system operacyjny Android klasie \textit{AsyncTask}. Klasa \textit{AsyncTask} pozwala na realizacje asynchronicznych zadaÒ wykonujπcych siÍ w tle bez blokowania g≥Ûwnego wπtku aplikacji. DziÍki czemu istnieje moøliwoúc wysy≥ania i odbierania pakietÛw TCP bez przerywania pracy g≥Ûwnego wπtku interfejsu uøytkownika.
@@ -506,22 +516,22 @@ NastÍpnie w pÍtli wykonywane sπ nastÍpujπce kroki:
 \item Zamknij gniazdo po stronie klienta (jeøeli jest to konieczne)
 \end{enumerate}
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=0.8,natwidth=507,natheight=281]{tcp_requests_send.png}
-	\caption{Wysy≥anie pakietÛw TCP po stronie klienta}
-	\label{fig:tcp_requests_android_send}
+    \caption{Wysy≥anie pakietÛw TCP po stronie klienta}
+    \label{fig:tcp_requests_android_send}
 \end{figure}
 
 \qquad Rysunek \ref{fig:tcp_requests_android_send} przedstawia sposÛb realizacji wysy≥ania pakietÛw TCP w aplikacji. Jak wspomniano w rozdziale poúwiÍconym aplikacji pe≥niπcej funkcjÍ serwera odbierajπcego i wysy≥ajπcego pakiety TCP na komputer PC, pierwsze dane jakich spodziewa siÍ serwer zawierajπ ciπg znakÛw \textit{PACKET\_SIZE:N} (ang. \textit{ROZMIAR\_PAKIETU:N}), gdzie N okreúla liczbÍ przesy≥anych bajtÛw danych (okreúlonπ przez uøytkownika w trakcie ustalania parametrÛw danego pomiaru).
 
 \qquad Dane te sπ wysy≥ane asynchronicznie, a wiÍc wpisanie do strumienia danych \textit{PrintWriter} ciπgu okreúlajπcego rozmiar wysy≥anych pakietÛw powoduje przes≥anie tych danych natychmiast na serwer. Po ustaleniu rozmiaru wysy≥anych pakietÛw, program zapisuje w pamiÍci aktualny czas, co pozwala zmierzyÊ i wyúwietliÊ czas nadania i odbioru danego pakietu w sieci w g≥Ûwnym wπtku programu. 
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=0.8,natwidth=624,natheight=327]{tcp_requests_receive.png}
-	\caption{Odbieranie pakietÛw TCP po stronie klienta}
-	\label{fig:tcp_requests_android_receive}
+    \caption{Odbieranie pakietÛw TCP po stronie klienta}
+    \label{fig:tcp_requests_android_receive}
 \end{figure}
 
 \qquad Po wys≥aniu danych tworzony jest bufor odbiorczy klasy \textit{InputStream} (ang. \textit{StrumieÒWejúciowy}), ktÛry odbiera od serwera dok≥adnie ten sam ciπg danych, ktÛry zosta≥ wys≥any poprzednio (rysunek \ref{fig:tcp_requests_android_receive}). W programie zosta≥a zaimplementowana takøe obs≥uga b≥ÍdÛw transmisji - w przypadku wystπpienia takiego b≥Ídu, uøytkownik zostanie o nim poinformowany stosownym komunikatem.
@@ -530,11 +540,11 @@ NastÍpnie w pÍtli wykonywane sπ nastÍpujπce kroki:
 
 \qquad Realizacja programowa transmisji pakietÛw poprzez protokÛ≥ UDP jest zbliøona do TCP. Odpowiada za niπ klasa \textit{UdpSocketRequestTask}, ktÛra podobnie jak opisane poprzednio \textit{HttpSocketRequestTask} oraz \textit{TcpSocketRequestTask} dziedziczy po klasie \textit{AsyncTask}, co pozwala na asynchroniczne przesy≥anie danych do serwera oraz ich odbiÛr.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=482,natheight=403]{udp_requests_transmission.png}
-	\caption{Realizacja programowa transmisji poprzez protokÛ≥ UDP}
-	\label{fig:udp_requests_android}
+    \caption{Realizacja programowa transmisji poprzez protokÛ≥ UDP}
+    \label{fig:udp_requests_android}
 \end{figure}
 
 \qquad Zaimplementowana w aplikacji transmisja danych (rysunek \ref{fig:udp_requests_android}) za pomocπ protoko≥u UDP nie wymaga otwierania bπdü zamykania gniazda po stronie serwera i sk≥ada siÍ z nastÍpujπcych krokÛw:
@@ -546,22 +556,22 @@ NastÍpnie w pÍtli wykonywane sπ nastÍpujπce kroki:
 \item Po zakoÒczonej transmisji zamknij gniazdo
 \end{enumerate}
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=515,natheight=213]{udp_requests_send.png}
-	\caption{Wysy≥anie pakietu UDP po stronie klienta}
-	\label{fig:udp_requests_android_send}
+    \caption{Wysy≥anie pakietu UDP po stronie klienta}
+    \label{fig:udp_requests_android_send}
 \end{figure}
 
 \qquad Na rysunku \ref{fig:udp_requests_android_send} zosta≥ przedstawiony sposÛb realizacji wysy≥ania danych za pomocπ protoko≥u UDP w aplikacji. Na poczπtku tworzony jest ciπg losowych danych o d≥ugoúci zadanej przez uøytkownika (\textit{packetSize}). NastÍpnie tworzony jest obiekt typu \textit{DatagramPacket}. 
 
 \qquad \textit{DatagramPacket} jest to klasa bÍdπca czÍúciπ systemu Android, ktÛra pozwala programiúcie na realizacji transmisji poprzez protokÛ≥ UDP w aplikacji. Aby utworzyÊ obiekt tej klasy naleøy przekazaÊ do konstruktora tej klasy: bajty przesy≥anych danych, d≥ugoúÊ przesy≥anych danych, adres oraz port na ktÛry dane majπ byÊ przes≥ane. NastÍpnie odczytywany jest czas w celu pÛüniejszego zmierzenia czasu transmisji i wys≥anie pakietu do serwera.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=555,natheight=127]{udp_requests_receive.png}
-	\caption{Odbieranie pakietu UDP po stronie klienta}
-	\label{fig:udp_requests_android_receive}
+    \caption{Odbieranie pakietu UDP po stronie klienta}
+    \label{fig:udp_requests_android_receive}
 \end{figure}
 
 \qquad Rysunek \ref{fig:udp_requests_android_receive} pokazuje sposÛb odbioru uprzednio przes≥anego datagramu UDP po jego retransmisji przez serwer. Polega on na utworzeniu bufora danych o d≥ugoúci takiej samej jak wys≥any pakiet, a nastÍpnie stworzenie obiektu \textit{DatagramPacket}, ktÛrego zadaniem jest odebranie przesy≥anego przez serwer datagramu. Po jego odebraniu odbywa siÍ aktualizacja aktualnych wynikÛw pomiaru. 
@@ -572,78 +582,78 @@ NastÍpnie w pÍtli wykonywane sπ nastÍpujπce kroki:
 
 \qquad Rysunki \ref{fig:time_measurement_timestamp} oraz \ref{fig:time_measurement_after_receiving_packet} przedstawiajπ metodÍ pomiaru czasu przesy≥u pakietu przez sieÊ komÛrkowπ. Przed kaødym takim zapytaniem (za poúrednictwem dowolnego z dostÍpnych w aplikacji protoko≥Ûw) pobierany jest aktualny czas (rysunek \ref{fig:time_measurement_timestamp}) systemowy i zapisywany do zmiennej \textit{timeBeforeRequest} (ang. \textit{czasPrzedZapytaniem}). Pozwala to na pÛüniejsze porÛwnanie czasu aktualnego (jest to zmienna zawierajπca liczbÍ sekund, ktÛre up≥ynÍ≥y od 1 stycznia 1970 roku) z czasem zmierzonym jako czas bezpoúrednio przed wys≥aniem pakietu.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=478,natheight=58]{android_time_measurement_create_timestamp.png}
-	\caption{Pobieranie aktualnego czasu przed wys≥aniem pakietu}
-	\label{fig:time_measurement_timestamp}
+    \caption{Pobieranie aktualnego czasu przed wys≥aniem pakietu}
+    \label{fig:time_measurement_timestamp}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=517,natheight=193]{android_time_measurement.png}
-	\caption{Pomiar czasu transmisji pakietu oraz pobieranie statystyk pomiaru}
-	\label{fig:time_measurement_after_receiving_packet}
+    \caption{Pomiar czasu transmisji pakietu oraz pobieranie statystyk pomiaru}
+    \label{fig:time_measurement_after_receiving_packet}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=457,natheight=177]{android_statistics.png}
-	\caption{Obliczanie statystyk aktualnego pomiaru}
-	\label{fig:calculating_statistics}
+    \caption{Obliczanie statystyk aktualnego pomiaru}
+    \label{fig:calculating_statistics}
 \end{figure}
 
 \qquad Po kaødym poprawnym odbiorze pakietu wykonywana jest funkcja \textit{updateRequestStatistics} przedstawiona na rysunku \ref{fig:time_measurement_after_receiving_packet}. Odpowiada ona za:
 
 \begin{itemize}
-	\item Wyznaczenie aktualnego czasu transmisji
-	\item Dodanie aktualnego czasu transmisji do tablicy zawierajπcej pozosta≥e czasy transmisji w trakcie aktualnego pomiaru
-	\item Dodanie aktualne zmierzonej mocy sygna≥u do tablicy zawierajπcej moce sygna≥u zmierzone w trakcie aktualnego pomiaru
-	\item Dodanie aktualnej pozycji terminala mobilnego do tablicy zawierajπcej informacje o pozycji terminala mobilnego w trakcie aktualnego pomiaru
-	\item Wyznaczenie statystyk aktualnego pomiaru: úredniej, mediany, odchylenia Êwiartkowego, maksymalnego i minimalnego czasu transmisji (rysunek \ref{fig:calculating_statistics})
-	\item Dodanie poprzednio zebranych danych do pliku w pamiÍci urzπdzenia
+    \item Wyznaczenie aktualnego czasu transmisji
+    \item Dodanie aktualnego czasu transmisji do tablicy zawierajπcej pozosta≥e czasy transmisji w trakcie aktualnego pomiaru
+    \item Dodanie aktualne zmierzonej mocy sygna≥u do tablicy zawierajπcej moce sygna≥u zmierzone w trakcie aktualnego pomiaru
+    \item Dodanie aktualnej pozycji terminala mobilnego do tablicy zawierajπcej informacje o pozycji terminala mobilnego w trakcie aktualnego pomiaru
+    \item Wyznaczenie statystyk aktualnego pomiaru: úredniej, mediany, odchylenia Êwiartkowego, maksymalnego i minimalnego czasu transmisji (rysunek \ref{fig:calculating_statistics})
+    \item Dodanie poprzednio zebranych danych do pliku w pamiÍci urzπdzenia
 \end{itemize}
 
 \subsection{SposÛb pomiaru po≥oøenia terminala mobilnego}
 \qquad Aplikacja \textit{Android Ping} posiada funkcjonalnoúc pomiaru aktualnej pozycji terminala mobilnego, wyúwietlania jej na mapie, oraz zapisywania pozycji do pliku. W tym celu skorzystano z us≥ugi udostÍpnianej przez twÛrcÛw Androida jakπ jest Google Maps \cite{[15]}. 
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=552,natheight=32]{android_gps_manifest.png}
-	\caption{Ustawienia pliku AndroidManifest.xml pozwalajπce na pomiar pozycji terminala mobilnego}
-	\label{fig:gps_permission}
+    \caption{Ustawienia pliku AndroidManifest.xml pozwalajπce na pomiar pozycji terminala mobilnego}
+    \label{fig:gps_permission}
 \end{figure}
 
 \qquad Aby korzystaÊ z us≥ug lokalizacji konieczne jest ustawienie w pliku \textit{AndroidManifest.xml} uprawnieÒ aplikacji przedstawionych na rysunku \ref{fig:gps_permission}. Jest to wymagane, ze wzglÍdu na fakt, øe w trakcie instalacji aplikacji uøytkownik musi zgodziÊ siÍ na mierzenie pozycji terminala mobilnego.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=499,natheight=60]{android_gps_api_key.png}
-	\caption{Wygenerowany klucz do us≥ugi nawigacji Google umieszczony w pliku AndroidManifest.xml}
-	\label{fig:gps_api_key}
+    \caption{Wygenerowany klucz do us≥ugi nawigacji Google umieszczony w pliku AndroidManifest.xml}
+    \label{fig:gps_api_key}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=406,natheight=124]{android_gps_connect_api.png}
-	\caption{SposÛb realizacji po≥πczenia aplikacji z us≥ugπ nawigacji Google}
-	\label{fig:gps_connect_api}
+    \caption{SposÛb realizacji po≥πczenia aplikacji z us≥ugπ nawigacji Google}
+    \label{fig:gps_connect_api}
 \end{figure}
 
 \qquad W celu rozpoczÍcia pomiaru aktualnej pozycji uøytkownika niezbÍdne jest wygenerowanie klucza us≥ugi nawigacji Google \cite{[15]} (rysunek \ref{fig:gps_api_key}), dodanie go do pliku \textit{AndroidManifest.xml} oraz po≥πczenie siÍ z us≥ugπ nawigacji. Po≥πczenie te jest przedstawione na rysunku \ref{fig:gps_connect_api} i polega na stworzeniu nowego obiektu typu \textit{GoogleApiClient}, dodaniu funkcji, ktÛre bÍdπ wykonywane w przypadku zmiany pozycji, b≥Ídu transmisji itd.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=607,natheight=325]{android_gps_listener.png}
-	\caption{SposÛb realizacji nas≥uchiwania na zmiany pozycji terminala mobilnego}
-	\label{fig:gps_listener}
+    \caption{SposÛb realizacji nas≥uchiwania na zmiany pozycji terminala mobilnego}
+    \label{fig:gps_listener}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=592,natheight=244]{android_gps_update_camera.png}
-	\caption{SposÛb realizacji rejestracji aktualnej pozycji oraz aktualizacji mapy}
-	\label{fig:gps_update_camera}
+    \caption{SposÛb realizacji rejestracji aktualnej pozycji oraz aktualizacji mapy}
+    \label{fig:gps_update_camera}
 \end{figure}
 
 \qquad Po po≥πczeniu siÍ z us≥ugπ nawigacji naleøy zdefiniowaÊ funkcje przedstawione na rysunku \ref{fig:gps_listener}, ktÛre zostanπ wykonane w przypadku np. zmiany pozycji terminala mobilnego. Najbardziej istotnπ z nich jest \textit{onLocationChanged}, ktÛra wykonywana jest za kaødym razem, gdy us≥uga nawigacji Google odczyta nowπ pozycjÍ. 
@@ -656,63 +666,63 @@ NastÍpnie w pÍtli wykonywane sπ nastÍpujπce kroki:
 
 \qquad Do zapisywania wynikÛw pomiaru s≥uøy zaimplementowana na potrzeby aplikacji klasa \textit{ResultsSaver}, ktÛra odpowiedzialna jest za utworzenie pliku, przygotowanie danych do zapisania oraz wykonanie zapisu pliku do pamiÍci urzπdzenia.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=592,natheight=379]{android_create_file.png}
-	\caption{Tworzenie pliku z rozszerzeniem .csv w pamiÍci urzπdzenia}
-	\label{fig:create_file}
+    \caption{Tworzenie pliku z rozszerzeniem .csv w pamiÍci urzπdzenia}
+    \label{fig:create_file}
 \end{figure}
 
 \qquad Rysunek \ref{fig:create_file} przedstawia sposÛb tworzenia pliku .csv w systemie Android. Zaimplementowano dwie funkcje \textit{createFilePath} oraz \textit{createFile}. Pierwsza z nich tworzy úcieøkÍ do pliku pobierajπc úcieøkÍ do g≥Ûwnego katalogu pamiÍci urzπdzenia i dodajπc do niej nazwÍ pliku o formacie:
 
-\qquad \textit{AndroidPingData[AKTUALNY_CZAS].csv}
+\qquad \textit{AndroidPingData\[AKTUALNY_CZAS\].csv}
 
 \qquad Funkcja \textit{createFile} tworzy pusty plik w pamiÍci urzπdzenia. W przypadku b≥Ídu w trakcie tworzenia pliku (np. brak wolnej pamiÍci wewnπtrz urzπdzenia), dalszy zapis danych nie bÍdzie kontynuowany.
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=428,natheight=210]{android_write_file.png}
-	\caption{SposÛb realizacji zapisu danych do pliku .csv}
-	\label{fig:write_file}
+    \caption{SposÛb realizacji zapisu danych do pliku .csv}
+    \label{fig:write_file}
 \end{figure}
 
 \qquad Za zapis danych odpowiada funkcja \textit{writeDataToFile} przedstawiona na rysunku \ref{fig:write_file}. Funkcja ta jest wykonywana za kaødym razem, gdy przes≥any przez serwer pakiet zostanie poprawnie odebrany przez aplikacjÍ. W pierwszej kolejnoúci pobierane sπ z pamiÍci aplikacji aktualne wartoúci pomiaru. NastÍpnie tworzony jest pierwszy wiersz pliku, ktÛry zawiera informacje o aktualnie dokonywanym pomiarze:
 
 \begin{itemize}
-	\item ProtokÛ≥ transmisji
-	\item Aktualna sieÊ (EDGE/WCDMA/LTE)
-	\item Rozmiar pakietu
-	\item Liczba nadawanych pakietÛw
-	\item OdstÍp czasu pomiÍdzy pakietami
-	\item åredni czas transferu pakietu
-	\item Mediana czasu transferu pakietu
-	\item Minimalny czas transferu pakietu
-	\item Maksymalny czas transferu pakietu
-	\item Odchylenie Êwiartkowe czasu transmisji pakietu
+    \item ProtokÛ≥ transmisji
+    \item Aktualna sieÊ (EDGE/WCDMA/LTE)
+    \item Rozmiar pakietu
+    \item Liczba nadawanych pakietÛw
+    \item OdstÍp czasu pomiÍdzy pakietami
+    \item åredni czas transferu pakietu
+    \item Mediana czasu transferu pakietu
+    \item Minimalny czas transferu pakietu
+    \item Maksymalny czas transferu pakietu
+    \item Odchylenie Êwiartkowe czasu transmisji pakietu
 \end{itemize}
 
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=442,natheight=365]{android_add_results_file.png}
-	\caption{Realizacja dodania wynikÛw pomiaru do pliku}
-	\label{fig:add_data_to_file}
+    \caption{Realizacja dodania wynikÛw pomiaru do pliku}
+    \label{fig:add_data_to_file}
 \end{figure}
 
 \qquad Kolejno do pliku dodawana jest tabela wynikÛw pomiaru, ktÛrej sposÛb tworzenia zaprezentowano na rysunku \ref{fig:add_data_to_file}. Sk≥ada siÍ ona z nastÍpujπcych kolumn:
 
 \begin{itemize}
-	\item Czas transmisji pakietu [ms]
-	\item Moc sygna≥u [dBm]
-	\item D≥ugoúÊ geograficzna
-	\item SzerokoúÊ geograficzna
+    \item Czas transmisji pakietu [ms]
+    \item Moc sygna≥u [dBm]
+    \item D≥ugoúÊ geograficzna
+    \item SzerokoúÊ geograficzna
 \end{itemize}
 
 \qquad Przyk≥adowe wyniki pomiaru zapisane do pliku przedstawia rysunek \ref{fig:sample_save_file}.
-\begin{figure}[h]
-	\centering
+\begin{figure}[H]
+    \centering
 \includegraphics[scale=1,natwidth=519,natheight=267]{android_sample_results.png}
-	\caption{Przyk≥adowe wyniki pomiarÛw zaimportowane do programu Microsoft Excel}
-	\label{fig:sample_save_file}
+    \caption{Przyk≥adowe wyniki pomiarÛw zaimportowane do programu Microsoft Excel}
+    \label{fig:sample_save_file}
 \end{figure}
 
 \newpage
@@ -724,71 +734,71 @@ Poniøsze wyniki przedstawiajπ pomiary dokonane w úrodowisku miejskim, terminal m
 \section{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietÛw, sieÊ LTE)}
 
 \begin{figure}[H]
-	\centering
+    \centering
 \includegraphics[scale=0.2,natwidth=1920,natheight=1080]{stationary_lte_http.png}
-	\caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ LTE, widok w aplikacji}
-	\label{fig:stationary_lte_http}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ LTE, widok w aplikacji}
+    \label{fig:stationary_lte_http}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
+    \centering
 \includegraphics[scale=0.4,natwidth=1130,natheight=117]{pomiary/stationary_http_lte.png}
-	\caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ LTE, zapisanie wyniki pomiarÛw}
-	\label{fig:stationary_lte_http_results}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ LTE, zapisanie wyniki pomiarÛw}
+    \label{fig:stationary_lte_http_results}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
+    \centering
 \includegraphics[scale=0.5,natwidth=1000,natheight=618]{pomiary/stationary_http_lte_wykres.png}
-	\caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ LTE, wykres utworzony w programie Excel}
-	\label{fig:stationary_lte_http_chart}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ LTE, wykres utworzony w programie Excel}
+    \label{fig:stationary_lte_http_chart}
 \end{figure}
 
 \section{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietÛw, sieÊ WCDMA)}
 
 \begin{figure}[H]
-	\centering
+    \centering
 \includegraphics[scale=0.2,natwidth=1920,natheight=1080]{stationary_wcdma_http.png}
-	\caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ WCDMA, widok w aplikacji}
-	\label{fig:stationary_wcdma_http}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ WCDMA, widok w aplikacji}
+    \label{fig:stationary_wcdma_http}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
+    \centering
 \includegraphics[scale=0.4,natwidth=1078,natheight=53]{pomiary/stationary_http_wcdma.png}
-	\caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ WCDMA, zapisanie wyniki pomiarÛw}
-	\label{fig:stationary_wcdma_http_results}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ WCDMA, zapisanie wyniki pomiarÛw}
+    \label{fig:stationary_wcdma_http_results}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
+    \centering
 \includegraphics[scale=0.4,natwidth=1317,natheight=697]{pomiary/stationary_http_wcdma_wykres.png}
-	\caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ WCDMA, wykres utworzony w programie Excel}
-	\label{fig:stationary_wcdma_http_chart}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ WCDMA, wykres utworzony w programie Excel}
+    \label{fig:stationary_wcdma_http_chart}
 \end{figure}
 
 
 \section{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietÛw, sieÊ EDGE)}
 
 \begin{figure}[H]
-	\centering
+    \centering
 \includegraphics[scale=0.2,natwidth=1920,natheight=1080]{stationary_edge_http.png}
-	\caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ EDGE, widok w aplikacji}
-	\label{fig:stationary_edge_http}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ EDGE, widok w aplikacji}
+    \label{fig:stationary_edge_http}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
+    \centering
 \includegraphics[scale=0.4,natwidth=1078,natheight=53]{pomiary/stationary_http_edge.png}
-	\caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ EDGE, zapisanie wyniki pomiarÛw}
-	\label{fig:stationary_edge_http_results}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ EDGE, zapisanie wyniki pomiarÛw}
+    \label{fig:stationary_edge_http_results}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
+    \centering
 \includegraphics[scale=0.4,natwidth=1317,natheight=697]{pomiary/stationary_http_edge_wykres.png}
-	\caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ EDGE, wykres utworzony w programie Excel}
-	\label{fig:stationary_edge_http_chart}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietÛw, sieÊ EDGE, wykres utworzony w programie Excel}
+    \label{fig:stationary_edge_http_chart}
 \end{figure}
 
 \section{Pomiar ruchomego terminala mobilnego w úrodowisku miejskim}
@@ -798,31 +808,31 @@ Poniøsze wyniki przedstawiajπ pomiary dokonane w úrodowisku miejskim, terminal m
 
 \newpage
 \begin{thebibliography}{10}
-	\bibitem{[1]} \textit{Podstawy cyfrowych systemÛw telekomunikacyjnych} - Krzysztof Weso≥owski, WK£, Warszawa 2006
-	\bibitem{[2]} \textit{Systemy radiokomunikacji ruchomej} - Krzysztof Weso≥owski, WK£, Warszawa 2006 
-	\bibitem{[3]} èrÛd≥o internetowe: \textit{"MIMO transmission schemes for LTE and HSPA networks"} \\
-	http://www.3gamericas.org/documents/ \\ Mimo\_Transmission\_Schemes\_for\_LTE\_and\_HSPA\_Networks\_June-2009.pdf
-	\bibitem{[4]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Play} \\
-	http://internet.playmobile.pl/maps/
-	\bibitem{[5]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Orange} \\
-	http://zasieg-orange.wp.pl/?ticaid=1c93f
-	\bibitem{[6]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora T-Mobile} \\
-	http://www.t-mobile.pl/pl/indywidualni/stali\_klienci/uslugi\_do\_telefonu/mapa\_zasiegu
-	\bibitem{[7]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Play"} \\
-	http://www.plus.pl/mapa\_zasiegu\_plusa
-	\bibitem{[8]} èrÛd≥o internetowe: \textit{Dokument RFC793 definiujπcy protokÛ≥ TCP} \\
-	http://tools.ietf.org/html/rfc793
-	\bibitem{[9]} èrÛd≥o internetowe: \textit{Android Open Source Project} \\
-	https://source.android.com/
-	\bibitem{[10]} \textit{Sieci Komputerowe} - Karol Krysiak, Helion, Gliwice 2005
-	\bibitem{[11]} èrÛd≥o internetowe: \textit{TCP, Transmission Control Protocol} \\ http://networksorcery.com/enp/protocol/tcp.htm
-	\bibitem{[12]} èrÛd≥o internetowe: \textit{Smartphone OS market share} \\ http://www.idc.com/prodserv/smartphone-os-market-share.jsp
-	\bibitem{[13]} \textit{Python. Leksykon kieszonkowy} - Mark Lutz, Helion, Gliwice 2014
-	\bibitem{[14]} èrÛd≥o internetowe: \textit{Strona internetowa Python Software Foundation} \\ https://www.python.org/
-	\bibitem{[15]} èrÛd≥o internetowe: \textit{Dokumentacja us≥ugi Google Maps} \\ https://developers.google.com/maps/documentation/android-api/
+    \bibitem{[1]} \textit{Podstawy cyfrowych systemÛw telekomunikacyjnych} - Krzysztof Weso≥owski, WK£, Warszawa 2006
+    \bibitem{[2]} \textit{Systemy radiokomunikacji ruchomej} - Krzysztof Weso≥owski, WK£, Warszawa 2006 
+    \bibitem{[3]} èrÛd≥o internetowe: \textit{"MIMO transmission schemes for LTE and HSPA networks"} \\
+    http://www.3gamericas.org/documents/ \\ Mimo\_Transmission\_Schemes\_for\_LTE\_and\_HSPA\_Networks\_June-2009.pdf
+    \bibitem{[4]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Play} \\
+    http://internet.playmobile.pl/maps/
+    \bibitem{[5]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Orange} \\
+    http://zasieg-orange.wp.pl/?ticaid=1c93f
+    \bibitem{[6]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora T-Mobile} \\
+    http://www.t-mobile.pl/pl/indywidualni/stali\_klienci/uslugi\_do\_telefonu/mapa\_zasiegu
+    \bibitem{[7]} èrÛd≥o internetowe: \textit{ZasiÍg sieci trzeciej i czwartej generacji operatora Play"} \\
+    http://www.plus.pl/mapa\_zasiegu\_plusa
+    \bibitem{[8]} èrÛd≥o internetowe: \textit{Dokument RFC793 definiujπcy protokÛ≥ TCP} \\
+    http://tools.ietf.org/html/rfc793
+    \bibitem{[9]} èrÛd≥o internetowe: \textit{Android Open Source Project} \\
+    https://source.android.com/
+    \bibitem{[10]} \textit{Sieci Komputerowe} - Karol Krysiak, Helion, Gliwice 2005
+    \bibitem{[11]} èrÛd≥o internetowe: \textit{TCP, Transmission Control Protocol} \\ http://networksorcery.com/enp/protocol/tcp.htm
+    \bibitem{[12]} èrÛd≥o internetowe: \textit{Smartphone OS market share} \\ http://www.idc.com/prodserv/smartphone-os-market-share.jsp
+    \bibitem{[13]} \textit{Python. Leksykon kieszonkowy} - Mark Lutz, Helion, Gliwice 2014
+    \bibitem{[14]} èrÛd≥o internetowe: \textit{Strona internetowa Python Software Foundation} \\ https://www.python.org/
+    \bibitem{[15]} èrÛd≥o internetowe: \textit{Dokumentacja us≥ugi Google Maps} \\ https://developers.google.com/maps/documentation/android-api/
 
 
 
-	
+    
 \end{thebibliography}
 \end{document}
