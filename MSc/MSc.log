@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  28 NOV 2016 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  29 NOV 2016 22:23
 entering extended mode
 **msc.tex
 (msc.tex
@@ -740,83 +740,102 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 32.
 
-(msc.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
- ABD: EveryShipout initializing macros
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen179
+\captionmargin@=\dimen180
+\captionwidth=\dimen181
+\caption@tempdima=\dimen182
+\caption@indent=\dimen183
+\caption@parindent=\dimen184
+\caption@hangindent=\dimen185
+)
+\c@ContinuedFloat=\count135
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+) (msc.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+ABD: EveryShipout initializing macros
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count135
-\scratchdimen=\dimen179
+\scratchcounter=\count136
+\scratchdimen=\dimen186
 \scratchbox=\box61
-\nofMPsegments=\count136
-\nofMParguments=\count137
+\nofMPsegments=\count137
+\nofMParguments=\count138
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count138
-\MPscratchDim=\dimen180
-\MPnumerator=\count139
-\makeMPintoPDFobject=\count140
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen187
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
 \everyMPtoPDFconversion=\toks39
 )
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring OFF on input line 45.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count141
+\c@section@level=\count142
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 
 (msc.out) (msc.out)
 \@outlinefile=\write5
-LaTeX Font Info:    Try loading font information for OML+plm on input line 43.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 47.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 43.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 47.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 43.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 47.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 43.
+(Font)              <14.4> on input line 47.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 43.
+(Font)              <10> on input line 47.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 43.
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
+(Font)              <7> on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -833,7 +852,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.51 \newpage
+l.55 \newpage
               [1]
 No file msc.nls.
 (msc.toc
@@ -870,7 +889,7 @@ Rozdzia\PlPrIeC {\l } 2.
 [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 \OT4/cmr/bx/n/12 nych pasm
  []
 
@@ -894,11 +913,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] <t_mobile_zasieg.jpg, id=258, 527.72156pt x 451.6875pt>
+[9] <t_mobile_zasieg.jpg, id=253, 527.72156pt x 451.6875pt>
 File: t_mobile_zasieg.jpg Graphic file (type jpg)
 
 <use t_mobile_zasieg.jpg>
-Package pdftex.def Info: t_mobile_zasieg.jpg used on input line 147.
+Package pdftex.def Info: t_mobile_zasieg.jpg used on input line 151.
 (pdftex.def)             Requested size: 422.17783pt x 361.35048pt.
 
 
@@ -922,13 +941,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 188.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 192.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -937,6 +956,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13]
+Overfull \hbox (16.22179pt too wide) in paragraph at lines 209--223
+ [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -944,6 +967,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
+Overfull \hbox (59.35623pt too wide) in paragraph at lines 231--241
+ [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -957,13 +984,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] <android_studio.png, id=308, 1445.4pt x 782.925pt>
-File: android_studio.png Graphic file (type png)
-
-<use android_studio.png>
-Package pdftex.def Info: android_studio.png used on input line 249.
-(pdftex.def)             Requested size: 433.62335pt x 234.8793pt.
-
+[16]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -971,7 +992,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17]
-Overfull \hbox (4.6799pt too wide) in paragraph at lines 256--256
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18] <android_studio.png, id=319, 1445.4pt x 782.925pt>
+File: android_studio.png Graphic file (type png)
+
+<use android_studio.png>
+Package pdftex.def Info: android_studio.png used on input line 295.
+(pdftex.def)             Requested size: 433.62335pt x 234.8793pt.
+
+Overfull \hbox (4.6799pt too wide) in paragraph at lines 302--302
 []\OT4/cmr/bx/n/17.28 Charakterystyka two-rze-nia opro-gra-mo-wa-nia w j¦-
  []
 
@@ -981,15 +1015,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./android_studio.png>]
-<python_interpreter.png, id=326, 482.55281pt x 77.53969pt>
+[19 <./android_studio.png>]
+<python_interpreter.png, id=328, 482.55281pt x 77.53969pt>
 File: python_interpreter.png Graphic file (type png)
 
 <use python_interpreter.png>
-Package pdftex.def Info: python_interpreter.png used on input line 268.
+Package pdftex.def Info: python_interpreter.png used on input line 314.
 (pdftex.def)             Requested size: 482.55162pt x 77.53947pt.
 
-Overfull \hbox (29.5838pt too wide) in paragraph at lines 268--269
+Overfull \hbox (29.5838pt too wide) in paragraph at lines 314--315
  [][] 
  []
 
@@ -999,19 +1033,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <./python_interpreter.png>]
+[20 <./python_interpreter.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[21]
 Rozdzia\PlPrIeC {\l } 3.
-[21
+[22
 
 ]
-Overfull \hbox (2.249pt too wide) in paragraph at lines 308--309
+Overfull \hbox (2.249pt too wide) in paragraph at lines 354--355
 []\OT4/cmr/m/n/12 Aktualne po-ªo-»e-nie ter-mi-na-la mo-bil-ne-go na ma-pie (za
  po-±red-nic-twem Go-ogle Maps).
  []
@@ -1022,11 +1056,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22] <server_source_code.png, id=351, 346.29375pt x 203.25937pt>
+[23] <server_source_code.png, id=354, 346.29375pt x 203.25937pt>
 File: server_source_code.png Graphic file (type png)
 
 <use server_source_code.png>
-Package pdftex.def Info: server_source_code.png used on input line 333.
+Package pdftex.def Info: server_source_code.png used on input line 379.
 (pdftex.def)             Requested size: 346.2929pt x 203.25887pt.
 
 
@@ -1035,20 +1069,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]
+[24]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./server_source_code.png (PNG copy)>]
-<server_socket_source_code.png, id=363, 477.28313pt x 585.68813pt>
+[25 <./server_source_code.png (PNG copy)>]
+<server_socket_source_code.png, id=366, 395.97937pt x 361.35pt>
 File: server_socket_source_code.png Graphic file (type png)
 
 <use server_socket_source_code.png>
-Package pdftex.def Info: server_socket_source_code.png used on input line 348.
-(pdftex.def)             Requested size: 381.82701pt x 468.55113pt.
+Package pdftex.def Info: server_socket_source_code.png used on input line 394.
+(pdftex.def)             Requested size: 316.78392pt x 289.0804pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1056,12 +1090,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <./server_socket_source_code.png>]
-<server_tcp_source.png, id=371, 410.2828pt x 330.48468pt>
+[26 <./server_socket_source_code.png>]
+<server_tcp_source.png, id=374, 410.2828pt x 330.48468pt>
 File: server_tcp_source.png Graphic file (type png)
 
 <use server_tcp_source.png>
-Package pdftex.def Info: server_tcp_source.png used on input line 365.
+Package pdftex.def Info: server_tcp_source.png used on input line 411.
 (pdftex.def)             Requested size: 410.2818pt x 330.48387pt.
 
 
@@ -1070,10 +1104,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] <main_screen.jpg, id=377, 542.025pt x 963.6pt>
+[27 <./server_tcp_source.png>] <main_screen.jpg, id=383, 542.025pt x 963.6pt>
 File: main_screen.jpg Graphic file (type jpg)
- <use main_screen.jpg>
-Package pdftex.def Info: main_screen.jpg used on input line 377.
+
+<use main_screen.jpg>
+Package pdftex.def Info: main_screen.jpg used on input line 425.
 (pdftex.def)             Requested size: 189.71158pt x 337.26506pt.
 
 
@@ -1082,12 +1117,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <./server_tcp_source.png>]
-<android_device_support.png, id=385, 423.83344pt x 70.01157pt>
+[28] <android_device_support.png, id=390, 423.83344pt x 70.01157pt>
 File: android_device_support.png Graphic file (type png)
 
 <use android_device_support.png>
-Package pdftex.def Info: android_device_support.png used on input line 386.
+Package pdftex.def Info: android_device_support.png used on input line 434.
 (pdftex.def)             Requested size: 423.83238pt x 70.01138pt.
 
 
@@ -1096,18 +1130,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./main_screen.jpg> <./android_device_support.png>]
+[29 <./main_screen.jpg> <./android_device_support.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29] <network_settings.jpg, id=406, 542.025pt x 963.6pt>
+[30] <network_settings.jpg, id=412, 542.025pt x 963.6pt>
 File: network_settings.jpg Graphic file (type jpg)
 
 <use network_settings.jpg>
-Package pdftex.def Info: network_settings.jpg used on input line 422.
+Package pdftex.def Info: network_settings.jpg used on input line 470.
 (pdftex.def)             Requested size: 189.71158pt x 337.26506pt.
 
 
@@ -1116,12 +1150,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30 <./network_settings.jpg>]
-<measurement_screen.jpg, id=414, 542.025pt x 963.6pt>
+[31 <./network_settings.jpg>]
+<measurement_screen.jpg, id=419, 542.025pt x 963.6pt>
 File: measurement_screen.jpg Graphic file (type jpg)
 
 <use measurement_screen.jpg>
-Package pdftex.def Info: measurement_screen.jpg used on input line 433.
+Package pdftex.def Info: measurement_screen.jpg used on input line 481.
 (pdftex.def)             Requested size: 189.71158pt x 337.26506pt.
 
 
@@ -1130,20 +1164,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31 <./measurement_screen.jpg>] <results.jpg, id=420, 963.6pt x 542.025pt>
+[32 <./measurement_screen.jpg>] <results.jpg, id=425, 963.6pt x 542.025pt>
 File: results.jpg Graphic file (type jpg)
 
 <use results.jpg>
-Package pdftex.def Info: results.jpg used on input line 450.
+Package pdftex.def Info: results.jpg used on input line 498.
 (pdftex.def)             Requested size: 337.26506pt x 189.71158pt.
- <http_requests_source.png, id=422, 488.57532pt x 80.55093pt>
+ <http_requests_source.png, id=427, 488.57532pt x 80.55093pt>
 File: http_requests_source.png Graphic file (type png)
 
 <use http_requests_source.png>
-Package pdftex.def Info: http_requests_source.png used on input line 461.
+Package pdftex.def Info: http_requests_source.png used on input line 509.
 (pdftex.def)             Requested size: 488.57413pt x 80.55074pt.
 
-Overfull \hbox (35.60631pt too wide) in paragraph at lines 461--462
+Overfull \hbox (35.60631pt too wide) in paragraph at lines 509--510
  [][] 
  []
 
@@ -1153,21 +1187,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32 <./results.jpg>]
-<http_request_task_handlers.png, id=429, 402.00188pt x 183.68625pt>
+[33 <./results.jpg>]
+<http_request_task_handlers.png, id=434, 402.00188pt x 183.68625pt>
 File: http_request_task_handlers.png Graphic file (type png)
 
 <use http_request_task_handlers.png>
-Package pdftex.def Info: http_request_task_handlers.png used on input line 470.
+Package pdftex.def Info: http_request_task_handlers.png used on input line 518.
 
 (pdftex.def)             Requested size: 402.00089pt x 183.68578pt.
 
-<http_request_task_string_request.png, id=431, 392.21532pt x 197.98969pt>
+<http_request_task_string_request.png, id=436, 392.21532pt x 197.98969pt>
 File: http_request_task_string_request.png Graphic file (type png)
 
 <use http_request_task_string_request.png>
 Package pdftex.def Info: http_request_task_string_request.png used on input lin
-e 479.
+e 527.
 (pdftex.def)             Requested size: 392.21436pt x 197.9892pt.
 
 
@@ -1176,13 +1210,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./http_requests_source.png> <./http_request_task_handlers.png>]
-<http_request_task_background.png, id=440, 378.66469pt x 222.07968pt>
+[34 <./http_requests_source.png> <./http_request_task_handlers.png>]
+<http_request_task_background.png, id=445, 378.66469pt x 222.07968pt>
 File: http_request_task_background.png Graphic file (type png)
 
 <use http_request_task_background.png>
-Package pdftex.def Info: http_request_task_background.png used on input line 48
-8.
+Package pdftex.def Info: http_request_task_background.png used on input line 53
+6.
 (pdftex.def)             Requested size: 378.66376pt x 222.07913pt.
 
 
@@ -1191,12 +1225,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34 <./http_request_task_string_request.png>]
-<tcp_requests_source.png, id=448, 415.5525pt x 386.19281pt>
+[35 <./http_request_task_string_request.png>]
+<tcp_requests_source.png, id=453, 415.5525pt x 386.19281pt>
 File: tcp_requests_source.png Graphic file (type png)
 
 <use tcp_requests_source.png>
-Package pdftex.def Info: tcp_requests_source.png used on input line 501.
+Package pdftex.def Info: tcp_requests_source.png used on input line 549.
 (pdftex.def)             Requested size: 332.44244pt x 308.95465pt.
 
 
@@ -1205,19 +1239,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <./http_request_task_background.png>]
+[36 <./http_request_task_background.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36 <./tcp_requests_source.png>]
-<tcp_requests_send.png, id=464, 381.67593pt x 211.54031pt>
+[37 <./tcp_requests_source.png>]
+<tcp_requests_send.png, id=469, 381.67593pt x 211.54031pt>
 File: tcp_requests_send.png Graphic file (type png)
 
 <use tcp_requests_send.png>
-Package pdftex.def Info: tcp_requests_send.png used on input line 521.
+Package pdftex.def Info: tcp_requests_send.png used on input line 569.
 (pdftex.def)             Requested size: 305.34116pt x 169.23247pt.
 
 
@@ -1226,12 +1260,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37 <./tcp_requests_send.png>]
-<tcp_requests_receive.png, id=477, 469.755pt x 246.1697pt>
+[38 <./tcp_requests_send.png>]
+<tcp_requests_receive.png, id=482, 469.755pt x 246.1697pt>
 File: tcp_requests_receive.png Graphic file (type png)
 
 <use tcp_requests_receive.png>
-Package pdftex.def Info: tcp_requests_receive.png used on input line 532.
+Package pdftex.def Info: tcp_requests_receive.png used on input line 580.
 (pdftex.def)             Requested size: 375.80452pt x 196.936pt.
 
 
@@ -1240,13 +1274,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38 <./tcp_requests_receive.png>]
-<udp_requests_transmission.png, id=485, 362.85562pt x 303.38344pt>
+[39 <./tcp_requests_receive.png>]
+<udp_requests_transmission.png, id=490, 362.85562pt x 303.38344pt>
 File: udp_requests_transmission.png Graphic file (type png)
 
 <use udp_requests_transmission.png>
-Package pdftex.def Info: udp_requests_transmission.png used on input line 545.
+Package pdftex.def Info: udp_requests_transmission.png used on input line 593.
 (pdftex.def)             Requested size: 362.85474pt x 303.38269pt.
+
+<udp_requests_send.png, id=492, 387.69844pt x 160.34906pt>
+File: udp_requests_send.png Graphic file (type png)
+
+<use udp_requests_send.png>
+Package pdftex.def Info: udp_requests_send.png used on input line 609.
+(pdftex.def)             Requested size: 387.69748pt x 160.34866pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1254,19 +1295,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39 <./udp_requests_transmission.png>]
-<udp_requests_send.png, id=495, 387.69844pt x 160.34906pt>
-File: udp_requests_send.png Graphic file (type png)
-
-<use udp_requests_send.png>
-Package pdftex.def Info: udp_requests_send.png used on input line 561.
-(pdftex.def)             Requested size: 387.69748pt x 160.34866pt.
-
-<udp_requests_receive.png, id=497, 417.81094pt x 95.6072pt>
+[40 <./udp_requests_transmission.png>]
+<udp_requests_receive.png, id=504, 417.81094pt x 95.6072pt>
 File: udp_requests_receive.png Graphic file (type png)
 
 <use udp_requests_receive.png>
-Package pdftex.def Info: udp_requests_receive.png used on input line 572.
+Package pdftex.def Info: udp_requests_receive.png used on input line 620.
 (pdftex.def)             Requested size: 417.80992pt x 95.60695pt.
 
 
@@ -1275,34 +1309,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40 <./udp_requests_send.png> <./udp_requests_receive.png>]
-<android_time_measurement_create_timestamp.png, id=512, 359.84438pt x 43.66313p
+[41 <./udp_requests_send.png> <./udp_requests_receive.png>]
+<android_time_measurement_create_timestamp.png, id=517, 359.84438pt x 43.66313p
 t>
 File: android_time_measurement_create_timestamp.png Graphic file (type png)
  <use android_time_measurement_create_timestamp.png>
 Package pdftex.def Info: android_time_measurement_create_timestamp.png used on 
-input line 587.
+input line 635.
 (pdftex.def)             Requested size: 359.84349pt x 43.66301pt.
 
-<android_time_measurement.png, id=513, 389.20406pt x 145.29282pt>
+<android_time_measurement.png, id=518, 389.20406pt x 145.29282pt>
 File: android_time_measurement.png Graphic file (type png)
 
 <use android_time_measurement.png>
-Package pdftex.def Info: android_time_measurement.png used on input line 594.
+Package pdftex.def Info: android_time_measurement.png used on input line 642.
 (pdftex.def)             Requested size: 389.20311pt x 145.29245pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[41 <./android_time_measurement_create_timestamp.png>]
-<android_statistics.png, id=521, 344.03531pt x 133.24782pt>
+<android_statistics.png, id=519, 344.03531pt x 133.24782pt>
 File: android_statistics.png Graphic file (type png)
 
 <use android_statistics.png>
-Package pdftex.def Info: android_statistics.png used on input line 601.
+Package pdftex.def Info: android_statistics.png used on input line 649.
 (pdftex.def)             Requested size: 344.03447pt x 133.24748pt.
 
 
@@ -1311,27 +1338,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42 <./android_time_measurement.png> <./android_statistics.png>]
-<android_gps_manifest.png, id=533, 415.5525pt x 24.09pt>
+[42 <./android_time_measurement_create_timestamp.png> <./android_time_measureme
+nt.png>] <android_gps_manifest.png, id=532, 415.5525pt x 24.09pt>
 File: android_gps_manifest.png Graphic file (type png)
 
 <use android_gps_manifest.png>
-Package pdftex.def Info: android_gps_manifest.png used on input line 622.
+Package pdftex.def Info: android_gps_manifest.png used on input line 670.
 (pdftex.def)             Requested size: 415.55148pt x 24.08992pt.
-
-<android_gps_api_key.png, id=535, 345.54094pt x 45.16875pt>
-File: android_gps_api_key.png Graphic file (type png)
-
-<use android_gps_api_key.png>
-Package pdftex.def Info: android_gps_api_key.png used on input line 631.
-(pdftex.def)             Requested size: 345.54008pt x 45.16862pt.
-
-<android_gps_connect_api.png, id=536, 305.64188pt x 93.34875pt>
-File: android_gps_connect_api.png Graphic file (type png)
-
-<use android_gps_connect_api.png>
-Package pdftex.def Info: android_gps_connect_api.png used on input line 638.
-(pdftex.def)             Requested size: 305.64111pt x 93.34851pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1339,23 +1352,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43 <./android_gps_manifest.png> <./android_gps_api_key.png> <./android_gps_con
-nect_api.png>] <android_gps_listener.png, id=551, 456.95718pt x 244.66406pt>
+[43 <./android_statistics.png>]
+<android_gps_api_key.png, id=541, 345.54094pt x 45.16875pt>
+File: android_gps_api_key.png Graphic file (type png)
+
+<use android_gps_api_key.png>
+Package pdftex.def Info: android_gps_api_key.png used on input line 679.
+(pdftex.def)             Requested size: 345.54008pt x 45.16862pt.
+
+<android_gps_connect_api.png, id=542, 305.64188pt x 93.34875pt>
+File: android_gps_connect_api.png Graphic file (type png)
+
+<use android_gps_connect_api.png>
+Package pdftex.def Info: android_gps_connect_api.png used on input line 686.
+(pdftex.def)             Requested size: 305.64111pt x 93.34851pt.
+
+<android_gps_listener.png, id=546, 456.95718pt x 244.66406pt>
 File: android_gps_listener.png Graphic file (type png)
 
 <use android_gps_listener.png>
-Package pdftex.def Info: android_gps_listener.png used on input line 647.
+Package pdftex.def Info: android_gps_listener.png used on input line 695.
 (pdftex.def)             Requested size: 456.95605pt x 244.66345pt.
 
-Overfull \hbox (3.98824pt too wide) in paragraph at lines 647--648
+Overfull \hbox (3.98824pt too wide) in paragraph at lines 695--696
  [][] 
  []
 
-<android_gps_update_camera.png, id=552, 445.665pt x 183.68625pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44 <./android_gps_manifest.png> <./android_gps_api_key.png> <./android_gps_con
+nect_api.png>]
+<android_gps_update_camera.png, id=557, 445.665pt x 183.68625pt>
 File: android_gps_update_camera.png Graphic file (type png)
 
 <use android_gps_update_camera.png>
-Package pdftex.def Info: android_gps_update_camera.png used on input line 654.
+Package pdftex.def Info: android_gps_update_camera.png used on input line 702.
 (pdftex.def)             Requested size: 445.66391pt x 183.68578pt.
 
 
@@ -1364,12 +1399,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44 <./android_gps_listener.png> <./android_gps_update_camera.png>]
-<android_create_file.png, id=563, 445.665pt x 285.31593pt>
+[45 <./android_gps_listener.png> <./android_gps_update_camera.png>]
+<android_create_file.png, id=568, 445.665pt x 285.31593pt>
 File: android_create_file.png Graphic file (type png)
 
 <use android_create_file.png>
-Package pdftex.def Info: android_create_file.png used on input line 671.
+Package pdftex.def Info: android_create_file.png used on input line 719.
 (pdftex.def)             Requested size: 445.66391pt x 285.31523pt.
 
 
@@ -1378,11 +1413,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45] <android_write_file.png, id=569, 322.20375pt x 158.09062pt>
+[46 <./android_create_file.png>]
+<android_write_file.png, id=576, 322.20375pt x 158.09062pt>
 File: android_write_file.png Graphic file (type png)
 
 <use android_write_file.png>
-Package pdftex.def Info: android_write_file.png used on input line 684.
+Package pdftex.def Info: android_write_file.png used on input line 732.
 (pdftex.def)             Requested size: 322.20296pt x 158.09023pt.
 
 
@@ -1391,12 +1427,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46 <./android_create_file.png>]
-<android_add_results_file.png, id=579, 332.74312pt x 274.77657pt>
+[47 <./android_write_file.png>]
+<android_add_results_file.png, id=586, 332.74312pt x 274.77657pt>
 File: android_add_results_file.png Graphic file (type png)
 
 <use android_add_results_file.png>
-Package pdftex.def Info: android_add_results_file.png used on input line 706.
+Package pdftex.def Info: android_add_results_file.png used on input line 754.
 (pdftex.def)             Requested size: 332.7423pt x 274.77588pt.
 
 
@@ -1405,21 +1441,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47 <./android_write_file.png>]
-<android_sample_results.png, id=588, 390.70969pt x 201.00093pt>
+[48 <./android_add_results_file.png>]
+<android_sample_results.png, id=596, 390.70969pt x 201.00093pt>
 File: android_sample_results.png Graphic file (type png)
 
 <use android_sample_results.png>
-Package pdftex.def Info: android_sample_results.png used on input line 723.
+Package pdftex.def Info: android_sample_results.png used on input line 771.
 (pdftex.def)             Requested size: 390.70872pt x 201.00043pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[48 <./android_add_results_file.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1429,33 +1458,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [49 <./android_sample_results.png>]
 Rozdzia\PlPrIeC {\l } 4.
 
-Overfull \hbox (9.22188pt too wide) in paragraph at lines 734--734
+Overfull \hbox (9.22188pt too wide) in paragraph at lines 782--782
 []\OT4/cmr/bx/n/17.28 Pomiar nie-ru-cho-me-go ter-mi-na-la mo-bil-ne-go (nada-
  []
 
-<stationary_lte_http.png, id=602, 1927.2pt x 1084.05pt>
+<stationary_lte_http.png, id=603, 1927.2pt x 1084.05pt>
 File: stationary_lte_http.png Graphic file (type png)
 
 <use stationary_lte_http.png>
-Package pdftex.def Info: stationary_lte_http.png used on input line 738.
+Package pdftex.def Info: stationary_lte_http.png used on input line 786.
 (pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
  [50
 
 ]
-<pomiary/stationary_http_lte.png, id=607, 850.67813pt x 88.07906pt>
+<pomiary/stationary_http_lte.png, id=608, 850.67813pt x 88.07906pt>
 File: pomiary/stationary_http_lte.png Graphic file (type png)
 
 <use pomiary/stationary_http_lte.png>
-Package pdftex.def Info: pomiary/stationary_http_lte.png used on input line 745
+Package pdftex.def Info: pomiary/stationary_http_lte.png used on input line 793
 .
 (pdftex.def)             Requested size: 340.26523pt x 35.23099pt.
 
-<pomiary/stationary_http_lte_wykres.png, id=608, 752.8125pt x 465.23813pt>
+<pomiary/stationary_http_lte_wykres.png, id=609, 752.8125pt x 465.23813pt>
 File: pomiary/stationary_http_lte_wykres.png Graphic file (type png)
 
 <use pomiary/stationary_http_lte_wykres.png>
 Package pdftex.def Info: pomiary/stationary_http_lte_wykres.png used on input l
-ine 752.
+ine 800.
 (pdftex.def)             Requested size: 376.40532pt x 232.61848pt.
 
 
@@ -1465,15 +1494,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [51 <./stationary_lte_http.png> <./pomiary/stationary_http_lte.png>]
-Overfull \hbox (9.22188pt too wide) in paragraph at lines 757--757
+Overfull \hbox (9.22188pt too wide) in paragraph at lines 805--805
 []\OT4/cmr/bx/n/17.28 Pomiar nie-ru-cho-me-go ter-mi-na-la mo-bil-ne-go (nada-
  []
 
-<stationary_wcdma_http.png, id=616, 1927.2pt x 1084.05pt>
+<stationary_wcdma_http.png, id=617, 1927.2pt x 1084.05pt>
 File: stationary_wcdma_http.png Graphic file (type png)
 
 <use stationary_wcdma_http.png>
-Package pdftex.def Info: stationary_wcdma_http.png used on input line 761.
+Package pdftex.def Info: stationary_wcdma_http.png used on input line 809.
 (pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
 
 
@@ -1483,20 +1512,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [52 <./pomiary/stationary_http_lte_wykres.png>]
-<pomiary/stationary_http_wcdma.png, id=623, 811.53188pt x 39.89906pt>
+<pomiary/stationary_http_wcdma.png, id=624, 811.53188pt x 39.89906pt>
 File: pomiary/stationary_http_wcdma.png Graphic file (type png)
 
 <use pomiary/stationary_http_wcdma.png>
-Package pdftex.def Info: pomiary/stationary_http_wcdma.png used on input line 7
-68.
+Package pdftex.def Info: pomiary/stationary_http_wcdma.png used on input line 8
+16.
 (pdftex.def)             Requested size: 324.607pt x 15.95932pt.
 
-<pomiary/stationary_http_wcdma_wykres.png, id=624, 991.45406pt x 524.71031pt>
+<pomiary/stationary_http_wcdma_wykres.png, id=625, 991.45406pt x 524.71031pt>
 File: pomiary/stationary_http_wcdma_wykres.png Graphic file (type png)
 
 <use pomiary/stationary_http_wcdma_wykres.png>
 Package pdftex.def Info: pomiary/stationary_http_wcdma_wykres.png used on input
- line 775.
+ line 823.
 (pdftex.def)             Requested size: 396.5746pt x 209.8804pt.
 
 
@@ -1506,23 +1535,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [53 <./stationary_wcdma_http.png> <./pomiary/stationary_http_wcdma.png>]
-Overfull \hbox (9.22188pt too wide) in paragraph at lines 781--781
+Overfull \hbox (9.22188pt too wide) in paragraph at lines 829--829
 []\OT4/cmr/bx/n/17.28 Pomiar nie-ru-cho-me-go ter-mi-na-la mo-bil-ne-go (nada-
  []
 
-<stationary_edge_http.png, id=632, 1927.2pt x 1084.05pt>
+<stationary_edge_http.png, id=633, 1927.2pt x 1084.05pt>
 File: stationary_edge_http.png Graphic file (type png)
 
 <use stationary_edge_http.png>
-Package pdftex.def Info: stationary_edge_http.png used on input line 785.
+Package pdftex.def Info: stationary_edge_http.png used on input line 833.
 (pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
 
-<pomiary/stationary_http_edge.png, id=633, 837.88031pt x 39.14626pt>
+<pomiary/stationary_http_edge.png, id=634, 837.88031pt x 39.14626pt>
 File: pomiary/stationary_http_edge.png Graphic file (type png)
 
 <use pomiary/stationary_http_edge.png>
-Package pdftex.def Info: pomiary/stationary_http_edge.png used on input line 79
-2.
+Package pdftex.def Info: pomiary/stationary_http_edge.png used on input line 84
+0.
 (pdftex.def)             Requested size: 335.14618pt x 15.65822pt.
 
 
@@ -1532,12 +1561,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [54 <./pomiary/stationary_http_wcdma_wykres.png> <./stationary_edge_http.png>]
-<pomiary/stationary_http_edge_wykres.png, id=642, 886.06032pt x 578.16pt>
+<pomiary/stationary_http_edge_wykres.png, id=643, 886.06032pt x 578.16pt>
 File: pomiary/stationary_http_edge_wykres.png Graphic file (type png)
 
 <use pomiary/stationary_http_edge_wykres.png>
 Package pdftex.def Info: pomiary/stationary_http_edge_wykres.png used on input 
-line 799.
+line 847.
 (pdftex.def)             Requested size: 354.41785pt x 231.2599pt.
 
 
@@ -1552,7 +1581,7 @@ Rozdzia\PlPrIeC {\l } 5.
 [56
 
 ]
-Overfull \hbox (16.8445pt too wide) in paragraph at lines 819--821
+Overfull \hbox (16.8445pt too wide) in paragraph at lines 865--867
 \OT4/cmr/m/n/12 http://www.t-mobile.pl/pl/indywidualni/stali[]klienci/uslugi[]d
 o[]telefonu/mapa[]zasiegu 
  []
@@ -1567,24 +1596,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [58]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 838.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 838.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 885.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 885.
  (msc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 838.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 838.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 885.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 885.
 Package rerunfilecheck Info: File `msc.out' has not changed.
-(rerunfilecheck)             Checksum: 191875D64AC313EA7711A9316D9FD522;3293.
+(rerunfilecheck)             Checksum: 9E823AC8AC1ABA711D0A1B8304C679F5;3188.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 838.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 885.
  ) 
 Here is how much of TeX's memory you used:
- 19410 strings out of 493673
- 387688 string characters out of 3141527
- 471642 words of memory out of 3000000
- 22177 multiletter control sequences out of 15000+200000
+ 20438 strings out of 493673
+ 406855 string characters out of 3141527
+ 491781 words of memory out of 3000000
+ 23197 multiletter control sequences out of 15000+200000
  17869 words of font info for 55 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,12n,67p,892b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1597,9 +1626,9 @@ mi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/pl/plr17.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/pl/plti12.pfb>
-Output written on msc.pdf (59 pages, 1714708 bytes).
+Output written on msc.pdf (59 pages, 1732234 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
- 527 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 735 PDF objects out of 1000 (max. 8388607)
+ 181 named destinations out of 1000 (max. 500000)
+ 519 words of extra memory for PDF output out of 10000 (max. 10000000)
 

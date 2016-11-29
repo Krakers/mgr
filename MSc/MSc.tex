@@ -33,6 +33,10 @@
 \fancyfoot[C]{\thepage}
 \setcounter{tocdepth}{4}
 
+% set up labelformat and labelsep for table
+\usepackage{caption}
+\captionsetup[table]{labelformat=simple, labelsep=space}
+
 \title{Praca magisterska \\ Aplikacja do pomiarÛw parametrÛw ≥πcza sieciowego dla urzπdzeÒ z systemem operacyjnym Android}
 \author{Tomasz £akomy}
 \date{}
@@ -77,6 +81,7 @@
 
 \begin{table}[H]
     \begin{center}
+		  \caption{PorÛwnanie standardÛw sieci GSM}
         \begin{tabular}{ | l | p{4cm} | p{4cm} | p{3cm} | }
         \hline
         \textbf{Standard} & \textbf{CzÍstotliwoúci wykorzystywane w ≥πczu w gÛrÍ [MHz]} & \textbf{CzÍstotliwoúci wykorzystywane w ≥πczu w dÛ≥ [MHz]} & \textbf{Liczba dostÍpnych pasm czÍstotliwoúci} \\ \hline
@@ -88,7 +93,6 @@ lub 488,8 - 496 & 35 \\ \hline
         GSM 1800 & 1710 - 1785 & 1805 - 1880 & 374 \\ \hline
         GSM 1900 & 1850 - 1910 & 1930 - 1990 & 299 \\ \hline
         \end{tabular}
-        \caption{Tabela porÛwnujπca standardy sieci GSM}
         \label{tab:GSM_standards}
     \end{center}
 \end{table}
@@ -112,6 +116,7 @@ lub 488,8 - 496 & 35 \\ \hline
 
 \begin{table}[H]
     \begin{center}
+        \caption{Tabela przedstawiajπca schematy transmisji w sieci EDGE}
         \begin{tabular}{ | l | l | l | l | l | }
         \hline
         \textbf{Schemat} & \textbf{Code rate} & \textbf{Modulacja} & \textbf{Transfer} & \textbf{Rodzina}\\ \hline
@@ -125,7 +130,6 @@ lub 488,8 - 496 & 35 \\ \hline
         MCS-8 & 0,92 & 8-PSK & 54,4 kbit/s & A\\ \hline
         MCS-9 & 1 & 8-PSK & 59,2 kbit/s & A\\ \hline
         \end{tabular}
-        \caption{Tabela przedstawiajπca schematy transmisji w sieci EDGE}
         \label{tab:EDGE_transmission_scheme}
     \end{center}
 \end{table}
@@ -168,6 +172,7 @@ lub 488,8 - 496 & 35 \\ \hline
 
 \begin{table}[H]
     \begin{center}
+        \caption{Podstawowe w≥aúciwoúci systemu LTE}
         \begin{tabular}{ | l | l |}
         \hline
         \textbf{Parametr} & \textbf{Standard LTE } \\ \hline
@@ -177,7 +182,6 @@ lub 488,8 - 496 & 35 \\ \hline
         Wykorzystana metoda wielodostÍpu - downlink & OFDMA \\ \hline
         Wykorzystana metoda wielodostÍpu - uplink & SC-FDMA \\ \hline
         \end{tabular}
-        \caption{Podstawowe w≥aúciwoúci systemu LTE}
         \label{LTE_requirements}
     \end{center}
 \end{table}
@@ -195,6 +199,48 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \section{Wybrane protoko≥y transmisji danych}
 \subsection{ProtokÛ≥ HTTP}
+\qquad ProtokÛ≥ HTTP (ang. \textit{Hypertext Transfer Protocol}) jest podstawπ dzia≥ania wspÛ≥czesnego Internetu, poniewaø jest to protokÛ≥ warstwy aplikacji odpowiedzialny za przesy≥anie w Internecie stron WWW. PracÍ nad nim rozpoczÍto w 1989 roku w CERN (\textit{European Organization for Nuclear Research}). Aktualnie najnowszπ wersjπ protoko≥u HTTP jest HTTP/2.0, ktÛry doczeka≥ siÍ standaryzacji w 2015 roku.
+
+\qquad Jednostkπ logicznπ protoko≥u HTTP jest wiadomoúÊ, ktÛra sk≥ada siÍ z zapytania od klienta do serwera oraz odpowiedzi od serwera. HTTP definiuje 9 metod, ktÛre mogπ zostaÊ wywo≥ane na zasobie, do ktÛrego dostÍp chce uzyskaÊ klient wysy≥ajπc zapytanie HTTP. DostÍpne us≥ugi HTTP przedstawia tabela \ref{HTTP_methods}.
+
+\begin{table}[H]
+    \begin{center}
+        \caption{DostÍpne us≥ugi protoko≥u HTTP}
+        \begin{tabular}{ | l | l |}
+        \hline
+        \textbf{Metoda} & \textbf{Przeznaczenie} \\ \hline
+        \textit{DELETE} & Øπdanie usuniÍcia zasobu z serwera \\ \hline
+        \textit{GET} & Øπdanie zasobu od serwera w postaci nag≥Ûwka danych oraz treúci \\ \hline
+        \textit{HEAD} & Øπdanie zasobu od serwera w postaci nag≥Ûwka danych \\ \hline
+        \textit{LINK} & Øπdanie ustanowienia relacji miÍdzy istniejπcymi zasobami \\ \hline
+        \textit{OPTIONS} & Øπdanie od serwera indentyfikacji obs≥ugiwanych metod \\ \hline
+        \textit{POST} & Øπdanie odebrania przez serwer danych do klienta \\ \hline
+        \textit{PUT} & Øπdanie odebrania przez serwer pliku od klienta \\ \hline
+        \textit{TRACE} & Øπdanie zwrÛcenia przez serwer nag≥ÛwkÛw wiadomoúci wys≥anej od klienta \\ \hline
+        \textit{UNLINK} & Øπdanie usuniÍcia relacji miÍdzy istniejπcym zasobami \\ \hline
+        \end{tabular}
+        \label{HTTP_methods}
+    \end{center}
+\end{table}
+
+\qquad Kaøda odpowiedü serwera na zapytanie HTTP zawiera tzw. kod stanu, ktÛry jest trzycyfrowπ liczbπ informujπcπ klienta o aktualnym statusie zapytania. Podzia≥ kodÛw stanu protoko≥u HTTP przedstawia tabela \ref{HTTP_responses}
+
+\begin{table}[H]
+    \begin{center}
+        \caption{DostÍpne us≥ugi protoko≥u HTTP}
+        \begin{tabular}{ | l | l | l | }
+        \hline
+        \textbf{Metoda} & \textbf{Rodzaj} \textbf{Znaczenie} \\ \hline
+        1xx & Informacyjne & Øπdanie odebrane, zapytanie w trakcie przetwarzania\\ \hline
+        2xx & Sukces & Zapytanie odebrane i zakoÒczone sukcesem\\ \hline
+        3xx & Przekierowanie & KoniecznoúÊ podjÍcia dalszych akcji, aby zakoÒczyÊ øπdanie\\ \hline
+        4xx & B≥πd po stronie klienta & Øπdanie ma z≥π sk≥adnie lub nie moøe zostaÊ spe≥nione\\ \hline
+        5xx & B≥πd po stronie serwera & Serwer nie moøe poprawnie obs≥uøyÊ øπdania\\ \hline
+        \end{tabular}
+        \label{HTTP_responses}
+    \end{center}
+\end{table}
+
 \subsection{ProtokÛ≥ TCP}
 \qquad ProtokÛ≥ TCP (ang. \textit{Transmission Control Protocol}) jest po≥πczeniowym, niezawodnym, strumieniownym protoko≥em stanowiπcym podstawÍ dzia≥ania dzisiejszego Internetu \cite{[10]}. Po raz pierwszy zosta≥ on zdefiniowany w dokumencie RFC 793 z 1981 roku zatytu≥owanym "\textit{Transmission Control Protocol. Darpa Internet Program protocol specification}" \cite{[8]}. Jest on protoko≥em warstwy transportowej modelu ISO, podobnie jak UDP.
 
@@ -350,13 +396,13 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
     \label{fig:server_socket_source_code}
 \end{figure}
 
-\qquad Rysunek \ref{fig:server_socket_source_code} przedstawia kod ürÛd≥owy programu pe≥niπcego funkcjÍ serwera wysy≥ajπcego i odbierajπcego pakiety TCP. Podobnie jak poprzedni program-serwer, zosta≥ on napisany w jÍzyku programowania Python, ze wzglÍdu na prostotÍ implementacji i szerokπ gamÍ gotowych do uøycia bibliotek. 
+\qquad Rysunek \ref{fig:server_socket_source_code} przedstawia fragment kodu ürÛd≥owego programu pe≥niπcego funkcjÍ serwera wysy≥ajπcego i odbierajπcego pakiety TCP. Podobnie jak poprzedni program-serwer, zosta≥ on napisany w jÍzyku programowania Python, ze wzglÍdu na prostotÍ implementacji i szerokπ gamÍ gotowych do uøycia bibliotek. 
 
 \qquad Poprzednio wspomniania biblioteka do obs≥ugi zapytaÒ HTTP jakπ jest Flask nie posiada moøliwoúci obs≥ugi transmisji pakietÛw TCP. Ze wzglÍdu na to, zdecydowano siÍ na zastosowanie biblioteki o nazwie socket (ang. \textit{gniazdo}). Pozwala ona na utworzenie tzw. gniazda po stronie serwera, do ktÛrego terminal mobilny moøe wysy≥aÊ pakiety protoko≥u TCP. 
 
 \qquad Wysy≥ajπc pakiety TCP konieczne jest okreúlenie rozmiaru pakietu w bajtach. Program oczekuje, øe wúrÛd przesy≥anych danych pojawi siÍ sekwencja PACKET\_SIZE:N (ang. \textit{Rozmiar pakietu}), gdzie N jest rozmiarem pakietu danych. NastÍpnie program (tak d≥ugo, jak wysy≥ane sπ dane) odbiera pakiety o zadanej d≥ugoúci i odsy≥a je z powrotem do terminala, ktÛry je nada≥. W momencie, w ktÛrym terminal mobilny przestaje wysy≥aÊ dane, serwer pozostaje w czuwaniu i czeka na kolejne pakiety do transmisji.
 
-\qquad ZarÛwno program pe≥niπcy funkcjÍ serwera dla zapytaÒ HTTP jak i serwer transmitujπcy pakiety TCP moøna uruchomiÊ na kaødym komputerze z systemem Windows, Linux lub OSX na ktÛrym zainstalowany zosta≥ jÍzyk programowania Python i biblioteka Flask.
+\qquad Dodatkowo serwer obs≥uguje sekwencjÍ \textit{CLOSE\_SOCKET} (ang. \textit{Zamknij gniazdo}), ktÛra powoduje zamkniÍcie gniazda po stronie serwera. Pozwala to na zapewnienie zestawiania nowego po≥πczenia przy kaødej prÛbie transmisji przy pomocy protoko≥u TCP.
 
 \subsection{ProtokÛ≥ UDP}
 
@@ -370,6 +416,8 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 \qquad Rysunek \ref{fig:server_udp_source_code} przedstawia kod ürÛd≥owy aplikacji \textit{server\_tcp.py} bÍdπcej serwerem zaimplementowanym w jÍzyku Python pozwalajπcym na odbiÛr i retransmisjÍ datagramÛw protoko≥u UDP. Podobnie jak w przypadku poprzednio opisane serwera obs≥ugujπcego pakiety TCP zdecydowano siÍ na skorzystanie z dostÍpnej w jÍzyku Python biblioteki \textit{socket} do przeprowadzenia transmisji.
 
 \qquad Uøytkownik uruchamiajπc serwer ma moøliwoúÊ zdefiniowania pod jakim portem zostanie on uruchomiony, w przypadku braku zdefiniowania portu domyúlnym portem jest port 8000. NastÍpnie tworzona jest nieskoÒczona pÍtla, ktÛra oczekuje na wiadomoúci przesy≥ane przez aplikacjÍ mobilnπ a nastÍpnie retransmituje je uøywajπc tego gniazda z ktÛrego nadano pierwotne dane. Serwer umoøliwia odebranie w jednym datagramie UDP 65565 bajtÛw danych, poniewaø taki jest maksymalny rozmiar datagramu protoko≥u UDP. 
+
+\qquad ZarÛwno program pe≥niπcy funkcjÍ serwera dla zapytaÒ HTTP jak i serwery transmitujπcy pakiety TCP lub datagramy UDP moøna uruchomiÊ na kaødym komputerze z systemem Windows, Linux lub OSX na ktÛrym zainstalowany zosta≥ jÍzyk programowania Python i biblioteka Flask \cite{[16]}.
 
 \section{Opis aplikacji na smartfon z systemem Android}
 \begin{figure}[H]
@@ -801,8 +849,6 @@ Poniøsze wyniki przedstawiajπ pomiary dokonane w úrodowisku miejskim, terminal m
     \label{fig:stationary_edge_http_chart}
 \end{figure}
 
-\section{Pomiar ruchomego terminala mobilnego w úrodowisku miejskim}
-
 \newpage
 \chapter{Podsumowanie}
 
@@ -830,6 +876,7 @@ Poniøsze wyniki przedstawiajπ pomiary dokonane w úrodowisku miejskim, terminal m
     \bibitem{[13]} \textit{Python. Leksykon kieszonkowy} - Mark Lutz, Helion, Gliwice 2014
     \bibitem{[14]} èrÛd≥o internetowe: \textit{Strona internetowa Python Software Foundation} \\ https://www.python.org/
     \bibitem{[15]} èrÛd≥o internetowe: \textit{Dokumentacja us≥ugi Google Maps} \\ https://developers.google.com/maps/documentation/android-api/
+    \bibitem{[16]} èrÛd≥o internetowe: \textit{Dokumentacja biblioteki jÍzyka Python Flask} \\ http://flask.pocoo.org/docs/0.11/
 
 
 
