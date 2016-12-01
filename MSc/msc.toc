@@ -16,22 +16,25 @@
 \contentsline {section}{\numberline {2.3}Charakterystyka tworzenia oprogramowania na urz\k adzenia z systemem Android}{18}{section.2.3}
 \contentsline {section}{\numberline {2.4}Charakterystyka tworzenia oprogramowania w j\k ezyku Python}{20}{section.2.4}
 \contentsline {section}{\numberline {2.5}Aktualnie dost\k epne narz\k edzia do pomiar\'ow parametr\'ow transmisji dla urz\k adze\'n z systemem Android}{21}{section.2.5}
-\contentsline {chapter}{\numberline {3}Realizacja pracy}{22}{chapter.3}
-\contentsline {section}{\numberline {3.1}Za\IeC {\l }o\.zenia projektowe}{22}{section.3.1}
-\contentsline {section}{\numberline {3.2}Opis aplikacji pe\IeC {\l }ni\k acej funkcj\k e serwera na komputer PC}{25}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Protok\'o\IeC {\l } HTTP}{25}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Protok\'o\IeC {\l } TCP}{26}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Protok\'o\IeC {\l } UDP}{27}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Opis aplikacji na smartfon z systemem Android}{29}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Opis realizacji programowej transmisji z wykorzystaniem zapyta\'n HTTP}{33}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } TCP}{37}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } UDP}{39}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Spos\'ob pomiaru czasu przesy\IeC {\l }ania pakietu}{42}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Spos\'ob pomiaru po\IeC {\l }o\.zenia terminala mobilnego}{43}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Spos\'ob zapisywania wynik\'ow pomiaru do pliku}{46}{subsection.3.3.6}
-\contentsline {chapter}{\numberline {4}Przyk\IeC {\l }adowe wyniki pomiar\'ow}{50}{chapter.4}
-\contentsline {section}{\numberline {4.1}Pomiar nieruchomego terminala mobilnego}{50}{section.4.1}
-\contentsline {section}{\numberline {4.2}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c LTE)}{51}{section.4.2}
-\contentsline {section}{\numberline {4.3}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c WCDMA)}{53}{section.4.3}
-\contentsline {section}{\numberline {4.4}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c EDGE)}{54}{section.4.4}
-\contentsline {chapter}{\numberline {5}Podsumowanie}{56}{chapter.5}
+\contentsline {subsection}{\numberline {2.5.1}Aplikacja RFBenchmark}{21}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Aplikacja netmonitor}{24}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Aplikacja Ping Tools}{27}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}Realizacja pracy}{32}{chapter.3}
+\contentsline {section}{\numberline {3.1}Za\IeC {\l }o\.zenia projektowe}{32}{section.3.1}
+\contentsline {section}{\numberline {3.2}Opis aplikacji pe\IeC {\l }ni\k acej funkcj\k e serwera na komputer PC}{35}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Protok\'o\IeC {\l } HTTP}{35}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Protok\'o\IeC {\l } TCP}{36}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Protok\'o\IeC {\l } UDP}{37}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Opis aplikacji na smartfon z systemem Android}{39}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Opis realizacji programowej transmisji z wykorzystaniem zapyta\'n HTTP}{43}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } TCP}{47}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Opis realizacji programowej transmisji pakiet\'ow poprzez protok\'o\IeC {\l } UDP}{49}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Spos\'ob pomiaru czasu przesy\IeC {\l }ania pakietu}{52}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Spos\'ob pomiaru po\IeC {\l }o\.zenia terminala mobilnego}{53}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Spos\'ob zapisywania wynik\'ow pomiaru do pliku}{56}{subsection.3.3.6}
+\contentsline {chapter}{\numberline {4}Przyk\IeC {\l }adowe wyniki pomiar\'ow}{60}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pomiar nieruchomego terminala mobilnego}{60}{section.4.1}
+\contentsline {section}{\numberline {4.2}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c LTE)}{61}{section.4.2}
+\contentsline {section}{\numberline {4.3}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c WCDMA)}{63}{section.4.3}
+\contentsline {section}{\numberline {4.4}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c EDGE)}{64}{section.4.4}
+\contentsline {chapter}{\numberline {5}Podsumowanie}{66}{chapter.5}

@@ -318,11 +318,138 @@ Aby uzyskaÊ w≥aúciwoúci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Python jest jÍzykiem interpretowanym, co pozwala na pisanie programÛw w tym jÍzyku nawet na stronie python.org, gdzie dostÍpny jest Python Interpreter Online. Pozwala on na naukÍ jÍzyka, a takøe na pisanie w≥asnych prostych programÛw bez pobierania jakiegokolwiek dodatkowego oprogramowania (rysunek \ref{fig:python_interpreter}). W celu pisania bardziej skompilkowanych programÛw zalecane jest pobranie interpretera oraz edytora tekstu takiego jak PyCharm czy SublimeText.
 
-\section{Aktualnie dostÍpne narzÍdzia do pomiarÛw parametrÛw transmisji dla urzπdzeÒ z systemem Android}
+\section{Aktualnie dostÍpne przyk≥adowe narzÍdzia do pomiarÛw parametrÛw transmisji dla urzπdzeÒ z systemem Android}
 
-\newpage
+\subsection{Aplikacja RFBenchmark}
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/rfbrenchmark_mainscreen.png}
+    \caption{Ekran g≥Ûwny aplikacji RFBenchmark}
+    \label{fig:rfbrenchmark_mainscreen}
+\end{figure}
+
+\qquad Aplikacja RFBenchmark (przedstawiona na rysunku \ref{fig:rfbrenchmark_mainscreen}) jest komercyjnym systemem pomiaru jakoúci po≥πczenia z sieciami komÛrkowymi. Pozwala ona uøytkownikowi na ocenienie jakoúci transmisji przy po≥πczeniu z sieciπ komÛrkowπ na podstawie w≥asnych pomiarÛw oraz na podstawie pomiarÛw w bazie danych aplikacji \cite{[17]}. Aplikacja ta jest dostÍpna na urzπdzenia z systemem Android, iOS oraz wewnπtrz przeglπdarki internetowej.
+
+\qquad Na rysunku \ref{fig:rfbrenchmark_mainscreen} sπ widoczne naniesione na mape rÛønokolorowe okrÍgi. Ich barwa reprezentuje jakoúÊ transmisji sieci komÛrkowej w danej pozycji na mapie. Uøytkownik ma moøliwoúÊ zmiany pozycji obserwowanej na mapie, a ponadto w gÛrnym panelu aplikacji znajdujπ siÍ podstawowe informacje o aktualnej sieci.
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/rfbenchmark_measurement.png}
+    \caption{Pomiar prÍdkoúci sieci w aplikacji RFBenchmark}
+    \label{fig:rfbenchmark_measurement}
+\end{figure}
+
+\qquad Rysunek \ref{fig:rfbenchmark_measurement} przedstawia kolejnπ funkcjonalnoúc aplikacji RFBenchmark, ktÛrπ jest moøliwoúc dokonywania w≥asnych pomiarÛw jakoúci sieci. Uøytkownik moøe zobaczyÊ czas transmisji z i do serwera RFBenchmark, oraz przybliøonπ prÍdkoúÊ pobierania oraz wysy≥ania plikÛw w sieci.
+
+\qquad W przeciwieÒstwie do aplikacji bÍdπcej przedmiotem niniejszej pracy magisterskiej, uøytkownik nie ma moøliwoúci wyboru serwera z ktÛrym prowadzona bÍdzie transmisja, rozmiaru pakietu czy protoko≥u transmisji. Nie istnieje takøe moøliwoúc zapisu wynikÛw do pliku, tylko jako publikacja na portalu spo≥ecznoúciowym.
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/rfbenchmark_signalinfo.png}
+    \caption{Widok informacji o aktualnym ≥πczu radiowym i sieci w aplikacji RFBenchmark}
+    \label{fig:rfbenchmark_signalinfo}
+\end{figure}
+
+\qquad Aplikacja RFBenchmark udostÍpnia takøe szczegÛ≥we informacje na temat aktualnego ≥πcza radiowego z sieciπ komÛrkowπ (rysunek \ref{fig:rfbenchmark_signalinfo}). Pozwalajπ one na podglπd m.in. aktualnej mocy sygna≥u, informacji o stacji bazowej oraz po≥oøenia terminala mobilnego.
+
+\subsection{Aplikacja netmonitor}
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/netmonitor_mainscreen.png}
+    \caption{Ekran g≥Ûwny aplikacji netmonitor}
+    \label{fig:netmonitor_mainscreen}
+\end{figure}
+
+\qquad Aplikacja netmonitor, ktÛrej ekran g≥Ûwny przedstawia rysunek \ref{fig:netmonitor_mainscreen} jest zdecydowanie mniej zaawansowanym rozwiπzaniem do pomiarÛw jakoúci transmisji w sieci od opisanej w poprzednim rozdziale aplikacji RFBenchmark. Na ekranie g≥Ûwnym uøytkownik ma moøliwoúÊ zapoznania siÍ z informacjami o sieci komÛrkowej, z ktÛrπ jest aktualnie po≥πczony oraz zapoznania siÍ z wykresem zmiany si≥y sygna≥u w funkcji czasu. Dodatkowo aplikacja wyúwietla przybliøony adres, pod ktÛrym znajduje siÍ uøytkownik
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/netmonitor_networks.png}
+    \caption{Widok dostÍpnych sieci w aplikacji netmonitor}
+    \label{fig:netmonitor_networks}
+\end{figure}
+
+\qquad Wewnπtrz aplikacji netmonitor istnieje moøliwoúÊ pomiaru mocy sygna≥u sieci WiFi, ktÛre sπ dostÍpne w zasiÍgu terminala komÛrkowego (rysunek \ref{fig:netmonitor_networks}). 
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/netmonitor_gps_position.png}
+    \caption{Widok pozycji terminala mobilnego w aplikacji netmonitor}
+    \label{fig:netmonitor_gps_position}
+\end{figure}
+
+\qquad Aplikacja umoøliwia takøe pomiar aktualnej pozycji terminala mobilnego, wraz z wyúwietleniem pomiaru jakoúci transmisji w danym miejscu. JakoúÊ ta jest wyúwietlana w postaci barwy zielonej, øÛ≥tej lub czerwonej, w zaleønoúci od tego jaka jest jakoúÊ transmisji w danym po≥oøeniu. Nie istnieje moøliwoúÊ uzyskania dok≥adnych informacji na temat transmisji na podstawie ktÛrej dokonywany jest pomiar.
+
+\subsection{Aplikacja Ping Tools}
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/ping_tools_mainscreen.png}
+    \caption{Widok g≥Ûwny aplikacji Ping Tools}
+    \label{fig:ping_tools_mainscreen}
+\end{figure}
+
+\qquad Ping Tools jest aplikacjπ ktÛrej zadaniem sπ pomiary transmisji z terminala mobilnego do dowolnego serwera. Transmisja ta odbywa siÍ za pomocπ protoko≥u HTTP, istnieje takøe moøliwoúÊ ustawienia odstÍpu czasu pomiÍdzy kolejnymi pakietami wysy≥anymi w sieci.
+
+\qquad Ekran g≥Ûwny aplikacji (rysunek \ref{fig:ping_tools_mainscreen}) przedstawia informacje na temat sieci WiFi, z ktÛrπ po≥πczony jest uøytkownik. Wyúwietlane sπ takie dane jak lokalne IP terminala mobilnego, bramka sieciowa, zewnÍtrzne IP, si≥a sygna≥u WiFi oraz urzπdzenia po≥πczone z tπ samπ sieciπ (rysunek \ref{fig:ping_tools_connected_devices}).
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/ping_tools_connected_devices.png}
+    \caption{Widok po≥πczonych z lokalnπ WiFi urzπdzeÒ w aplikacji Ping Tools}
+    \label{fig:ping_tools_connected_devices}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/ping_tools_menu.png}
+    \caption{DostÍpne opcje pomiaru w aplikacji Ping Tools}
+    \label{fig:ping_tools_menu}
+\end{figure}
+
+\qquad Aplikacja Ping Tools umoøliwia uøytkownikowi rozmaite opcje pomiaru poza pomiarem szybkoúci transmisji z i do serwera. Istnieje np. moøliwoúÊ skanowania otwartych portÛw innego urzπdzenia po≥πczonego z Internetem, podglπd drogi, jakie pokonujπ pakiety w trakcie transmisji do serwera, czy skaner UPnP (ang. \textit{Universal Plug-and-Play}).
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/ping_tools_pingresult.png}
+    \caption{Widok pomiaru czasu transmisji z i do serwera w aplikacji Ping Tools}
+    \label{fig:ping_tools_pingresult}
+\end{figure}
+
+\qquad Rysunek \ref{fig:ping_tools_pingresult} przedstawia wynik pomiaru czasu transmisji do serwera firmy Google. Uøytkownik ma moøliwoúÊ wyboru liczby pakietÛw, a po zakoÒczeniu pomiaru - zapoznania siÍ ze statystykami pomiaru oraz udostÍpnienia ich w innej aplikacji.
+
+\subsection{Aplikacja Net Monitor}
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/net_monitor_mainscreen.png}
+    \caption{Widok g≥Ûwny aplikacji Net Monitor}
+    \label{fig:net_monitor_mainscreen}
+\end{figure}
+
+\qquad Ekran g≥Ûwny aplikacji Net Monitor (ktÛra, mimo bardzo zbliøonej nazwy do wczeúniej opisywanej aplikacji netmonitor, jest tworem innej firmy) zosta≥ przedstawiony na rynkus \ref{fig:net_monitor_mainscreen}. Przedstawia on podstawowe informacje na temat aktualnego po≥πczenia z sieciπ komÛrkowπ takie jak: nazwa operatora, aktualna sieÊ, si≥a sygna≥u czy pozycja GPS. Dodatkowo istnieje takøe moøliwoúÊ uzyskania informacji o sπsiednich stacjach bazowych, jeøeli znajdujπ siÍ one w zasiÍgu transmisji telefonu.
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/net_monitor_measurement.png}
+    \caption{Widok pomiaru ≥πcza radiowego w aplikacji Net Monitor}
+    \label{fig:net_monitor_measurement}
+\end{figure}
+
+Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoúci transmisji telefonu z stacjπ bazowπ. Na wykresie przedstawione zosta≥y wskaüniki RSSI (ang. \textit{Received Signal Strength Indication}) dla sieci GSM, WCDMA oraz LTE. Dla sieci LTE dodatkowo przedstawione sπ wskaüniki RSRQ (ang. \textit{Reference Signal Received Quality}) oraz RSSNR (ang. \textit{Reference Signal Signal to Noise Ratio}). Pozwala to na analizÍ zmian jakoúci transmisji pomiÍdzy terminalem mobilnym, a stacjπ bazowπ w ciπgu dnia.
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.135,natwidth=1080,natheight=1920]{screeny/net_monitor_sessions.png}
+    \caption{Widok zapisanych sesji pomiarÛw w aplikacji Net Monitor}
+    \label{fig:net_monitor_sessions}
+\end{figure}
+
+\qquad Aplikacja Net Monitor umoøliwia takøe zapisywanie wewnπtrz aplikacji dokonywanych sesji pomiarowych, co przedstawia rysunek \ref{fig:net_monitor_sessions}. Kaøda sesja ma swojπ nazwÍ, oraz zawiera informacjÍ o czasie rozpoczÍcia pomiaru, czasie trwania pomiaru, iloúci pakietÛw wysy≥anych oraz rozk≥ad iloúci wys≥anych pakietÛw z podzia≥em na sieci GSM, WCDMA oraz LTE.
+
 \chapter{Realizacja pracy}
-
 \section{Za≥oøenia projektowe}
 
 \qquad Celem pracy jest stworzenie úrodowiska pomiarowego do pomiaru czasu transmisji danych w sieciach komÛrkowych pod kπtem zastosowania tych sieci w systemach pomiarowych. 
@@ -877,6 +1004,8 @@ Poniøsze wyniki przedstawiajπ pomiary dokonane w úrodowisku miejskim, terminal m
     \bibitem{[14]} èrÛd≥o internetowe: \textit{Strona internetowa Python Software Foundation} \\ https://www.python.org/
     \bibitem{[15]} èrÛd≥o internetowe: \textit{Dokumentacja us≥ugi Google Maps} \\ https://developers.google.com/maps/documentation/android-api/
     \bibitem{[16]} èrÛd≥o internetowe: \textit{Dokumentacja biblioteki jÍzyka Python Flask} \\ http://flask.pocoo.org/docs/0.11/
+    \bibitem{[17]} èrÛd≥o internetowe: \textit{Strona internetowa aplikacji RFBenchmark} \\ http://www.rfbenchmark.eu/
+
 
 
 
