@@ -47,20 +47,16 @@
 \maketitle
 \newpage
 
-\section*{}
-{\Large \textbf{Streszczenie}}
+\subsection*{Streszczenie}
+\qquad Celem niniejszej pracy magisterskiej jest stworzenie systemu pomiarowego sk³adaj¹cego siê z aplikacji zaimplementowanej w jêzyku programowania Java na urz¹dzenia z systemem Android oraz aplikacji napisanych w jêzyku Python na komputer PC pe³ni¹cych funkcjê serwera retransmituj¹cego pakiety. Zadaniem tego systemu jest transmisja pakietów o zadanej d³ugoœci co okreœlony przez u¿ytkownika okres czasu oraz z wykorzystaniem zadanego protoko³u, nastêpnie retransmisja przes³anych pakietów przez serwer do aplikacji w celu dokonania pomiarów czasu transmisji oraz mocy sygna³u.
 
-{\Large \textbf{Abstract}}
+\qquad Aplikacja umo¿liwia transmisjê pakietów za pomoc¹ protoko³ów HTTP, TCP oraz UDP, a ponadto posiada szereg funkcjonalnoœci takich jak: pomiar pozycji terminala mobilnego, wyliczanie statystyk pomiaru, zapisywanie danych do pliku, mo¿liwoœæ pracy w tle, oraz zapisywanie zrzutów ekranu w pamiêci telefonu.
 
+\subsection*{Abstract}
+\qquad The goal of this Master's thesis is to create a measurement system which is composed of an application written in programming language Java developed for Android devices and applications written in Python which purpose is to act as a server for retransmitting previously sent packets. Created system is responsible for transmitting packets from mobile device of given length with a given interval, while using a protocol specified by the user. Afterwards the server retransmits the packets to the mobile phone in order for request time and signal strength measurements to be made.
 
-\newpage
+\qquad The mobile phone application allows the user to send packets using HTTP, TCP or UDP protocols, along with functionalities such as measuring the mobile phone location, calculating measurement statistics, saving the data to file, background measurements and saving screenshots to phone data storage.
 
-\nomenclature{LTE}{Long Term Evolution}
-\nomenclature{UMTS}{Universal Mobile Telecommunications System}
-\nomenclature{GSM}{Global System for Mobile Communications}
-\renewcommand{\nomname}{S³ownik skrótów i~akronimów}
-\makenomenclature
-\printnomenclature[2.5cm]
 
 \newpage
 %Spis treœci
@@ -69,6 +65,26 @@
 %Pierwszy rozdzia³ - Wstêp
 \newpage
 \chapter{Wstêp}
+\qquad We wspó³czesnym œwiecie dynamiczny rozwój technologii transmisji zarówno g³osu jak i danych ³¹czami radiowymi sprawia, ¿e telekomunikacja kablowa schodzi na dalszy plan. Coraz mniejsza czêœæ spo³eczeñstwa wykorzystuje w codziennej komunikacji z bliskimi telefony stacjonarne, obecnie telefon komórkowy nie jest ju¿ symbolem statusu, lecz jego zakup sta³ siê niemal¿e koniecznoœci¹ w XXI wieku.
+
+\qquad Gdy w latach 90-tych pojawi³y siê pierwsze sieci komórkowe GSM, ma³o kto spodziewa³ siê, ¿e w ci¹gu 20 lat u¿ytkownicy bêd¹ mieli mo¿liwoœæ transmisji nie tylko g³osu na odleg³oœæ, lecz tak¿e danych, zdjêæ, filmów, gier itd. Telefony komórkowe posiadaj¹ obecnie tak rozbudowane funkcje (g³ównie za spraw¹ tworzonych na nie aplikacje), ¿e zastêpuj¹ one z sukcesem komputery stacjonarne w takich zastosowaniach jak np. bankowoœc elektroniczna, czy zakupy przez Internet.
+
+\qquad Ze wzglêdu na tak powszechny dostêp do szybkich transmisji za pomoc¹ ³¹cz radiowych w telefonii komórkowej, do celów telemetrycznych stosuje siê tak¿e radiokomunikacje. Wygoda u¿ytkowania oraz transportu terminala mobilnego sprawia, ¿e jest do doskona³e narzêdzie do przeprowadzania pomiarów jakoœci transmisji w sieciach bezprzewodowych. Spora gama dostêpnych w Polsce operatorów telefonii komórkowej sprawia, ¿e pomiary jakoœci transmisji zyskuj¹ na znaczeniu ze wzglêdu na liczbê stacji bazowych w zasiêgu terminala mobilnego, ró¿ne zasiêgi operatorów, rozmaite tryby transmisji oraz mo¿liwe zak³ócenia w kanale radiowym.
+
+\qquad Celem niniejszej pracy jest stworzenie systemu pomiarowego, który bêdzie sk³ada³ siê z aplikacji napisanej na telefon z systemem operacyjnym Android oraz serwerów uruchamianych na komputerze PC. Zadaniem tego systemu jest nadawanie pakietów z terminala mobilnego za pomoc¹ trzech dostêpnych protoko³ów (HTTP, TCP oraz UDP), odbiór pakietu po stronie serwera oraz jego retransmisja do aplikacji w celu dokonania pomiaru czasu transmisji pakietu oraz mocy sygna³u.
+
+\qquad Wynikiem ukoñczonej pracy jest aplikacja na urz¹dzenia z systemem Android zaimplementowana w jêzyku programowania Java, któr¹ mo¿na z powodzeniem uruchomiæ i u¿ywaæ na zdecydowanej wiêkszoœci obecnie dostêpnych na rynku urz¹dzeñ dzia³aj¹cych pod kontrol¹ systemu Android, oraz aplikacje-serwery zaimplementowane w jêzyku Python, które mo¿na uruchomiæ na komputerach z systemami Windows, MacOS oraz Linux.
+
+\qquad Ca³oœæ pracy zosta³a podzielona na piêæ rodzia³ów, jej struktura jest nastêpuj¹ca:
+
+\begin{itemize}
+  \item Rozdzia³ pierwszy zawiera wstêp do pracy.
+  \item Rozdzia³ drugi zawiera teoretyczny opis zastosowanych w trakcie realizacji pracy. Przedstawiono opis technologii radiokomunikacji ruchomej zastosowanych w pracy, protoko³ów transmisji danych w sieci Internet, oraz charakterystykê tworzenia oprogramowania na urz¹dzenia z systemem Android oraz w jêzyku programowania Java. Opisano tak¿e aktualnie dostêpne na rynku przyk³adowe narzêdzia do pomiarów parametrów transmisji dla urz¹dzeñ z systemem 
+Android.
+  \item W rozdziale trzecim opisano praktyczn¹ realizacjê zaimplementowanego na potrzeby pracy oprogramowania. Opisano zarówno sposób implementacji serwerów jak i przedstawiono w szczegó³owy sposób detale implementacji poszczególnych funkcjonalnoœci aplikacji mobilnej
+  \item Rozdzia³ czwarty zawiera przyk³adowe pomiary dokonane za pomoc¹ systemu bêd¹cego przedmiotem niniejszej pracy magisterskiej.
+  \item Rozdzia³ pi¹ty zawiera podsumowanie pracy wraz z bibliografi¹, spisem rysunków i tabel.
+\end{itemize}
 
 \newpage
 \chapter{Opis teoretyczny zastosowanych technologii}
@@ -1008,8 +1024,12 @@ Nastêpnie w pêtli wykonywane s¹ nastêpuj¹ce kroki:
     \bibitem{[16]} ród³o internetowe: \textit{Dokumentacja biblioteki jêzyka Python Flask} \\ http://flask.pocoo.org/docs/0.11/
     \bibitem{[17]} ród³o internetowe: \textit{Strona internetowa aplikacji RFBenchmark} \\ http://www.rfbenchmark.eu/
 
-
-
+\newpage
+\listoffigures
+\begingroup
+\let\clearpage\relax
+\listoftables
+\endgroup
 
     
 \end{thebibliography}

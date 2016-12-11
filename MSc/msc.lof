@@ -1,0 +1,60 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Zasi\k eg sieci 3G operatora T-Mobile w wrze\'sniu 2015 roku\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Tworzenie aplikacji na system operacyjny Android w \'srodowisku Android Studio\relax }}{20}{figure.caption.15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Interpreter j\k ezyka Python\relax }}{21}{figure.caption.16}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ekran g\IeC {\l }\'owny aplikacji RFBenchmark\relax }}{22}{figure.caption.17}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Pomiar pr\k edko\'sci sieci w aplikacji RFBenchmark\relax }}{23}{figure.caption.18}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Widok informacji o\nobreakspace {}aktualnym \IeC {\l }\k aczu radiowym i\nobreakspace {}sieci w aplikacji RFBenchmark\relax }}{24}{figure.caption.19}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Ekran g\IeC {\l }\'owny aplikacji netmonitor\relax }}{25}{figure.caption.20}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Widok dost\k epnych sieci w aplikacji netmonitor\relax }}{26}{figure.caption.21}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Widok pozycji terminala mobilnego w aplikacji netmonitor\relax }}{27}{figure.caption.22}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Widok g\IeC {\l }\'owny aplikacji Ping Tools\relax }}{28}{figure.caption.23}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Widok po\IeC {\l }\k aczonych z\nobreakspace {}lokaln\k a WiFi urz\k adze\'n w aplikacji Ping Tools\relax }}{29}{figure.caption.24}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Dost\k epne opcje pomiaru w aplikacji Ping Tools\relax }}{29}{figure.caption.25}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Widok pomiaru czasu transmisji z\nobreakspace {}i\nobreakspace {}do serwera w aplikacji Ping Tools\relax }}{30}{figure.caption.26}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Widok g\IeC {\l }\'owny aplikacji Net Monitor\relax }}{31}{figure.caption.27}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Widok pomiaru \IeC {\l }\k acza radiowego w aplikacji Net Monitor\relax }}{32}{figure.caption.28}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Widok zapisanych sesji pomiar\'ow w aplikacji Net Monitor\relax }}{33}{figure.caption.29}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Kod \'zr\'od\IeC {\l }owy serwera odbieraj\k acego i\nobreakspace {}nadaj\k acego przy pomocy zapyta\'n HTTP\relax }}{37}{figure.caption.30}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Kod \'zr\'od\IeC {\l }owy serwera odbieraj\k acego i\nobreakspace {}nadaj\k acego pakiety protoko\IeC {\l }u TCP\relax }}{38}{figure.caption.31}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Kod \'zr\'od\IeC {\l }owy serwera odbieraj\k acego i\nobreakspace {}nadaj\k acego datagramy UDP\relax }}{39}{figure.caption.32}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces G\IeC {\l }\'owny ekran aplikacji\relax }}{41}{figure.caption.33}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Wsparcie sprz\k etowe aplikacji na system Android\relax }}{41}{figure.caption.34}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ustawienia sieci kom\'orkowej w systemie Android\relax }}{43}{figure.caption.35}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ekran pomiaru\relax }}{44}{figure.caption.36}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Ekran wy\'swietlania wynik\'ow pomiaru\relax }}{45}{figure.caption.37}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Realizacja programowa transmisji z\nobreakspace {}wykorzystaniem zapyta\'n HTTP\relax }}{46}{figure.caption.38}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Funkcje pomocnicze odpowiadaj\k ace za obs\IeC {\l }ug\k e poprawnej lub b\IeC {\l }\k ednej transmisji HTTP\relax }}{46}{figure.caption.39}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Definicja funkcji \textit {getStringRequest}\relax }}{47}{figure.caption.40}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces P\k etla wysy\IeC {\l }aj\k aca zapytania HTTP do serwera\relax }}{48}{figure.caption.41}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Realizacja programowa transmisji poprzez protok\'o\IeC {\l } TCP\relax }}{49}{figure.caption.42}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Wysy\IeC {\l }anie pakiet\'ow TCP po stronie klienta\relax }}{50}{figure.caption.43}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Odbieranie pakiet\'ow TCP po stronie klienta\relax }}{51}{figure.caption.44}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Realizacja programowa transmisji poprzez protok\'o\IeC {\l } UDP\relax }}{52}{figure.caption.45}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Wysy\IeC {\l }anie pakietu UDP po stronie klienta\relax }}{53}{figure.caption.46}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Odbieranie pakietu UDP po stronie klienta\relax }}{53}{figure.caption.47}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Pobieranie aktualnego czasu przed wys\IeC {\l }aniem pakietu\relax }}{54}{figure.caption.48}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Pomiar czasu transmisji pakietu oraz pobieranie statystyk pomiaru\relax }}{54}{figure.caption.49}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Obliczanie statystyk aktualnego pomiaru\relax }}{55}{figure.caption.50}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Ustawienia pliku AndroidManifest.xml pozwalaj\k ace na pomiar pozycji terminala mobilnego\relax }}{56}{figure.caption.51}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Wygenerowany klucz do us\IeC {\l }ugi nawigacji Google umieszczony w pliku AndroidManifest.xml\relax }}{56}{figure.caption.52}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Spos\'ob realizacji po\IeC {\l }\k aczenia aplikacji z\nobreakspace {}us\IeC {\l }ug\k a nawigacji Google\relax }}{56}{figure.caption.53}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Spos\'ob realizacji nas\IeC {\l }uchiwania na zmiany pozycji terminala mobilnego\relax }}{57}{figure.caption.54}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Spos\'ob realizacji rejestracji aktualnej pozycji oraz aktualizacji mapy\relax }}{57}{figure.caption.55}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Tworzenie pliku z\nobreakspace {}rozszerzeniem .csv w pami\k eci urz\k adzenia\relax }}{58}{figure.caption.56}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Spos\'ob realizacji zapisu danych do pliku .csv\relax }}{59}{figure.caption.57}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Realizacja dodania wynik\'ow pomiaru do pliku\relax }}{60}{figure.caption.58}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Przyk\IeC {\l }adowe wyniki pomiar\'ow zaimportowane do programu Microsoft Excel\relax }}{61}{figure.caption.59}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Widok aplikacji po zako\'nczonym pomiarze - nadanie 50 pakiet\'ow, sie\'c LTE\relax }}{63}{figure.caption.60}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Widok wykresu wynik\'ow pomiaru w aplikacji - nadanie 50 pakiet\'ow, sie\'c LTE\relax }}{64}{figure.caption.61}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 50 pakiet\'ow, sie\'c LTE, zapisane pomiary wy\'swietlone za pomoc\k a programu Microsoft Excel\relax }}{64}{figure.caption.62}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Widok aplikacji po zako\'nczonym pomiarze - nadanie 50 pakiet\'ow, sie\'c WCDMA\relax }}{65}{figure.caption.63}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Widok wykresu wynik\'ow pomiaru w aplikacji - nadanie 50 pakiet\'ow, sie\'c WCDMA\relax }}{66}{figure.caption.64}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 50 pakiet\'ow, sie\'c WCDMA zapisane pomiary wy\'swietlone za pomoc\k a programu Microsoft Excel\relax }}{66}{figure.caption.65}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Widok aplikacji po zako\'nczonym pomiarze - nadanie 50 pakiet\'ow, sie\'c EDGE\relax }}{67}{figure.caption.66}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Widok wykresu wynik\'ow pomiaru w aplikacji - nadanie 50 pakiet\'ow, sie\'c EDGE\relax }}{68}{figure.caption.67}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 50 pakiet\'ow, sie\'c EDGE, zapisane pomiary wy\'swietlone za pomoc\k a programu Microsoft Excel\relax }}{68}{figure.caption.68}
+\addvspace {10\p@ }
