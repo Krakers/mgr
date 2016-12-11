@@ -15,26 +15,27 @@
 \BOOKMARK [2][-]{subsection.2.2.3}{Protok\363\233 UDP}{section.2.2}% 15
 \BOOKMARK [1][-]{section.2.3}{Charakterystyka tworzenia oprogramowania na urzadzenia z systemem Android}{chapter.2}% 16
 \BOOKMARK [1][-]{section.2.4}{Charakterystyka tworzenia oprogramowania w jezyku Python}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.5}{Aktualnie dostepne narzedzia do pomiar\363w parametr\363w transmisji dla urzadzen z systemem Android}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.5}{Aktualnie dostepne przyk\233adowe narzedzia do pomiar\363w parametr\363w transmisji dla urzadzen z systemem Android}{chapter.2}% 18
 \BOOKMARK [2][-]{subsection.2.5.1}{Aplikacja RFBenchmark}{section.2.5}% 19
 \BOOKMARK [2][-]{subsection.2.5.2}{Aplikacja netmonitor}{section.2.5}% 20
 \BOOKMARK [2][-]{subsection.2.5.3}{Aplikacja Ping Tools}{section.2.5}% 21
-\BOOKMARK [0][-]{chapter.3}{Realizacja pracy}{}% 22
-\BOOKMARK [1][-]{section.3.1}{Za\233ozenia projektowe}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.2}{Opis aplikacji pe\233niacej funkcje serwera na komputer PC}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.2.1}{Protok\363\233 HTTP}{section.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.2.2}{Protok\363\233 TCP}{section.3.2}% 26
-\BOOKMARK [2][-]{subsection.3.2.3}{Protok\363\233 UDP}{section.3.2}% 27
-\BOOKMARK [1][-]{section.3.3}{Opis aplikacji na smartfon z systemem Android}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.1}{Opis realizacji programowej transmisji z wykorzystaniem zapytan HTTP}{section.3.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.2}{Opis realizacji programowej transmisji pakiet\363w poprzez protok\363\233 TCP}{section.3.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.3}{Opis realizacji programowej transmisji pakiet\363w poprzez protok\363\233 UDP}{section.3.3}% 31
-\BOOKMARK [2][-]{subsection.3.3.4}{Spos\363b pomiaru czasu przesy\233ania pakietu}{section.3.3}% 32
-\BOOKMARK [2][-]{subsection.3.3.5}{Spos\363b pomiaru po\233ozenia terminala mobilnego}{section.3.3}% 33
-\BOOKMARK [2][-]{subsection.3.3.6}{Spos\363b zapisywania wynik\363w pomiaru do pliku}{section.3.3}% 34
-\BOOKMARK [0][-]{chapter.4}{Przyk\233adowe wyniki pomiar\363w}{}% 35
-\BOOKMARK [1][-]{section.4.1}{Pomiar nieruchomego terminala mobilnego}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.2}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec LTE\)}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.3}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec WCDMA\)}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.4}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec EDGE\)}{chapter.4}% 39
-\BOOKMARK [0][-]{chapter.5}{Podsumowanie}{}% 40
+\BOOKMARK [2][-]{subsection.2.5.4}{Aplikacja Net Monitor}{section.2.5}% 22
+\BOOKMARK [0][-]{chapter.3}{Realizacja pracy}{}% 23
+\BOOKMARK [1][-]{section.3.1}{Za\233ozenia projektowe}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{Opis aplikacji pe\233niacej funkcje serwera na komputer PC}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.2.1}{Protok\363\233 HTTP}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.2}{Protok\363\233 TCP}{section.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.2.3}{Protok\363\233 UDP}{section.3.2}% 28
+\BOOKMARK [1][-]{section.3.3}{Opis aplikacji na smartfon z systemem Android}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.1}{Opis realizacji programowej transmisji z wykorzystaniem zapytan HTTP}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.2}{Opis realizacji programowej transmisji pakiet\363w poprzez protok\363\233 TCP}{section.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.3}{Opis realizacji programowej transmisji pakiet\363w poprzez protok\363\233 UDP}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.4}{Spos\363b pomiaru czasu przesy\233ania pakietu}{section.3.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.5}{Spos\363b pomiaru po\233ozenia terminala mobilnego}{section.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.6}{Spos\363b zapisywania wynik\363w pomiaru do pliku}{section.3.3}% 35
+\BOOKMARK [0][-]{chapter.4}{Przyk\233adowe wyniki pomiar\363w}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Pomiar nieruchomego terminala mobilnego}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec LTE\)}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.3}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec WCDMA\)}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.4}{Pomiar nieruchomego terminala mobilnego \(nadanie 200 pakiet\363w, siec EDGE\)}{chapter.4}% 40
+\BOOKMARK [0][-]{chapter.5}{Podsumowanie}{}% 41
