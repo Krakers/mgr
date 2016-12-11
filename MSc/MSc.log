@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  11 DEC 2016 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  11 DEC 2016 18:56
 entering extended mode
 **msc.tex
 (msc.tex
@@ -1797,7 +1797,7 @@ Rozdzia\PlPrIeC {\l } 5.
 [69
 
 ]
-Overfull \hbox (16.8445pt too wide) in paragraph at lines 1010--1012
+Overfull \hbox (16.8445pt too wide) in paragraph at lines 1015--1017
 \OT4/cmr/m/n/12 http://www.t-mobile.pl/pl/indywidualni/stali[]klienci/uslugi[]d
 o[]telefonu/mapa[]zasiegu 
  []
@@ -1832,11 +1832,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [75]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1036.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1036.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1041.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1041.
  (msc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1036.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1036.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1041.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1041.
 
 Package rerunfilecheck Info: File `msc.out' has not changed.
 (rerunfilecheck)             Checksum: 88FD23706A991B40EB1C5415F0F5E6D4;3503.
@@ -1844,7 +1844,7 @@ Package rerunfilecheck Info: File `msc.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1036.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1041.
  ) 
 Here is how much of TeX's memory you used:
  20563 strings out of 493673
@@ -1861,7 +1861,7 @@ les (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}<C:/Program Files (x86)/MiKTeX
 pe1/public/pl/plr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/p
 l/plr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb
 >
-Output written on msc.pdf (76 pages, 5202114 bytes).
+Output written on msc.pdf (76 pages, 5203415 bytes).
 PDF statistics:
  947 PDF objects out of 1000 (max. 8388607)
  219 named destinations out of 1000 (max. 500000)
