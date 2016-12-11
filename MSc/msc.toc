@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {3.3.6}Spos\'ob zapisywania wynik\'ow pomiaru do pliku}{57}{subsection.3.3.6}
 \contentsline {chapter}{\numberline {4}Przyk\IeC {\l }adowe wyniki pomiar\'ow}{61}{chapter.4}
 \contentsline {section}{\numberline {4.1}Pomiar nieruchomego terminala mobilnego}{61}{section.4.1}
-\contentsline {section}{\numberline {4.2}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c LTE)}{62}{section.4.2}
-\contentsline {section}{\numberline {4.3}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c WCDMA)}{64}{section.4.3}
-\contentsline {section}{\numberline {4.4}Pomiar nieruchomego terminala mobilnego (nadanie 200 pakiet\'ow, sie\'c EDGE)}{65}{section.4.4}
-\contentsline {chapter}{\numberline {5}Podsumowanie}{67}{chapter.5}
+\contentsline {section}{\numberline {4.2}Pomiar nieruchomego terminala mobilnego (nadanie 50 pakiet\'ow, sie\'c LTE)}{62}{section.4.2}
+\contentsline {section}{\numberline {4.3}Pomiar nieruchomego terminala mobilnego (nadanie 50 pakiet\'ow, sie\'c WCDMA)}{64}{section.4.3}
+\contentsline {section}{\numberline {4.4}Pomiar nieruchomego terminala mobilnego (nadanie 50 pakiet\'ow, sie\'c EDGE)}{66}{section.4.4}
+\contentsline {chapter}{\numberline {5}Podsumowanie}{68}{chapter.5}

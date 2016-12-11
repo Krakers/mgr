@@ -623,8 +623,8 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.35,natwidth=540,natheight=960]{results.jpg}
-    \caption{Ekran pomiaru}
+\includegraphics[scale=0.18,natwidth=1920,natheight=1080]{results.jpg}
+    \caption{Ekran wyœwietlania wyników pomiaru}
     \label{fig:results_android}
 \end{figure}
 
@@ -905,76 +905,77 @@ Nastêpnie w pêtli wykonywane s¹ nastêpuj¹ce kroki:
 \chapter{Przyk³adowe wyniki pomiarów}
 \section{Pomiar nieruchomego terminala mobilnego}
 
-Poni¿sze wyniki przedstawiaj¹ pomiary dokonane w œrodowisku miejskim, terminal mobilny pozostawa³ nieruchomy przez ca³y czas pomiaru. Nadano 200 pakietów o~rozmiarze 1024 bajtów, z~odstêpem 2s pomiêdzy kolejnymi pakietami.
+\qquad Poni¿sze wyniki przedstawiaj¹ przyk³adowe pomiary dokonane w œrodowisku miejskim, terminal mobilny pozostawa³ nieruchomy przez ca³y czas pomiaru. Nadano 50 pakietów o~rozmiarze 1024 bajtów za pomoc¹ protoko³u HTTP, z~odstêpem czasu 2s pomiêdzy kolejnymi pakietami.
 
-\section{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietów, sieæ LTE)}
+\qquad Po zakoñczeniu ka¿dego z pomiarów wykonano zrzuty ekranu w celu zobrazowania widoku statystyk dotycz¹cych pomiaru w aplikacji, oraz wykresu przedstawiaj¹cego zmianê czasu transmisji pakietu oraz mocy sygna³u w czasie. Dodatkowo zaimportowano automatycznie generowane przez aplikacjê wyniki w pliku .csv do programu Microsoft Excel w celu wykazania, ¿e aplikacja umo¿liwia dalsz¹ analzê danych za pomoc¹ narzêdzi na komputer PC.
+
+\section{Pomiar nieruchomego terminala mobilnego (nadanie 50 pakietów, sieæ LTE)}
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.2,natwidth=1920,natheight=1080]{stationary_lte_http.png}
-    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietów, sieæ LTE, widok w aplikacji}
+\includegraphics[scale=0.2,natwidth=1920,natheight=1080]{pomiary/app_http_lte_measurement.png}
+    \caption{Widok aplikacji po zakoñczonym pomiarze - nadanie 50 pakietów, sieæ LTE}
     \label{fig:stationary_lte_http}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.4,natwidth=1130,natheight=117]{pomiary/stationary_http_lte.png}
-    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietów, sieæ LTE, zapisanie wyniki pomiarów}
+\includegraphics[scale=0.2,natwidth=1920,natheight=1080]{pomiary/app_http_lte_results.png}
+    \caption{Widok wykresu wyników pomiaru w aplikacji - nadanie 50 pakietów, sieæ LTE}
     \label{fig:stationary_lte_http_results}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.5,natwidth=1000,natheight=618]{pomiary/stationary_http_lte_wykres.png}
-    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietów, sieæ LTE, wykres utworzony w programie Excel}
-    \label{fig:stationary_lte_http_chart}
+\includegraphics[scale=0.5,natwidth=1048,natheight=486]{pomiary/lte_excel.png}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 50 pakietów, sieæ LTE, zapisane pomiary wyœwietlone za pomoc¹ programu Microsoft Excel}
+    \label{fig:stationary_lte_http_excel}
 \end{figure}
 
-\section{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietów, sieæ WCDMA)}
+\section{Pomiar nieruchomego terminala mobilnego (nadanie 50 pakietów, sieæ WCDMA)}
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.2,natwidth=1920,natheight=1080]{stationary_wcdma_http.png}
-    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietów, sieæ WCDMA, widok w aplikacji}
+\includegraphics[scale=0.2,natwidth=1920,natheight=1080]{pomiary/app_http_wcdma_measurement.png}
+    \caption{Widok aplikacji po zakoñczonym pomiarze - nadanie 50 pakietów, sieæ WCDMA}
     \label{fig:stationary_wcdma_http}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.4,natwidth=1078,natheight=53]{pomiary/stationary_http_wcdma.png}
-    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietów, sieæ WCDMA, zapisanie wyniki pomiarów}
-    \label{fig:stationary_wcdma_http_results}
+\includegraphics[scale=0.2,natwidth=1920,natheight=1080]{pomiary/app_http_wcdma_results.png}
+    \caption{Widok wykresu wyników pomiaru w aplikacji - nadanie 50 pakietów, sieæ WCDMA}
+    \label{fig:stationary__wcdma_results}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.4,natwidth=1317,natheight=697]{pomiary/stationary_http_wcdma_wykres.png}
-    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietów, sieæ WCDMA, wykres utworzony w programie Excel}
-    \label{fig:stationary_wcdma_http_chart}
+\includegraphics[scale=0.5,natwidth=1042,natheight=486]{pomiary/wcdma_excel.png}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 50 pakietów, sieæ WCDMA zapisane pomiary wyœwietlone za pomoc¹ programu Microsoft Excel}
+    \label{fig:stationary_wcdma_http_excel}
 \end{figure}
 
-
-\section{Pomiar nieruchomego terminala mobilnego (nadanie 200 pakietów, sieæ EDGE)}
+\section{Pomiar nieruchomego terminala mobilnego (nadanie 50 pakietów, sieæ EDGE)}
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.2,natwidth=1920,natheight=1080]{stationary_edge_http.png}
-    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietów, sieæ EDGE, widok w aplikacji}
-    \label{fig:stationary_edge_http}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-\includegraphics[scale=0.4,natwidth=1078,natheight=53]{pomiary/stationary_http_edge.png}
-    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietów, sieæ EDGE, zapisanie wyniki pomiarów}
-    \label{fig:stationary_edge_http_results}
+\includegraphics[scale=0.2,natwidth=1920,natheight=1080]{pomiary/app_http_edge_measurement.png}
+    \caption{Widok aplikacji po zakoñczonym pomiarze - nadanie 50 pakietów, sieæ EDGE}
+    \label{fig:stationary_wcdma_http}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.4,natwidth=1317,natheight=697]{pomiary/stationary_http_edge_wykres.png}
-    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 200 pakietów, sieæ EDGE, wykres utworzony w programie Excel}
-    \label{fig:stationary_edge_http_chart}
+\includegraphics[scale=0.2,natwidth=1920,natheight=1080]{pomiary/app_http_edge_results.png}
+    \caption{Widok wykresu wyników pomiaru w aplikacji - nadanie 50 pakietów, sieæ EDGE}
+    \label{fig:stationary__wcdma_results}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+\includegraphics[scale=0.5,natwidth=1039,natheight=487]{pomiary/edge_excel.png}
+    \caption{Wyniki pomiaru nieruchomego terminala mobilnego - nadanie 50 pakietów, sieæ EDGE, zapisane pomiary wyœwietlone za pomoc¹ programu Microsoft Excel}
+    \label{fig:stationary_wcdma_http_excel}
 \end{figure}
 
 \newpage
