@@ -36,6 +36,7 @@
 % set up labelformat and labelsep for table
 \usepackage{caption}
 \captionsetup[table]{labelformat=simple, labelsep=space}
+\captionsetup[figure]{labelformat=simple, labelsep=period}
 
 \title{Praca magisterska \\ Aplikacja do pomiarów szybkoœci transmisji danych w urz¹dzeniach z~systemem operacyjnym Android}
 \author{Tomasz £akomy}
@@ -163,7 +164,7 @@ lub 488,8 - 496 & 35 \\ \hline
 \subsubsection{HSDPA}
 \qquad HSDPA (ang. \textit{High Speed Downlink Packet Access}) pojawi³o siê ze wzglêdu na wci¹¿ rosn¹ce zapotrzebowanie na szybk¹ transmisjê danych, prêdkoœci oferowane przez WCDMA nie by³y ju¿ wystarczaj¹ce dla u¿ytkowników XXI wieku. Technologia ta powsta³a na bazie WCDMA, co sprawia, ¿e operatorzy komórkowi przy jej wdra¿aniu nie musza ponosiæ kosztów zwi¹zanych z~wymian¹ sieci szkieletowej, a~jedyne zmiany dotycz¹ sieci radiowej.
 
-\qquad System HSDPA oferuje prêdkoœci transmisji siêgaj¹ce 21.6 Mbit/s w ³¹czu w dó³. Tak du¿¹ prêdkoœc transmisji danych uda³o siê osi¹gn¹æ poprzez m.in. zastosowanie modulacji 16QAM (gdy warunki panuj¹ce w kanale radiowym na to pozwalaj¹, ze wzglêdu na to, ¿e modulacja ta jest bardziej wra¿liwa na zak³ócenia ni¿ modulacja QPSK), wyodrêbnienie osobnego kana³u transportowego dla transmisji w ³¹czu w dó³ - HS-DSCH (\textit{High Speed Downlink Shared Channel}), oraz dziêki zmniejszeniu okresu, w którym przesy³ana jest ramka danych, co pozwala na lepsze reagowanie na zmieniaj¹ce siê w czasie w³aœciwoœci kana³u radiowego.
+\qquad System HSDPA oferuje prêdkoœci transmisji siêgaj¹ce 21,6 Mbit/s w ³¹czu w dó³. Tak du¿¹ prêdkoœc transmisji danych uda³o siê osi¹gn¹æ poprzez m.in. zastosowanie modulacji 16QAM (gdy warunki panuj¹ce w kanale radiowym na to pozwalaj¹, ze wzglêdu na to, ¿e modulacja ta jest bardziej wra¿liwa na zak³ócenia ni¿ modulacja QPSK), wyodrêbnienie osobnego kana³u transportowego dla transmisji w ³¹czu w dó³ - HS-DSCH (\textit{High Speed Downlink Shared Channel}), oraz dziêki zmniejszeniu okresu, w którym przesy³ana jest ramka danych, co pozwala na lepsze reagowanie na zmieniaj¹ce siê w czasie w³aœciwoœci kana³u radiowego.
 
 \subsection{LTE}
 \qquad Technologia LTE (ang. \textit{Long Term Evolution}) powsta³a jako odpowiedŸ konsorcjum 3GPP (ang. \textit{3rd Generation Partnership Project}) na rosn¹ce zapotrzebowanie u¿ytkowników na przepustowoœæ ³¹cza danych. z~racji tego, ¿e jest ona nastêpc¹ takich rozwi¹zañ telekomunikacyjnych jak WCDMA i~HSPA bywa ona bardzo czêsto omy³kowo nazywana "technologi¹ 4G", co nie jest do koñca prawd¹. W tym miejscu warto zaznaczyæ, ¿e pomimo wielu nieprawdziwych informacji docieraj¹cych z~mediów standard LTE nie spe³nia wymogów stawianych przez ITU (ang. \textit{International Telecommunication Union}) dla technologii 4G/IMT-Advanced. Wymogi te spe³nia dopiero nastêpca standardu LTE o~nazwie LTE-Advanced.
@@ -179,8 +180,8 @@ lub 488,8 - 496 & 35 \\ \hline
         Max przep³ywnoœæ - ³¹cze w dó³ & 300 Mb/s \\ \hline
         Maksymalna przep³ywnoœæ - ³¹czê w górê & 50Mb/s \\ \hline
         Maksymalne opóŸnienie pakietu & ok. 10ms  \\ \hline
-        Wykorzystana metoda wielodostêpu - downlink & OFDMA \\ \hline
-        Wykorzystana metoda wielodostêpu - uplink & SC-FDMA \\ \hline
+        Wykorzystana metoda wielodostêpu - ³¹cze w dó³ & OFDMA \\ \hline
+        Wykorzystana metoda wielodostêpu - ³¹cze w górê & SC-FDMA \\ \hline
         \end{tabular}
         \label{LTE_requirements}
     \end{center}
@@ -228,9 +229,9 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 \begin{table}[H]
     \begin{center}
         \caption{Dostêpne us³ugi protoko³u HTTP}
-        \begin{tabular}{ | l | l | l | }
+        \begin{tabular}{ | l | l | p{8cm} | }
         \hline
-        \textbf{Metoda} & \textbf{Rodzaj} \textbf{Znaczenie} \\ \hline
+        \textbf{Metoda} & \textbf{Rodzaj} & \textbf{Znaczenie} \\ \hline
         1xx & Informacyjne & ¯¹danie odebrane, zapytanie w trakcie przetwarzania\\ \hline
         2xx & Sukces & Zapytanie odebrane i~zakoñczone sukcesem\\ \hline
         3xx & Przekierowanie & Koniecznoœæ podjêcia dalszych akcji, aby zakoñczyæ ¿¹danie\\ \hline
@@ -362,7 +363,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
     \label{fig:netmonitor_mainscreen}
 \end{figure}
 
-\qquad Aplikacja netmonitor, której ekran g³ówny przedstawia rysunek \ref{fig:netmonitor_mainscreen} jest zdecydowanie mniej zaawansowanym rozwi¹zaniem do pomiarów jakoœci transmisji w sieci od opisanej w poprzednim rozdziale aplikacji RFBenchmark. Na ekranie g³ównym u¿ytkownik ma mo¿liwoœæ zapoznania siê z~informacjami o~sieci komórkowej, z~któr¹ jest aktualnie po³¹czony oraz zapoznania siê z~wykresem zmiany si³y sygna³u w funkcji czasu. Dodatkowo aplikacja wyœwietla przybli¿ony adres, pod którym znajduje siê u¿ytkownik
+\qquad Aplikacja netmonitor, której ekran g³ówny przedstawia rysunek \ref{fig:netmonitor_mainscreen} jest zdecydowanie mniej zaawansowanym rozwi¹zaniem do pomiarów jakoœci transmisji w sieci od opisanej w poprzednim rozdziale aplikacji RFBenchmark. Na ekranie g³ównym u¿ytkownik ma mo¿liwoœæ zapoznania siê z~informacjami o~sieci komórkowej, z~któr¹ jest aktualnie po³¹czony oraz zapoznania siê z~wykresem zmiany si³y sygna³u w funkcji czasu. Dodatkowo aplikacja wyœwietla przybli¿ony adres, pod którym znajduje siê u¿ytkownik.
 
 \begin{figure}[H]
     \centering
@@ -850,7 +851,7 @@ Nastêpnie w pêtli wykonywane s¹ nastêpuj¹ce kroki:
 
 \qquad Rysunek \ref{fig:create_file} przedstawia sposób tworzenia pliku .csv w systemie Android. Zaimplementowano dwie funkcje \textit{createFilePath} oraz \textit{createFile}. Pierwsza z~nich tworzy œcie¿kê do pliku pobieraj¹c œcie¿kê do g³ównego katalogu pamiêci urz¹dzenia i~dodaj¹c do niej nazwê pliku o~formacie:
 
-\qquad \textit{AndroidPingData\[AKTUALNY_CZAS\].csv}
+\qquad \textit{AndroidPingData\lbrack AKTUALNY\_CZAS\rbrack.csv}
 
 \qquad Funkcja \textit{createFile} tworzy pusty plik w pamiêci urz¹dzenia. W przypadku b³êdu w trakcie tworzenia pliku (np. brak wolnej pamiêci wewn¹trz urz¹dzenia), dalszy zapis danych nie bêdzie kontynuowany.
 
