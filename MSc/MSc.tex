@@ -65,21 +65,20 @@
 %Pierwszy rozdzia³ - Wstêp
 \newpage
 \chapter{Wstêp}
-\qquad We wspó³czesnym œwiecie dynamiczny rozwój technologii transmisji zarówno g³osu jak i danych ³¹czami radiowymi sprawia, ¿e telekomunikacja kablowa schodzi na dalszy plan. Coraz mniejsza czêœæ spo³eczeñstwa wykorzystuje w codziennej komunikacji z bliskimi telefony stacjonarne, obecnie telefon komórkowy nie jest ju¿ symbolem statusu, lecz jego zakup sta³ siê niemal¿e koniecznoœci¹ w XXI wieku.
+\qquad We wspó³czesnym œwiecie dynamiczny rozwój technologii transmisji zarówno g³osu jak i danych ³¹czami radiowymi sprawia, ¿e telekomunikacja kablowa schodzi na dalszy plan. Coraz mniejsza czêœæ spo³eczeñstwa wykorzystuje w codziennej komunikacji z bliskimi telefony stacjonarne, obecnie w XXI wieku telefon komórkowy nie jest ju¿ symbolem statusu, lecz jego zakup sta³ siê niemal¿e koniecznoœci¹.
 
-\qquad Gdy w latach 90-tych pojawi³y siê pierwsze sieci komórkowe GSM, ma³o kto spodziewa³ siê, ¿e w ci¹gu 20 lat u¿ytkownicy bêd¹ mieli mo¿liwoœæ transmisji nie tylko g³osu na odleg³oœæ, lecz tak¿e danych, zdjêæ, filmów, gier itd. Telefony komórkowe posiadaj¹ obecnie tak rozbudowane funkcje (g³ównie za spraw¹ tworzonych na nie aplikacje), ¿e zastêpuj¹ one z sukcesem komputery stacjonarne w takich zastosowaniach jak np. bankowoœc elektroniczna, czy zakupy przez Internet.
+\qquad Gdy w latach 90-tych pojawi³y siê pierwsze sieci komórkowe GSM, ma³o kto spodziewa³ siê, ¿e w ci¹gu 20 lat u¿ytkownicy bêd¹ mieli mo¿liwoœæ transmisji na odleg³oœæ nie tylko g³osu, lecz tak¿e danych, zdjêæ, filmów, gier itd. Telefony komórkowe posiadaj¹ obecnie tak rozbudowane funkcje (g³ównie za spraw¹ tworzonych na nie aplikacji), ¿e zastêpuj¹ one z sukcesem komputery stacjonarne w takich zastosowaniach jak np. bankowoœc elektroniczna, czy zakupy przez Internet.
 
-\qquad Ze wzglêdu na tak powszechny dostêp do szybkich transmisji za pomoc¹ ³¹cz radiowych w telefonii komórkowej, do celów telemetrycznych stosuje siê tak¿e radiokomunikacje. Wygoda u¿ytkowania oraz transportu terminala mobilnego sprawia, ¿e jest do doskona³e narzêdzie do przeprowadzania pomiarów jakoœci transmisji w sieciach bezprzewodowych. Spora gama dostêpnych w Polsce operatorów telefonii komórkowej sprawia, ¿e pomiary jakoœci transmisji zyskuj¹ na znaczeniu ze wzglêdu na liczbê stacji bazowych w zasiêgu terminala mobilnego, ró¿ne zasiêgi operatorów, rozmaite tryby transmisji oraz mo¿liwe zak³ócenia w kanale radiowym.
+\qquad Ze wzglêdu na tak powszechny dostêp do szybkich transmisji za pomoc¹ ³¹cz radiowych w telefonii komórkowej, do celów telemetrycznych stosuje siê tak¿e radiokomunikacje. Wygoda u¿ytkowania oraz transportu terminala mobilnego sprawia, ¿e jest to doskona³e narzêdzie do przeprowadzania pomiarów jakoœci transmisji w sieciach bezprzewodowych. Spora gama dostêpnych w Polsce operatorów telefonii komórkowej sprawia, ¿e pomiary jakoœci transmisji zyskuj¹ na znaczeniu ze wzglêdu na liczbê stacji bazowych w zasiêgu terminala mobilnego, ró¿ne zasiêgi operatorów, rozmaite tryby transmisji oraz mo¿liwe zak³ócenia w kanale radiowym.
 
-\qquad Celem niniejszej pracy jest stworzenie systemu pomiarowego, który bêdzie sk³ada³ siê z aplikacji napisanej na telefon z systemem operacyjnym Android oraz serwerów uruchamianych na komputerze PC. Zadaniem tego systemu jest nadawanie pakietów z terminala mobilnego za pomoc¹ trzech dostêpnych protoko³ów (HTTP, TCP oraz UDP), odbiór pakietu po stronie serwera oraz jego retransmisja do aplikacji w celu dokonania pomiaru czasu transmisji pakietu oraz mocy sygna³u.
+\qquad Celem niniejszej pracy jest stworzenie systemu pomiarowego, który sk³ada  siê z aplikacji napisanej na telefon z systemem operacyjnym Android oraz serwerów uruchamianych na komputerze PC. Zadaniem tego systemu jest nadawanie pakietów z terminala mobilnego za pomoc¹ trzech dostêpnych protoko³ów (HTTP, TCP oraz UDP), odbiór pakietu po stronie serwera oraz jego retransmisja do aplikacji w celu dokonania pomiaru czasu transmisji pakietu oraz mocy sygna³u.
 
-\qquad Wynikiem ukoñczonej pracy jest aplikacja na urz¹dzenia z systemem Android zaimplementowana w jêzyku programowania Java, któr¹ mo¿na z powodzeniem uruchomiæ i u¿ywaæ na zdecydowanej wiêkszoœci obecnie dostêpnych na rynku urz¹dzeñ dzia³aj¹cych pod kontrol¹ systemu Android, oraz aplikacje-serwery zaimplementowane w jêzyku Python, które mo¿na uruchomiæ na komputerach z systemami Windows, MacOS oraz Linux.
+\qquad Wynikiem ukoñczonej pracy jest aplikacja na urz¹dzenia z systemem Android zaimplementowana w jêzyku Java, któr¹ mo¿na z powodzeniem uruchomiæ i u¿ywaæ na zdecydowanej wiêkszoœci obecnie dostêpnych na rynku urz¹dzeñ dzia³aj¹cych pod kontrol¹ systemu Android, oraz aplikacje-serwery zaimplementowane w jêzyku Python, które mo¿na uruchomiæ na komputerach z systemami Windows, MacOS oraz Linux.
 
-\qquad Ca³oœæ pracy zosta³a podzielona na piêæ rodzia³ów, jej struktura jest nastêpuj¹ca:
-
+\qquad Ca³oœæ pracy sk³ada siê z piêciu rozdzia³ów, jej struktura jest nastêpuj¹ca:
 \begin{itemize}
   \item Rozdzia³ pierwszy zawiera wstêp do pracy.
-  \item Rozdzia³ drugi zawiera teoretyczny opis zastosowanych w trakcie realizacji pracy. Przedstawiono opis technologii radiokomunikacji ruchomej zastosowanych w pracy, protoko³ów transmisji danych w sieci Internet, oraz charakterystykê tworzenia oprogramowania na urz¹dzenia z systemem Android oraz w jêzyku programowania Java. Opisano tak¿e aktualnie dostêpne na rynku przyk³adowe narzêdzia do pomiarów parametrów transmisji dla urz¹dzeñ z systemem 
+  \item Rozdzia³ drugi zawiera teoretyczny opis technologii transmisji zastosowanych w trakcie realizacji pracy. Przedstawiono opis technologii radiokomunikacji ruchomej zastosowanych w pracy, protoko³ów transmisji danych w sieci Internet, oraz charakterystykê tworzenia oprogramowania na urz¹dzenia z systemem Android oraz w jêzyku programowania Java. Opisano tak¿e aktualnie dostêpne na rynku przyk³adowe narzêdzia do pomiarów parametrów transmisji dla urz¹dzeñ z systemem 
 Android.
   \item W rozdziale trzecim opisano praktyczn¹ realizacjê zaimplementowanego na potrzeby pracy oprogramowania. Opisano zarówno sposób implementacji serwerów jak i przedstawiono w szczegó³owy sposób detale implementacji poszczególnych funkcjonalnoœci aplikacji mobilnej
   \item Rozdzia³ czwarty zawiera przyk³adowe pomiary dokonane za pomoc¹ systemu bêd¹cego przedmiotem niniejszej pracy magisterskiej.
@@ -94,7 +93,7 @@ Android.
 \subsubsection{GSM}
 \qquad GSM (ang. \textit{Global System for Mobile Communications}) jest standardem, który powsta³ dziêki europejskiej inicjatywie stworzenia jednego, otwartego standardu telefonii komórkowej. Jest to najstarsza wykorzystywana dziœ technologia radiokomunikacji ruchomej, na obszarze europejskim rozpoczêto uruchamianie GSM ju¿ w roku 1989, rok po opublikowaniu pierwszej wersji standardu. Polska na uruchomienie pierwszej sieci GSM czeka³a kolejne 7 lat, zosta³a ona uruchomiona w roku 1996.
 
-\qquad GSM jest aktualnie najpowszechniej wykorzystywanym standardem telefonii komórkowej na œwiecie, jest on dostêpny w 219 pañstwach. Pierwotnie by³ to standard pozwalaj¹cy jedynie na transmisje mowy, jednak¿e po latach ewolucji pojawi³y siê bazuj¹ce na GSM technologie transmisji danych takie jak GPRS (ang. \textit{General Packet Radio Service}) czy jego nastêpca, EDGE (ang. \textit{Enchanced Data Rules for GSM evolution}). W przypadku, gdy u¿ytkownik terminala mobilnego wybra³ korzystanie np. z~sieci LTE (ang. \textit{Long Term Evolution}) do transmisji danych i~z jakiœ powodów transmisja ta nie jest mo¿liwa (przyk³adowo z~powodu zbyt s³abego zasiêgu sieci LTE), transmisja mo¿e byæ przeprowadzona za pomoc¹ technologii EDGE, która jest dostêpna niemal¿e wszêdzie tam, gdzie dostêpna jest sieæ GSM.
+\qquad GSM jest aktualnie najpowszechniej wykorzystywanym standardem telefonii komórkowej na œwiecie, jest on dostêpny w 219 pañstwach. Pierwotnie by³ to standard pozwalaj¹cy jedynie na transmisje mowy, jednak¿e po latach ewolucji pojawi³y siê bazuj¹ce na GSM technologie transmisji danych takie jak GPRS (ang. \textit{General Packet Radio Service}), czy jego nastêpca, EDGE (ang. \textit{Enchanced Data Rules for GSM evolution}). W przypadku, gdy u¿ytkownik terminala mobilnego wybra³ korzystanie np. z~sieci LTE (ang. \textit{Long Term Evolution}) do transmisji danych i~z jakiœ powodów transmisja ta nie jest mo¿liwa (przyk³adowo z~powodu zbyt s³abego zasiêgu sieci LTE), transmisja mo¿e byæ przeprowadzona za pomoc¹ technologii EDGE, która jest dostêpna niemal¿e wszêdzie tam, gdzie dostêpna jest sieæ GSM.
 
 \begin{table}[H]
     \begin{center}
@@ -103,8 +102,8 @@ Android.
         \hline
         \textbf{Standard} & \textbf{Czêstotliwoœci wykorzystywane w ³¹czu w górê [MHz]} & \textbf{Czêstotliwoœci wykorzystywane w ³¹czu w dó³ [MHz]} & \textbf{Liczba dostêpnych pasm czêstotliwoœci} \\ \hline
         GSM 400 & 450,4 - 457,6
-lub 478,8 - 486 & 460,4 - 467,6
-lub 488,8 - 496 & 35 \\ \hline
+lub \newline 478,8 - 486 & 460,4 - 467,6
+lub \newline 488,8 - 496 & 35 \\ \hline
         GSM 850 & 824 - 849 & 869 - 894 & 124 \\ \hline
         GSM 900 & 880 - 915 & 925 - 960 & 174 \\ \hline
         GSM 1800 & 1710 - 1785 & 1805 - 1880 & 374 \\ \hline
@@ -114,7 +113,7 @@ lub 488,8 - 496 & 35 \\ \hline
     \end{center}
 \end{table}
 
-\qquad Istnieje piêæ g³ównych standardów sieci GSM, ró¿ni¹cych siê od siebie wykorzystywanym pasmem radiowym oraz liczb¹ dostêpnych pasm czêstotliwoœci, co przedstawia tabela \ref{tab:GSM_standards}
+\qquad Istnieje piêæ g³ównych standardów sieci GSM, ró¿ni¹cych siê od siebie wykorzystywanym pasmem radiowym oraz liczb¹ dostêpnych pasm czêstotliwoœci, co przedstawia tabela \ref{tab:GSM_standards}.
 
 \qquad Na terenie Unii Europejskiej u¿ywany jest standard GSM 900/1800, który polega na uruchomieniu obu sieci jednoczeœnie na danym obszarze. Na terenach, gdzie spodziewany ruch jest niezbyt du¿y (np. tereny wiejskie) uruchamiana jest tylko sieæ GSM 900, jednak¿e w miastach, gdzie ruch ten jest zdecydowanie wiêkszy, dodatkowo wdra¿any jest tak¿e standard GSM 1800, który dziêki wiêkszej liczbie jednoczeœnie oferowanych czêstotliwoœci jest w stanie obs³u¿yæ wiêkszy ruch. 
 
@@ -123,7 +122,7 @@ lub 488,8 - 496 & 35 \\ \hline
 \subsubsection{EDGE}
 \qquad Standard EDGE (ang. \textit{Enhanced Data Rates for GSM Evolution}) powsta³ jako odpowiedŸ na zapotrzebowanie u¿ytkowników na wiêksze ni¿ w przypadku GPRS prêdkoœci transmsji danych pakietowych. Obecnie jest to najbardziej podstawowa technika przesy³ana danych w sieciach komórkowych, wykorzystywana, gdy sieci UMTS oraz LTE nie s¹ dostêpne.
 
-\qquad Zarówno EDGE jak i~GPRS dzia³aj¹ na bazie istniej¹cej infrastruktury sieci komórkowej, wiêc wdro¿enie ich nie stwarza³o koniecznoœci budowania nowej sieci radiowej. EDGE (mimo, ¿e powsta³ póŸniej) nie oferowa³ nowych us³ug, ale za to oferowa³ u¿ytkownikom mo¿liwoœci dostarczania takich us³ug jak Internet, korzystanie z~transmisji strumieniowych audio/video czy te¿ wideorozmowy.
+\qquad Zarówno EDGE jak i~GPRS dzia³aj¹ na bazie istniej¹cej infrastruktury sieci komórkowej, wiêc wdro¿enie ich nie stwarza³o koniecznoœci budowania nowej sieci radiowej. EDGE (mimo, ¿e powsta³ póŸniej) nie oferowa³ nowych us³ug, ale za to oferowa³ u¿ytkownikom mo¿liwoœci dostarczania takich us³ug jak Internet, korzystanie z~transmisji strumieniowych audiowizualnych czy te¿ wideorozmowy.
 
 \qquad W podstawowym systemie GSM, transmisja jest zorganizowana na pasmach o~szerokoœci 200 kHz, a~czas podzielony jest na 8 kolejno nastêpuj¹cych szczelin czasowych, z~których ka¿da trwa 577 mikrosekund. Szczeliny se t¹ ponumerowane od 1 do 8 i~nastêpuj¹ cyklicznie. W przypadku transmisji mowy, kontroler stacji bazowej przypisuje terminalowi mobilnemu jedn¹ szczelinê czasow¹ na czêstotwliwoœci u¿ywanej to transmisji. Oznacza to, ¿e na 1 czêstotliwoœci mo¿na jednoczeœnie prowadziæ do 8 rozmów telefonicznych.
 
@@ -152,14 +151,14 @@ lub 488,8 - 496 & 35 \\ \hline
 \end{table}
 
 
-\qquad z~powy¿szej tabeli wynika, ¿e maksymaln¹ prêdkoœc transmisji mo¿na osi¹gn¹æ wybieraj¹c schemat MCS-9, który przy zastosowaniu 5 szczelin czasowych umo¿liwa transmisjê do 296 kilobitów na sekundê. W praktyce prêdkoœæ ta jest zdecydowanie ni¿sza, g³ównie ze wzglêdu na warunki panuj¹ce w kanale radiowym.
+\qquad Z~powy¿szej tabeli wynika, ¿e maksymaln¹ prêdkoœc transmisji mo¿na osi¹gn¹æ wybieraj¹c schemat MCS-9, który przy zastosowaniu 5 szczelin czasowych umo¿liwa transmisjê do 296 kilobitów na sekundê. W praktyce prêdkoœæ ta jest zdecydowanie ni¿sza, g³ównie ze wzglêdu na warunki panuj¹ce w kanale radiowym.
 
 \subsection{UMTS i~HSDPA}
 \subsubsection{UMTS}
 
 \qquad UMTS (ang. \textit{Universal Mobile Telecommunications System}), jest to standard sieci komórkowej trzeciej generacji bêd¹cy nastêpc¹ systemu GSM. UMTS zosta³ zbudowany na bazie GSM, co oznacza, ¿e nie zak³ada on zmian w sieci szkieletowej, jednak¿e wprowadzono gruntowne zmiany w sieci radiowej. Dziêki tym zmianiom (takim jak zaimplementowanie technologii HSDPA - ang. \textit{High Speed Downlink Packet Access}) uda³o siê uzyskaæ prêdkoœci transmisji danych pakietowych dochodz¹ce do 21,6 Mbit/s w transmisji w ³¹czu w górê, oraz do 5,76 Mbit/s w ³¹czu w dó³.
 
-\qquad Prêdkoœci transmisji danych w sieciach trzeciej generacji s¹ zdecydowanie wiêksze od prêdkoœci mierzonych w sieciach generacji poprzedniej ze wzglêdu na rosn¹ce zapotrzebowanie u¿ytkowników na korzystanie z~us³ug internetowych w terminalach mobilnych. W czasach, gdy strumieniowanie filmów w wysokiej rozdzielczoœci przez Internet jest po¿¹dan¹ przez u¿ytkowników telefonów komórkowych funkcjonalnoœci¹, EDGE nie jest wystarczaj¹cy dla zaspokojenia ich potrzeb.
+\qquad Prêdkoœci transmisji danych w sieciach trzeciej generacji s¹ zdecydowanie wiêksze od prêdkoœci mierzonych w sieciach generacji poprzedniej ze wzglêdu na rosn¹ce zapotrzebowanie u¿ytkowników na korzystanie z~us³ug internetowych w terminalach mobilnych. W czasach, gdy strumieniowanie filmów w wysokiej rozdzielczoœci przez Internet jest po¿¹dan¹ przez u¿ytkowników telefonów komórkowych funkcjonalnoœci¹, EDGE nie jest wystarczaj¹cy dla zaspokojenia tych potrzeb.
 
 \qquad W dzisiejszych czasach UMTS jest najpopularniejsz¹ sieci¹ komórkow¹ trzeciej generacji, a~polscy operatorzy komórkowi objeli jej zasiêgiem niemal¿e ca³y kraj. \cite{[4]}\cite{[5]}\cite{[6]}\cite{[7]}
 
@@ -178,14 +177,14 @@ lub 488,8 - 496 & 35 \\ \hline
 \qquad W systemach wykorzystuj¹cych CDMA, transmisje pochodz¹ce od poszczególnych u¿ytkowników sieci s¹ przetwarzane w nadajniku za pomoc¹ wyznaczonych kodów, które poszerzaj¹ pasmo nadawanego sygna³u. Dziêki temu mo¿na umieœciæ wiele transmisji na jednakowym paœmie, kody te s¹ ortogonalne wobec siebie, tak wiêc mo¿liwe jest wyobrêbnienie danego sygna³u w odbiorniku spoœród wielu innych, jednoczeœnie nadawanych. Ponadto, ci¹gi danych s¹ modulowane z~zastosowaniem modulacji cyfrowej QPSK, co tak¿e poprawia odpornoœæ transmisji na b³êdy.
 
 \subsubsection{HSDPA}
-\qquad HSDPA (ang. \textit{High Speed Downlink Packet Access}) pojawi³o siê ze wzglêdu na wci¹¿ rosn¹ce zapotrzebowanie na szybk¹ transmisjê danych, prêdkoœci oferowane przez WCDMA nie by³y ju¿ wystarczaj¹ce dla u¿ytkowników XXI wieku. Technologia ta powsta³a na bazie WCDMA, co sprawia, ¿e operatorzy komórkowi przy jej wdra¿aniu nie musza ponosiæ kosztów zwi¹zanych z~wymian¹ sieci szkieletowej, a~jedyne zmiany dotycz¹ sieci radiowej.
+\qquad HSDPA (ang. \textit{High Speed Downlink Packet Access}) pojawi³o siê ze wzglêdu na wci¹¿ rosn¹ce zapotrzebowanie na szybk¹ transmisjê danych, prêdkoœci oferowane przez WCDMA nie by³y ju¿ wystarczaj¹ce dla u¿ytkowników XXI wieku. Technologia ta powsta³a na bazie WCDMA, co sprawia, ¿e operatorzy komórkowi przy jej wdra¿aniu nie musz¹ ponosiæ kosztów zwi¹zanych z~wymian¹ sieci szkieletowej, a~jedyne zmiany dotycz¹ sieci radiowej.
 
 \qquad System HSDPA oferuje prêdkoœci transmisji siêgaj¹ce 21,6 Mbit/s w ³¹czu w dó³. Tak du¿¹ prêdkoœc transmisji danych uda³o siê osi¹gn¹æ poprzez m.in. zastosowanie modulacji 16QAM (gdy warunki panuj¹ce w kanale radiowym na to pozwalaj¹, ze wzglêdu na to, ¿e modulacja ta jest bardziej wra¿liwa na zak³ócenia ni¿ modulacja QPSK), wyodrêbnienie osobnego kana³u transportowego dla transmisji w ³¹czu w dó³ - HS-DSCH (\textit{High Speed Downlink Shared Channel}), oraz dziêki zmniejszeniu okresu, w którym przesy³ana jest ramka danych, co pozwala na lepsze reagowanie na zmieniaj¹ce siê w czasie w³aœciwoœci kana³u radiowego.
 
 \subsection{LTE}
 \qquad Technologia LTE (ang. \textit{Long Term Evolution}) powsta³a jako odpowiedŸ konsorcjum 3GPP (ang. \textit{3rd Generation Partnership Project}) na rosn¹ce zapotrzebowanie u¿ytkowników na przepustowoœæ ³¹cza danych. z~racji tego, ¿e jest ona nastêpc¹ takich rozwi¹zañ telekomunikacyjnych jak WCDMA i~HSPA bywa ona bardzo czêsto omy³kowo nazywana "technologi¹ 4G", co nie jest do koñca prawd¹. W tym miejscu warto zaznaczyæ, ¿e pomimo wielu nieprawdziwych informacji docieraj¹cych z~mediów standard LTE nie spe³nia wymogów stawianych przez ITU (ang. \textit{International Telecommunication Union}) dla technologii 4G/IMT-Advanced. Wymogi te spe³nia dopiero nastêpca standardu LTE o~nazwie LTE-Advanced.
 
-\qquad Pierwsz¹ implementacjê standardu opisuje dokument 3GPP LTE Release 8, opublikowany w grudniu 2008 roku. Opisano w nim nowo projektowany standard oraz przedstawiono jego specyfikacjê. Kolejny dokument (Release 9) zosta³ wydany rok póŸniej, a~wydanie Release 10 zawieraj¹cego opis LTE-Advanced pozwoli³o 3GPP na spe³nienie wymagañ dotycz¹cych sieci 4G. W Release 8 zosta³y opisane podstawowe w³aœciwoœci systemu LTE, które przedstawiono w tabeli \ref{LTE_requirements}
+\qquad Pierwsz¹ implementacjê standardu opisuje dokument 3GPP LTE Release 8, opublikowany w grudniu 2008 roku. Opisano w nim nowo projektowany standard oraz przedstawiono jego specyfikacjê. Kolejny dokument (Release 9) zosta³ wydany rok póŸniej, a~wydanie Release 10 zawieraj¹ce opis LTE-Advanced pozwoli³o 3GPP na spe³nienie wymagañ dotycz¹cych sieci 4G. W dokumencie Release 8 zosta³y opisane podstawowe w³aœciwoœci systemu LTE, które przedstawiono w tabeli \ref{LTE_requirements}
 
 \begin{table}[H]
     \begin{center}
@@ -269,16 +268,16 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 \begin{itemize}
   \item \textbf{Port Ÿród³owy} [16 bitów]
   \item \textbf{Port przeznaczenia} [16 bitów]
-  \item \textbf{Numer kolejny} [32 bity] - numer kolejny pierwszego bajtu danych w tym segmencie. S³u¿y do numerowania bajtów w ca³ym po³¹czeniu, w celu zapewnienia ich poprawnej kolejnoœci
+  \item \textbf{Numer kolejny} [32 bity] - numer kolejny pierwszego bajtu danych w tym segmencie. S³u¿y do numerowania bajtów w ca³ym po³¹czeniu, w celu zapewnienia ich poprawnej kolejnoœci.
   \item \textbf{Numer potwierdzenia} [32 bity] - pole to zawiera wartoœæ kolejnego oczekiwanego numeru kolejnego. Wartoœæ ta jest potwierdzeniem odebrania wszystkich bajtów o~numerach kolejnych mniejszych ni¿ wartoœæ zapisana w tym polu.
   \item \textbf{Przesuniêcie} [4 bity] - liczba 32 bitowych s³ów w aktualnie przesy³anym nag³ówki TCP. Przesuniêcie te wskazuje pocz¹tek danych.
-  \item \textbf{Zarezerwowane} [6 bitów] - zarezerwowane do wykorzystania w przysz³oœci
-  \item \textbf{Flagi} [6 bitów] - ka¿da o~innym przeznaczeniu, przyk³adowo flaga ACK oznacza pole potwierdzenia, RST resetuje po³¹czenie, a~flaga FIN - koñczy je
+  \item \textbf{Zarezerwowane} [6 bitów] - zarezerwowane do wykorzystania w przysz³oœci.
+  \item \textbf{Flagi} [6 bitów] - ka¿da o~innym przeznaczeniu, przyk³adowo flaga ACK oznacza pole potwierdzenia, RST resetuje po³¹czenie, a~flaga FIN - koñczy je.
   \item \textbf{Okno} [16 bitów] - okreœla liczbê bajtów danych, które nadawca zgodzi siê przyj¹æ. Pole te s³u¿y do sterowania przep³ywem danych.
   \item \textbf{Suma kontrolna} [16 bitów] - suma kontrolna nag³ówka oraz danych
-  \item \textbf{WskaŸnik pilnoœci} [16 bitów] - pole u¿ywane, gdy ustawiona jest flaga URG. Zawiera numer kolejny bajtu nastêpuj¹cego po tzw. "pilnych danych"
-  \item \textbf{Pola opcji} [0 - 44 bajtów] - dodatkowe opcje transmisji TCP. Listê wszystkich dostêpnych opcji mo¿na znaleŸæ w \cite{[11]}
-  \item \textbf{Uzupe³nienie} [X bitów] - uzupe³nia zerami opcje tak, aby d³ugoœæ nag³ówka TCP by³a wielokrotnoœci¹ 32 bitów
+  \item \textbf{WskaŸnik pilnoœci} [16 bitów] - pole u¿ywane, gdy ustawiona jest flaga URG. Zawiera numer kolejny bajtu nastêpuj¹cego po tzw. "pilnych danych".
+  \item \textbf{Pola opcji} [0 - 44 bajtów] - dodatkowe opcje transmisji TCP. Listê wszystkich dostêpnych opcji mo¿na znaleŸæ w \cite{[11]}.
+  \item \textbf{Uzupe³nienie} [X bitów] - uzupe³nia zerami opcje tak, aby d³ugoœæ nag³ówka TCP by³a wielokrotnoœci¹ 32 bitów.
 \end{itemize}
 
 
@@ -299,7 +298,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \section{Charakterystyka tworzenia oprogramowania na urz¹dzenia z~systemem Android}
 
-\qquad Android jest systemem operacyjnym z~j¹drem Linux przeznaczonym dla urz¹dzeñ mobilnych takich jak telefony komórkowe, smartfony, tablety oraz przyk³adowo w inteligentnych telewizorach (technologia Android TV). Obecnie jest to najbardziej popularny system operacyjny na telefony komórkowe (87\% udzia³u na rynku, dane z~drugiego kwarta³u 2016 \cite{[12]}), a~w mowie potocznej okreœlenie "smartfon" jest uto¿samianie z~telefonem z~panelem dotykowym, na którym zainstalowany jest system operacyjny Android.
+\qquad Android jest systemem operacyjnym z~j¹drem Linux przeznaczonym dla urz¹dzeñ mobilnych takich jak telefony komórkowe, smartfony, tablety oraz przyk³adowo dla inteligentnych telewizorów (technologia Android TV). Obecnie jest to najbardziej popularny system operacyjny na telefony komórkowe (87\% udzia³u na rynku, dane z~drugiego kwarta³u 2016 \cite{[12]}), a~w mowie potocznej okreœlenie "smartfon" jest uto¿samianie z~telefonem z~panelem dotykowym, na którym zainstalowany jest system operacyjny Android.
 
 \qquad Android jest rozwi¹zaniem typu Open Source\cite{[9]}, co oznacza, ¿e jego kod Ÿród³owy jest powszechnie dostêpny. Jest to jeden z~elementów otwartej polityki aktualnego w³aœciciela systemu operacyjnego Android - firmy Google, która rozwija Androida jako otwart¹ platformê zarówno dla programistów jak i~dla u¿ytkowników.
 
@@ -320,7 +319,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Python to powsta³y w 1991 roku jêzyk programowania wysokiego poziomu, którego ide¹ jest czystoœæ i~klarownoœæ kodu Ÿród³owego. Python jest jêzykiem uniwersalnym, wieloparadygmatowym i~aktualnie jednym z~najpowszechniej u¿ywanych jêzyków programowania na œwiecie \cite{[13]}.
 
-\qquad Do zalet programowania w jêzyku Python nale¿y zaliczyæ ogromn¹ iloœæ dostêpnych bibliotek, obszern¹ bibliotekê standardow¹, prostotê pisania i~czytania kodu oraz mo¿liwoœæ uruchamiania stworzonego w tym jêzyku oprogramowania na wielu ró¿nych platformach. Python jest jêzykiem interpretowanym, co oznacza, ¿e do uruchomienia programu napisanego w tym jêzyku nie jest wymagana kompilacja. Pozwala to na zwiêkszenie szybkoœci pracy nad oprogramowaniem, a~ró¿nice w prêdkoœci dzia³ania programów napisanych w Pythonie i~tych napiasnych w jêzykach kompilowanych nie s¹ widoczne w wiêkszoœci popularnych zastosowañ.
+\qquad Do zalet programowania w jêzyku Python nale¿y zaliczyæ ogromn¹ iloœæ dostêpnych bibliotek, obszern¹ bibliotekê standardow¹, prostotê pisania i~czytania kodu oraz mo¿liwoœæ uruchamiania stworzonego w tym jêzyku oprogramowania na wielu ró¿nych platformach. Python jest jêzykiem interpretowanym, co oznacza, ¿e do uruchomienia programu napisanego w tym jêzyku nie jest wymagana kompilacja. Pozwala to na zwiêkszenie szybkoœci pracy nad oprogramowaniem, a~ró¿nice w prêdkoœci dzia³ania programów napisanych w Pythonie i~tych napisanych w jêzykach kompilowanych nie s¹ widoczne w wiêkszoœci popularnych zastosowañ.
 
 \qquad Python jest obecnie wykorzystywany do tworzenia zarówno samodzielnych programów i~gier, jak i~aplikacji skryptowych o~wielu ró¿nych zastosowaniach. Znajduje zastosowanie tak¿e w systemach sztucznej inteligencji, nauczaniu maszynowym czy w programach realizuj¹cych transmisjê z~wykorzystaniem protoko³ów sieciowych.
 
@@ -359,7 +358,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
 
 \qquad Rysunek \ref{fig:rfbenchmark_measurement} przedstawia kolejn¹ funkcjonalnoœc aplikacji RFBenchmark, któr¹ jest mo¿liwoœc dokonywania w³asnych pomiarów jakoœci sieci. U¿ytkownik mo¿e zobaczyæ czas transmisji z~i~do serwera RFBenchmark, oraz przybli¿on¹ prêdkoœæ pobierania oraz wysy³ania plików w sieci.
 
-\qquad W przeciwieñstwie do aplikacji bêd¹cej przedmiotem niniejszej pracy magisterskiej, u¿ytkownik nie ma mo¿liwoœci wyboru serwera z~którym prowadzona bêdzie transmisja, rozmiaru pakietu czy protoko³u transmisji. Nie istnieje tak¿e mo¿liwoœc zapisu wyników do pliku, tylko jako publikacja na portalu spo³ecznoœciowym.
+\qquad W przeciwieñstwie do aplikacji bêd¹cej przedmiotem niniejszej pracy magisterskiej, u¿ytkownik nie ma mo¿liwoœci wyboru serwera z~którym prowadzona bêdzie transmisja, rozmiaru pakietu, czy protoko³u transmisji. Nie istnieje tak¿e mo¿liwoœc zapisu wyników do pliku, tylko jako publikacja na portalu spo³ecznoœciowym.
 
 \begin{figure}[H]
     \centering
@@ -446,7 +445,7 @@ Aby uzyskaæ w³aœciwoœci systemu przedstawione w tabeli \ref{LTE_requirements} wy
     \label{fig:net_monitor_mainscreen}
 \end{figure}
 
-\qquad Ekran g³ówny aplikacji Net Monitor (która, mimo bardzo zbli¿onej nazwy do wczeœniej opisywanej aplikacji netmonitor, jest tworem innej firmy) zosta³ przedstawiony na rynkus \ref{fig:net_monitor_mainscreen}. Przedstawia on podstawowe informacje na temat aktualnego po³¹czenia z~sieci¹ komórkow¹ takie jak: nazwa operatora, aktualna sieæ, si³a sygna³u czy pozycja GPS. Dodatkowo istnieje tak¿e mo¿liwoœæ uzyskania informacji o~s¹siednich stacjach bazowych, je¿eli znajduj¹ siê one w zasiêgu transmisji telefonu.
+\qquad Ekran g³ówny aplikacji Net Monitor (która, mimo bardzo zbli¿onej nazwy do wczeœniej opisywanej aplikacji netmonitor, jest tworem innej firmy) zosta³ przedstawiony na rysunku \ref{fig:net_monitor_mainscreen}. Przedstawia on podstawowe informacje na temat aktualnego po³¹czenia z~sieci¹ komórkow¹ takie jak: nazwa operatora, aktualna sieæ, si³a sygna³u czy pozycja GPS. Dodatkowo istnieje tak¿e mo¿liwoœæ uzyskania informacji o~s¹siednich stacjach bazowych, je¿eli znajduj¹ siê one w zasiêgu transmisji telefonu.
 
 \begin{figure}[H]
     \centering
@@ -475,12 +474,12 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
 
 \qquad Aplikacja na system Android umo¿liwia wybór nastêpuj¹cych parametrów pomiaru:
 \begin{itemize}
-\item Adres IP serwera
-\item Port, na którym nas³uchuje uruchomiony uprzednio serwer
-\item Liczbê pakietów, która zostanie przes³ana w trakcie pomiaru
-\item Rozmiar (w bajtach) pojedyñczego przesy³anego pakietu
-\item Czas pomiêdzy przes³aniem kolejnego pakietu. Minimalny dopuszczalny czas wynosi 500ms, u¿ytkownik ma tak¿e mo¿liwoœæ wyboru pomiêdzy podaniem wartoœci w sekundach, minutach oraz milisekundach.
-\item Protokó³ transmisji - do wyboru s¹ protoko³y HTTP, TCP oraz UDP
+\item Adresu IP serwera
+\item Portu, na którym nas³uchuje uruchomiony uprzednio serwer
+\item Liczby pakietów, która zostanie przes³ana w trakcie pomiaru
+\item Rozmiaru (w bajtach) pojedyñczego przesy³anego pakietu
+\item Czasu pomiêdzy przes³aniem kolejnego pakietu. Minimalny dopuszczalny czas wynosi 500ms, u¿ytkownik ma tak¿e mo¿liwoœæ wyboru pomiêdzy podaniem wartoœci w sekundach, minutach oraz milisekundach.
+\item Protoko³u utransmisji - do wyboru s¹ protoko³y HTTP, TCP oraz UDP
 \end{itemize}
 
 \qquad Pojedyñczym pomiarem czasu transmisji nazywamy pomiar czasu wykonania nastêpuj¹cych czynnoœci:
@@ -495,13 +494,13 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
 
 \qquad W trakcie dokonywania pomiaru, program wyœwietla nastêpuj¹ce dane:
 \begin{itemize}
-\item Aktualne po³o¿enie terminala mobilnego na mapie (za poœrednictwem Google Maps). W zale¿noœci od szybkoœci aktualnej transmisji, po³o¿enie jest zaznaczane jaœniejszym b¹dŸ ciemniejszym okrêgiem. Pozwala to oceniæ jakoœæ transmisji w danym miejscu w przypadku przemieszczania siê w trakcie pomiaru.
+\item Aktualne po³o¿enie terminala mobilnego na mapie (za poœrednictwem us³ugi Google Maps). W zale¿noœci od szybkoœci aktualnej transmisji, po³o¿enie jest zaznaczane jaœniejszym b¹dŸ ciemniejszym okrêgiem. Pozwala to oceniæ jakoœæ transmisji w danym miejscu w przypadku przemieszczania siê w trakcie pomiaru.
 \item Numer aktualnie przesy³anego pakietu
 \item Liczbê pakietów, które zostan¹ przes³ane w trakcie aktualnego pomiaru
 \item Aktualn¹ sieæ (LTE/WCDMA/EDGE)
 \item Aktualn¹ moc sygna³u (w dBm)
 \item Czas transmisji aktualnie wys³anego pakietu
-\item Mediana czasu transmisji pakietu
+\item Medianê czasu transmisji pakietu
 \item Odchylenie æwiartkowe czasu transmisji pakietu
 \item Minimalny czas transmisji pakietu w trakcie aktualnego pomiaru
 \item Maksymalny czas transmisji pakietu w trakcie aktualnego pomiaru
@@ -510,7 +509,7 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
 
 \qquad W trakcie pomiaru tworzony jest plik w formacie .csv w pamiêci urz¹dzenia. Plik ten zawiera dane o~aktualnym pomiarze w formacie:
 
-\qquad [\textit{Data, czas pomiaru, aktualna sieæ, czas transmisji pakietu, moc sygna³u, po³o¿enie terminala ruchomego}]
+\qquad [\textit{Protokó³ transmisji, aktualna sieæ, rozmiar pakietu, liczba pakietów, odstêp pomiêdzy pakietami, œredni czas transmisji pakietu, mediana czasu transmisji, minimalny czas transmisji, maksymalny czas transmisji, odchylenie æwiartkowe}] oraz tabela zawieraj¹ca czasy transmisji ka¿dego pakietu wraz z moc¹ sygna³u i dok³adnym po³o¿eniem.
 
 \qquad Po skoñczonym pomiarze u¿ytkownik ma mo¿liwoœæ wygenerowania nie tylko pliku z~wynikami pomiarów, lecz tak¿e zapisanej w pliku .jpg mapy z~zaznaczonymi punkatami pomiarów oraz wykresu przedstawiaj¹cego zmiany czasów transmisji oraz mocy sygna³u w trakcie pomiaru.
 
@@ -527,7 +526,7 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
 
 \qquad Rysunek \ref{fig:server_source_code} przedstawia kod Ÿród³owy jednego z~programów, które powsta³y w celu odbierania pakietów od terminala mobilnego, a~nastêpnie odsy³ania ich z~powrotem. Zosta³ on napisany w jêzyku programowania Python, który jest jêzykiem skryptowym znajduj¹cym szerokie zastosowania w serwerach, przetwarzaniu danych, a~nawet sztucznej inteligencji. 
 
-\qquad W programie tym skorzystano z~biblioteki o~nazwie Flask (ang. \textit{fiolka}), która w prosty sposób pozwala na realizacje obs³ugi zapytañ HTTP. Wysoki stopieñ abstrakcji interfejsu programisty udostêpnionego przez bibliotekê Flask sprawia, ¿e przy odrobinie umiejêtnoœci programistycznych mo¿na implementowaæ zarówno proste jak i~bardziej skomplikowane aplikacje - serwery przy u¿yciu niewielkiej iloœci linii kodu.
+\qquad W programie tym skorzystano z~biblioteki o~nazwie Flask (ang. \textit{fiolka}), która w prosty sposób pozwala na realizacje obs³ugi zapytañ HTTP. Wysoki stopieñ abstrakcji interfejsu programisty udostêpnionego przez bibliotekê Flask sprawia, ¿e posiadaj¹c umiejêtnoœci programistyczne mo¿na implementowaæ zarówno proste jak i~bardziej skomplikowane aplikacje - serwery przy u¿yciu niewielkiej iloœci linii kodu.
 
 \qquad Zasada dzia³ania tego programu pe³ni¹cego funkcjê serwera HTTP jest nastêpuj¹ca: je¿eli do serwera dotrze zapytanie typu POST, odeœlij przes³ane dane do nadawcy w niezmienionej postaci. W przeciwnym przypadku odeœlij tekst 'Hello World!' (ang. \textit{Witaj Œwiecie!}), co pozwala w prosty sposób przetestowaæ czy serwer dzia³a poprawnie, oraz czy dany komputer b¹dŸ terminal mobilny mo¿e siê z~nim po³¹czyæ.
 
@@ -544,7 +543,7 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
 
 \qquad Poprzednio wspomniania biblioteka do obs³ugi zapytañ HTTP jak¹ jest Flask nie posiada mo¿liwoœci obs³ugi transmisji pakietów TCP. Ze wzglêdu na to, zdecydowano siê na zastosowanie biblioteki o~nazwie socket (ang. \textit{gniazdo}). Pozwala ona na utworzenie tzw. gniazda po stronie serwera, do którego terminal mobilny mo¿e wysy³aæ pakiety protoko³u TCP. 
 
-\qquad Wysy³aj¹c pakiety TCP konieczne jest okreœlenie rozmiaru pakietu w bajtach. Program oczekuje, ¿e wœród przesy³anych danych pojawi siê sekwencja PACKET\_SIZE:N (ang. \textit{Rozmiar pakietu}), gdzie N jest rozmiarem pakietu danych. Nastêpnie program (tak d³ugo, jak wysy³ane s¹ dane) odbiera pakiety o~zadanej d³ugoœci i~odsy³a je z~powrotem do terminala, który je nada³. W momencie, w którym terminal mobilny przestaje wysy³aæ dane, serwer pozostaje w czuwaniu i~czeka na kolejne pakiety do transmisji.
+\qquad Wysy³aj¹c pakiety TCP konieczne jest okreœlenie rozmiaru pakietu w bajtach. Program oczekuje, ¿e wœród przesy³anych danych pojawi siê sekwencja \textit{PACKET\_SIZE:N} (ang. \textit{Rozmiar pakietu}), gdzie N jest rozmiarem pakietu danych. Nastêpnie program (tak d³ugo, jak wysy³ane s¹ dane) odbiera pakiety o~zadanej d³ugoœci i~odsy³a je z~powrotem do terminala, który je nada³. W momencie, w którym terminal mobilny przestaje wysy³aæ dane, serwer pozostaje w czuwaniu i~czeka na kolejne pakiety do transmisji.
 
 \qquad Dodatkowo serwer obs³uguje sekwencjê \textit{CLOSE\_SOCKET} (ang. \textit{Zamknij gniazdo}), która powoduje zamkniêcie gniazda po stronie serwera. Pozwala to na zapewnienie zestawiania nowego po³¹czenia przy ka¿dej próbie transmisji przy pomocy protoko³u TCP.
 
@@ -571,7 +570,7 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
     \label{fig:main_screen_android}
 \end{figure}
 
-\qquad Aplikacja na smartfon z~systemem Android zosta³a przygotowana w œrodowisku Android Studio w wersji 1.3.1 i~zaimplementowana w jêzyku programowania Java. Aplikacja zosta³a napisana wspieraj¹c wersjê systemu operacyjnego Android pocz¹wszy od 4.0.0, co w praktyce oznacza, ¿e ponad 94\% telefonów z~systemem Android jest w stanie j¹ poprawnie uruchomiæ. Dane te potwierdza rysunek \ref{fig:android_device_support}.
+\qquad Aplikacja na smartfon z~systemem Android zosta³a przygotowana w œrodowisku Android Studio w wersji 1.3.1 i~zaimplementowana w jêzyku programowania Java. Aplikacja zosta³a napisana zak³adaj¹c wsparcie wersji systemu operacyjnego Android pocz¹wszy od 4.0.0, co w praktyce oznacza, ¿e ponad 94\% telefonów z~systemem Android jest w stanie j¹ poprawnie uruchomiæ i przeprowadzaæ pomiary. Dane te potwierdza rysunek \ref{fig:android_device_support}.
 
 \begin{figure}[H]
     \centering
@@ -583,12 +582,12 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
 \qquad Rysunek \ref{fig:main_screen_android} przedstawia g³ówny ekran aplikacji napisanej na system Android. Aplikacja ta zosta³a nazwana \textit{Android Ping!}, co podkreœla fakt, ¿e jej dzia³anie zbli¿one jest do programu \textit{ping} z~systemów Unixowych. Przed rozpoczêciem pomiaru, aplikacja prosi u¿ytkownika o~podanie nastêpuj¹cych danych:
 
 \begin{enumerate}
-\item Adres IP serwera
-\item Port, na którym nas³uchuje uruchomiony uprzednio serwer
-\item Liczbê pakietów, która zostanie przes³ana w trakcie pomiaru
-\item Rozmiar (w bajtach) pojedyñczego przesy³anego pakietu
-\item Czas pomiêdzy przes³aniem kolejnego pakietu. Minimalny dopuszczalny czas wynosi 500ms, u¿ytkownik ma tak¿e mo¿liwoœæ wyboru pomiêdzy podaniem wartoœci w sekundach, minutach oraz milisekundach.
-\item Protokó³ transmisji - do wyboru s¹ protoko³y HTTP, TCP oraz UDP
+\item Adresu IP serwera
+\item Portu, na którym nas³uchuje uruchomiony uprzednio serwer
+\item Liczby pakietów, która zostanie przes³ana w trakcie pomiaru
+\item Rozmiaru (w bajtach) pojedyñczego przesy³anego pakietu
+\item Czasu pomiêdzy przes³aniem kolejnego pakietu. Minimalny dopuszczalny czas wynosi 500ms, u¿ytkownik ma tak¿e mo¿liwoœæ wyboru pomiêdzy podaniem wartoœci w sekundach, minutach oraz milisekundach.
+\item Protoko³u transmisji - do wyboru s¹ protoko³y HTTP, TCP oraz UDP
 \end{enumerate}
 
 \qquad Aplikacja weryfikuje podane przez u¿ytkownika dane przed rozpoczêciem pomiaru. Kryteria, jakie musz¹ spe³niaæ parametry pomiaru s¹ nastêpuj¹ce:
@@ -622,12 +621,12 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
 
 \begin{figure}[H]
     \centering
-\includegraphics[scale=0.35,natwidth=540,natheight=960]{measurement_screen.jpg}
+\includegraphics[scale=0.18,natwidth=1920,natheight=1080]{measurement_screen.jpg}
     \caption{Ekran pomiaru}
     \label{fig:measurement_screen_android}
 \end{figure}
 
-\qquad Pod map¹ znajduj¹ siê informacje na temat biê¿¹cego pomiaru takie jak:
+\qquad Pod map¹ znajduj¹ siê informacje na temat bie¿¹cego pomiaru takie jak:
 
 \begin{itemize}
   \item Iloœæ pakietów, które zostan¹ przes³ane w trakcie bie¿¹cego pomiaru
@@ -635,7 +634,7 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
   \item Œredni czas przesy³u pakietu dla aktualnego pomiaru
 \end{itemize}
 
-\qquad Po zakoñczeniu pomiaru u¿ytkownik mo¿e zobaczyæ œredni czas transferu pakietu dla uprzednio ustalonych parametrów, a~tak¿e u¿yæ przycisku \textit{RESULTS} (ang. \textit{wyniki}), aby zobaczyæ wykres obrazuj¹cy w jaki sposób zmienia³y siê czasy przesy³u poszczególnych pakietów. Przyk³ad takiego wykresu obrazuje rysunek \ref{fig:results_android}. Dodatkowo aplikacja posiada mo¿liwoœæ zapisu wyników pomiaru do pliku z~rozszerzeniem csv (ang. \textit{Comma Separated Values} - wartoœci oddzielone œrednikiem). Plik tego typu mo¿e byæ póŸniej odczytany w programach do analizy danych takich jak Microsoft Office Excel czy Matlab. Pozwala to na dowoln¹ analizê wyników pomiaru ju¿ po ich wykonaniu i~np. zamkniêciu aplikacji.
+\qquad Po zakoñczeniu pomiaru u¿ytkownik mo¿e zobaczyæ œredni czas transferu pakietu dla uprzednio ustalonych parametrów, a~tak¿e u¿yæ przycisku \textit{RESULTS} (ang. \textit{wyniki}), aby zobaczyæ wykres obrazuj¹cy w jaki sposób zmienia³y siê czasy przesy³u poszczególnych pakietów. Przyk³ad takiego wykresu obrazuje rysunek \ref{fig:results_android}. Dodatkowo aplikacja posiada mo¿liwoœæ zapisu wyników pomiaru do pliku z~rozszerzeniem csv (ang. \textit{Comma Separated Values} - wartoœci oddzielone przecinkiem). Plik tego typu mo¿e byæ póŸniej odczytany w programach do analizy danych takich jak Microsoft Office Excel czy Matlab. Pozwala to na dowoln¹ analizê wyników pomiaru ju¿ po ich wykonaniu i~np. zamkniêciu aplikacji.
 
 \begin{figure}[H]
     \centering
@@ -655,7 +654,7 @@ Rysunek \ref{fig:net_monitor_measurement} przedstawia widok pomiaru jakoœci tran
     \label{fig:http_requests_android}
 \end{figure}
 
-\qquad Wewn¹trz definicji funkcji \textit{performHttpRequests()} powstaje obiekt zaimplementowanej na potrzeby aplikacji klasy \textit{HttpRequestTask}. Jest to klasa, która dziedziczy po wbudowanej w system Android klasie \textit{AsyncTask}. Klasa \textit{AsyncTask} pozwala programistom aplikacji na system Android na tworzenie kodu, który wykonywany jest asynchronicznie, bez blokowania g³ównego w¹tku aplikacji. Dziêki temu, pêtla, która wysy³a zapytania HTTP co okreœlony interwa³ nie blokuje innych funkcji aplikacji (np. œledzenia pozycji terminalu mobilnego).
+\qquad Wewn¹trz definicji funkcji \textit{performHttpRequests()} powstaje obiekt zaimplementowanej na potrzeby aplikacji klasy \textit{HttpRequestTask}. Jest to klasa, która dziedziczy po wbudowanej w system Android klasie \textit{AsyncTask}. Klasa \textit{AsyncTask} pozwala programistom aplikacji na system Android na tworzenie kodu, który wykonywany jest asynchronicznie, bez blokowania g³ównego w¹tku aplikacji. Dziêki temu pêtla, która wysy³a zapytania HTTP co okreœlony interwa³ czasu nie blokuje innych funkcji aplikacji (np. œledzenia pozycji terminalu mobilnego).
 
 \begin{figure}[H]
     \centering
@@ -807,7 +806,7 @@ Nastêpnie w pêtli wykonywane s¹ nastêpuj¹ce kroki:
 \end{itemize}
 
 \subsection{Sposób pomiaru po³o¿enia terminala mobilnego}
-\qquad Aplikacja \textit{Android Ping} posiada funkcjonalnoœc pomiaru aktualnej pozycji terminala mobilnego, wyœwietlania jej na mapie, oraz zapisywania pozycji do pliku. W tym celu skorzystano z~us³ugi udostêpnianej przez twórców Androida jak¹ jest Google Maps \cite{[15]}. 
+\qquad Aplikacja \textit{Android Ping} posiada funkcjonalnoœæ pomiaru aktualnej pozycji terminala mobilnego, wyœwietlania jej na mapie, oraz zapisywania pozycji do pliku. W tym celu skorzystano z~us³ugi udostêpnianej przez twórców Androida jak¹ jest Google Maps \cite{[15]}. 
 
 \begin{figure}[H]
     \centering
@@ -848,7 +847,7 @@ Nastêpnie w pêtli wykonywane s¹ nastêpuj¹ce kroki:
     \label{fig:gps_update_camera}
 \end{figure}
 
-\qquad Po po³¹czeniu siê z~us³ug¹ nawigacji nale¿y zdefiniowaæ funkcje przedstawione na rysunku \ref{fig:gps_listener}, które zostan¹ wykonane w przypadku np. zmiany pozycji terminala mobilnego. Najbardziej istotn¹ z~nich jest \textit{onLocationChanged}, która wykonywana jest za ka¿dym razem, gdy us³uga nawigacji Google odczyta now¹ pozycjê. 
+\qquad Po po³¹czeniu siê z~us³ug¹ nawigacji nale¿y zdefiniowaæ funkcje przedstawione na rysunku \ref{fig:gps_listener}, które zostan¹ wykonane w przypadku np. zmiany pozycji terminala mobilnego. Najbardziej istotn¹ z~nich jest \textit{onLocationChanged}, która wykonywana jest za ka¿dym razem, gdy us³uga nawigacji Google odczyta now¹ pozycjê urz¹dzenia.
 
 \qquad Po ka¿dej zmianie aktualnej pozycji wykonywana jest funkcja \textit{updateCamera} (rysunek \ref{fig:gps_update_camera}, która odpowiada za aktualizacjê danych o~aktualnej pozycji, oraz wyœwietlenie pozycji na mapie widocznej w aplikacji.
 
@@ -912,7 +911,7 @@ Nastêpnie w pêtli wykonywane s¹ nastêpuj¹ce kroki:
 \qquad Przyk³adowe wyniki pomiaru zapisane do pliku przedstawia rysunek \ref{fig:sample_save_file}.
 \begin{figure}[H]
     \centering
-\includegraphics[scale=1,natwidth=519,natheight=267]{android_sample_results.png}
+\includegraphics[scale=0.5,natwidth=1039,natheight=487]{pomiary/edge_excel.png}
     \caption{Przyk³adowe wyniki pomiarów zaimportowane do programu Microsoft Excel}
     \label{fig:sample_save_file}
 \end{figure}
